@@ -1,0 +1,35 @@
+{
+    [
+        {
+            "club": "Preston North End",
+            "stadium": "Deepdale",
+            "address": {
+                "address1": "Sir Tom Finney Way",
+                "address2": "",
+                "city": "Preston",
+                "state": "Lancashire",
+                "postCode": "xxxx xxx"
+            },
+            "website": `<a href="https://www.pnefc.net/">Official Website<a>`,
+            "lat": "",
+            "lng": ""
+        }
+    ]
+
+}
+
+{
+    "firstName": "Rack",
+    "lastName": "jackson",
+    "gender": "man",
+    "age": 24,
+    "address": {
+        "streetAddress": "126 Udhna",
+        "city": "san jone",
+        "state": "CA",
+        "postalCode": "394221"
+    },
+    "phoneNumbers": [
+        { "type": "home", "number": "7383627627" }
+    ]
+}

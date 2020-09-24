@@ -1,41 +1,108 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<img src="#">
 
-Welcome Stuart Saint,
+Welcome to my interactive front-end development milestone project. For this project I chose to create Away Day, a website that harnesses Google APIs to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## User Experience
 
-## Gitpod Reminders
+### Styling
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- Wireframes
+- Fonts
+- Colour Selection
+- Icons
+- Miscellaneous Design Decisions
 
-`python3 -m http.server`
+### User Stories
 
-A blue button should appear to click: *Make Public*,
+Testing for each of the below user stories is included within the [testing log](#).
 
-Another blue button should appear to click: *Open Browser*.
+1. As a fan, I would like to get directions to the stadium;
+2. As a fan, I would like to find the nearest pub to the stadium;
+3. As a fan, I would like to find a hotel to stay in;
+4. 
+5. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Features
 
-A blue button should appear to click: *Make Public*,
+### Existing Features
+- locate ground for any Premier League or Championship club
+- find pubs
+- find hotels
+- find nightclubs
+- get directions to ground from any location
 
-Another blue button should appear to click: *Open Browser*.
+### Features to Implements
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+- Share plans with friends
+- Rollout to more leagues, sports and countries
 
-## Updates Since The Instructional Video
+## Technologies Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    - 
+- [CSS3](https://en.wikipedia.org/wiki/CSS3)
+    - 
+- [Bootstrap](https://getbootstrap.com/)
+    - 
+- [Javascript](https://www.javascript.com/)
+    - 
+- [jQuery](https://jquery.com/)
+    - 
+- [Font Awesome](https://fontawesome.com/)
+    - 
+- [Google Fonts](https://fonts.google.com/)
+    - 
+- [GitPod](https://www.gitpod.io/)
+    - 
+- [GitHub](https://www.github.com/)
+    - 
+- [EmailJS](https://www.emailjs.com/)
+    - 
+- [Balsamiq](https://www.balsamiq.com/)
+    - 
+- [Pixlr](https://www.pixlr.com/)
+    - 
+- [Favicon.io](https://favicon.io/)
+    - 
+- [Google Maps Javascript API]()
+    - 
+- [Google Location API]()
+    - 
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+## Testing
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed along with other common files.
+I have included a testing log within the repository.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+>>> In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while mobile devices always drop into col-12 formatting.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+>>> I tested this project primarily on Firefox but also Chrome and Edge, taking advantage of the screen size options to test using iPad, Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Deployment
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+>>> I used [GitHub](https://www.github.com/) as the host for this project, and [GitPod](https://www.gitpod.io/) to write it, using just one branch.
 
---------
+I deployed this project to GitHub Pages using the following method:
 
-Happy coding!
+    Locate the desired repository in your repository list and open it;
+    Navigate to the Settings heading in the repository heading;
+    Locate the GitHub Pages heading at the bottom of the page;
+    Click the button beneath the Source sub-heading and change this from 'None' to 'Master Branch';
+    Once the page reloads, locate the GitHub Pages heading again;
+    If successful, a green box will appear beneath the heading with the link to your deployed page;
+    This page will only update with new content once that content has been pushed from your developer environment.
+
+### Cloning
+
+Assuming you already have Git [installed](https://git-scm.com/download/), anybody can clone this repository by following these steps:
+
+    Open the command prompt/terminal on your machine;
+    Type the command 'cd' followed by the directory you wish to store the repository in;
+    Go to the top of the [GitHub repository](https://github.com/kiehozero/away-day/) and click the green 'Code' drop-down button;
+    Copy the [link](https://github.com/kiehozero/away-day.git) provided;
+    Return to the Command Prompt and type 'git clone' followed by the copied address.
+
+For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/), from which my steps above were taken.
+
+## Credits
+- 
+- 
+- 
