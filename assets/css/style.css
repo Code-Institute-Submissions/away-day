@@ -34,7 +34,7 @@ a:hover {
     color: #8a2be2;
 }
 
-button {
+.map-button {
     height: 80px;
     width: 80px;
 }
