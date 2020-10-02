@@ -1,8 +1,8 @@
 /* Copied from the Code Institute resume tutorial */
 function sendMail(contactForm) {
-    emailjs.send("gmail", "template_bd40mjq", {
+    emailjs.send("gmail", "template_vn6mied", {
         "name": contactForm.name.value, 
-        "emailaddress": contactForm.emailaddress.value, 
+        "email_address": contactForm.email.value, 
         "feedback": contactForm.feedback.value
     })
     .then(

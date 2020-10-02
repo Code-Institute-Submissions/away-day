@@ -22,6 +22,15 @@
         href="/assets/css/style.css"
         rel="stylesheet"
         type="text/css">
+    <script 
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script
+        type="text/javascript">
+        (function() {
+            emailjs.init("user_W4dj8lHY3F2fCc19kl6tw");
+        })();
+    </script>
 </head>
 <body>
     <header class="container-fluid">
@@ -49,7 +58,7 @@
                     Got feedback for AwayDay?
                 </h3>
                 <div class="center-form">
-                   <form onsubmit="return sendMail(this);">
+                    <form onsubmit="return sendMail(this);">
                         <input
                             type="text"
                             name="name"
@@ -60,7 +69,7 @@
                         />
                         <input
                             type="email"
-                            name="email_address"
+                            name="email"
                             id="email_address"
                             class="form-control"
                             placeholder="Email"
