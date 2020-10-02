@@ -38,3 +38,33 @@ a:hover {
     height: 80px;
     width: 80px;
 }
+
+/* Footer */
+
+.footer div {
+    font-size: 22px;
+}
+
+#footer-left {
+    text-align: left;
+}
+
+#footer-right {
+    text-align: right;
+}
+
+/* Media Queries */
+
+@media (max-width: 575px) {
+    #footer-left {
+        text-align: center;
+    }
+
+    #footer-right {
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 940px) {
+
+}
