@@ -14,33 +14,58 @@ a:hover {
     text-decoration: none;
 }
 
+.map-button {
+    height: 80px;
+    width: 90%;
+}
+
+.map-button:hover {
+    color: #05e680;
+}
+
+#mapbox {
+    height: 80vh;
+}
+
+/* Header */
+
 .logo {
     color: #ffffff;
     /* font-family: 'Prompt', sans-serif; */
     font-size: 48px;
     font-style: italic;
     font-weight: 700;
+    text-align: left;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.gitlink,
-.contact,
-.social i {
+.head-social,
+.head-social a {
+    color: #ffffff;
+    word-spacing: 24px;
+    font-size: 36px;
+    text-align: right;
+}
+
+#dtSelector {
+    /* Overwrites btn-outline-secondary Bootstrap outline */
+    border-color: #ffffff;
     color: #ffffff;
 }
 
-.social i:hover {
-    color: #8a2be2;
+#dtSelector:active {
+    /* Overwrites btn-outline-secondary Bootstrap class properties, this is currently still displaying the default */
+    background-color: #8a2be2;
 }
 
-.map-button {
-    height: 80px;
-    width: 80px;
+#dtSelector:hover {
+    /* Overwrites btn-outline-secondary Bootstrap class properties */
+    background-color: #8a2be2;
 }
 
-.map-button:hover {
-    color: #05e680;
+#mobSelector {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -57,9 +82,23 @@ a:hover {
     text-align: right;
 }
 
+.gitlink,
+.contact,
+.foot-social i {
+    color: #ffffff;
+}
+
+.foot-social i:hover {
+    color: #8a2be2;
+}
+
 /* Media Queries */
 
 @media (max-width: 575px) {
+    .map-button {
+        width: 30%;
+    }
+
     #footer-left {
         text-align: center;
     }
