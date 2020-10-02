@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact AWAYDAY</title>
+
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+    <script
+        src="https://kit.fontawesome.com/faa153a592.js"
+        crossorigin="anonymous">
+    </script>
+    <link
+        rel="icon"
+        href="#"
+        type="image/x-icon"> <!--Add favicon upon generation-->
+    <link
+        href="/assets/css/style.css"
+        rel="stylesheet"
+        type="text/css">
 </head>
 <body>
-    
+    <header class="container-fluid">
+        <nav>
+            <div class="row text-center no-gutters">
+                <div class="col-2">
+                    <a href="index.html" class="logo">AwayDay</a>
+                </div>
+                <div class="col-8 mx-auto">
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-2 d-none d-md-block">
+                    radio buttons to classify requests (suggestion, collaboration?)
+            <!-- This form is taken from the Code Institute tutorial-->
+            </div>
+            <div class="col-sm-12 col-md-8 bg-color-contact-right">
+                <h3 class="contact-heading uppercase text-center">
+                    Got feedback for AwayDay?
+                </h3>
+                <div class="center-form">
+                   <form onsubmit="return sendMail(this);">
+                        <input
+                            type="text"
+                            name="name"
+                            id="full_name"
+                            class="form-control"
+                            placeholder="Name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="email_address"
+                            id="email_address"
+                            class="form-control"
+                            placeholder="Email"
+                            required
+                        />
+                        <textarea
+                            rows="5"
+                            name="feedback"
+                            id="feedback"
+                            class="form-control"
+                            placeholder="Feedback"
+                            required>
+                        </textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">
+                                    Send Request
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>Copy from index.html</footer>
+
+    <script src="scripts/contact.js"></script>
 </body>
 </html>
