@@ -39,6 +39,10 @@ a:hover {
     width: 80px;
 }
 
+.map-button:hover {
+    color: #05e680;
+}
+
 /* Footer */
 
 .footer div {
