@@ -8,7 +8,10 @@ Welcome to my interactive front-end development milestone project. For this proj
 
 - Wireframes
 - Fonts
-- Colour Selection
+- Colour Selection 
+ - #8a2be2: purple/violet
+ - #05e680: green
+ - #ffffff: white
 - Icons
 - Miscellaneous Design Decisions
 
