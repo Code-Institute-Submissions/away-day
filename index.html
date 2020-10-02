@@ -26,33 +26,58 @@
 <body>
     <header class="container-fluid">
         <nav>
-            <div class="row text-center no-gutters">
-                <div class="col-2">
-                    <a href="index.html" class="logo">AwayDay</a>
+            <div class="row no-gutters">
+                <div class="col-sm-2 col-md-3 my-auto">
+                    <a href="index.html" class="logo">
+                        <img class="d-sm-none d-block" src="images/site/logo-64px.png">
+                        <span class="d-none d-md-block">AwayDay</span>
+                    </a>
                 </div>
-                <div class="col-8 mx-auto">
-                    <div class="dropdown">
+                <div class="col-sm-10 col-md-6 mx-auto my-auto">
+                    <div class="navbar-toggler">
                     <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
+
+                    <!--NAVIGATION DROP-DOWN (MOBILE ONLY)-->
+                    
+                        <button 
+                            class="navbar-toggler ml-auto d-sm-none d-block"
+                            type="button"
+                            id="mobSelector"
+                            data-toggle="dropdown"
+                            data-target="#leagueSelection"
+                            aria-controls="leagueSelection"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                        </button>
+                        
+                    <!--NAVIGATION DROP-DOWN (DESKTOP AND TABLET)-->
+                    <!--Needs to fit on same line as icon-->
                         <button
-                            class="btn btn-secondary dropdown-toggle"
+                            class="btn btn-outline-secondary btn-block dropdown-toggle d-none d-sm-block"
                             type="button" 
-                            id="leagueSelection" 
+                            id="dtSelector" 
                             data-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false">
-                                Choose Your Opponent
+                            Choose Your Opponent
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="leagueSelection">
+                    
+                    <!--DROP-DOWN MENU ITEMS-->
+                        <div class="dropdown-menu btn-block" aria-labelledby="leagueSelection">
                             <a class="dropdown-item" href="#">Premier League</a>
                             <a class="dropdown-item" href="#">Championship</a>
                             <a class="dropdown-item" href="#">Bundesliga</a>
                             <a class="dropdown-item" href="#">GAA</a>
+                            <a class="dropdown-item d-sm-none d-block" href="contact.html">Contact</a>
                         </div>
                     </div>
                     <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
                 </div>
-                <div class="col-2">
-                    <p><a href="contact.html" class="contact">Contact</a></p>
+                <div class="col-md-3 d-none d-sm-block head-social my-auto">
+                    <a href="contact.html" ><i class="far fa-envelope"></i></a>
+                    <a href="http://www.twitter.com/" target="_blank" ><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </nav>
@@ -60,12 +85,21 @@
     
     <main class="container-fluid">
         <div class="row no-gutters">
-            <div class="d-none d-md-block col-md-2">
+            <div class="col-sm-12 col-md-2 col-lg-3 instructions my-auto d-none d-sm-block">
+            AwayDay exists to give travelling supporters a quick guide to their next destination.
+            <br><br>
+            Select your opponent from the drop-down menu at the the top of the page, then click each button to customise the map.
+            <br><br>
+            Clicking the 'Get to the ground' button will generation directions from your current location.
+            <br><br>
+            Clicking any of the 'Best...' buttons will display the top-rated businesses in each category.
+            <br><br>
+            Click the 'SHARE' button to send the map to the friends you are travelling with!
             </div>
-            <div class="col-sm-12 col-md-8" id="mapbox">
+            <div class="col-sm-12 col-md-8 col-lg-6" id="mapbox">
                 <map>Big old bastard map</map>
             </div>
-            <div class="col-sm-12 col-md-2">
+            <div class="col-sm-12 col-md-2 col-lg-3 my-auto">
                 <div class="row">
                     <button class="btn btn-outline-light map-button mx-auto">Get to the ground</button>
                     <button class="btn btn-outline-light map-button mx-auto">Best pubs</button>
@@ -82,9 +116,9 @@
         <!--Footer shell taken from Code Institute resume mini-project.-->
         <div class="row footer">
             <div id="footer-left" class="col-12 col-md-4">
-                <a class="social" target="_blank" href="http://www.twitter.com/"><i class="fab fa-twitter-square"></i></a>
-                <a class="social" target="_blank" href="http://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
-                <a class="social" target="_blank" href="contact.html"><i class="fas fa-envelope-square"></i></a>
+                <a class="foot-social" target="_blank" href="http://www.twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                <a class="foot-social" target="_blank" href="http://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                <a class="foot-social" target="_blank" href="contact.html"><i class="fas fa-envelope-square"></i></a>
             </div>
             <div id="footer-centre" class="col-12 col-md-4">
             </div>
@@ -110,5 +144,6 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous">
     </script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
