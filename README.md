@@ -106,6 +106,6 @@ Assuming you already have Git [installed](https://git-scm.com/download/), anybod
 For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/), from which my steps above were taken.
 
 ## Credits
-- 
+- Map help: https://www.sitepoint.com/google-maps-javascript-api-the-right-way/
 - 
 - 
