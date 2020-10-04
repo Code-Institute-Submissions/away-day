@@ -23,7 +23,15 @@ a:hover {
     color: #05e680;
 }
 
-#mapbox {
+/* Map */
+
+#map-api {
+    /* Map will not display without these dimensions */
+    min-height: 90%;
+    width: 90%;
+}
+
+#map-box {
     height: 80vh;
 }
 
