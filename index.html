@@ -65,14 +65,31 @@
                     
                     <!--DROP-DOWN MENU ITEMS-->
                         <div class="dropdown-menu btn-block" aria-labelledby="leagueSelection">
-                            <a class="dropdown-item" href="#">Premier League</a>
-                            <a class="dropdown-item" href="#">Championship</a>
-                            <a class="dropdown-item" href="#">Bundesliga</a>
-                            <a class="dropdown-item" href="#">Gaelic Games</a>
-                            <a class="dropdown-item" href="#">Super League</a>
-                            <a class="dropdown-item" href="#">League of Ireland</a>
-                            <a class="dropdown-item" href="#">NHL</a>
-                            <a class="dropdown-item d-sm-none d-block" href="contact.html">Contact</a>
+                            <ul>
+                            <li class="dropdown-item">Premier League</li>
+                            <li class="dropdown-item">Championship</li>
+                            <li class="dropdown-item">Bundesliga</li>
+                            <li class="dropdown-item">Gaelic Games</li>
+                            <button class="dropdown dropdown-item nav-link dropdown-toggle" href="#" id="slrDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Super League
+                                <div class="dropdown-submenu" data-toggle="dropdown" aria-labelledby="slrDropdown">
+                            <li class="dropdown-club" href="#" id="slrCasTig">Castleford Tigers</li>
+                            <li class="dropdown-club" href="#" id="slrCatDra">Catalans Dragons</li>
+                            <li class="dropdown-club" href="#" id="slrHudGia">Huddersfield Giants</li>
+                            <li class="dropdown-club" href="#" id="slrHullFC">Hull FC</li>
+                            <li class="dropdown-club" href="#" id="slrHullKR">Hull Kingston Rovers</li>
+                            <li class="dropdown-club" href="#" id="slrLeeRhi">Leeds Rhinos</li>
+                            <li class="dropdown-club" href="#" id="slrSalRed">Salford Red Devils</li>
+                            <li class="dropdown-club" href="#" id="slrStHlns">St. Helens</li>
+                            <li class="dropdown-club" href="#" id="slrWakTri">Wakefield Trinity</li>
+                            <li class="dropdown-club" href="#" id="slrWarWol">Warrington Wolves</li>
+                            <li class="dropdown-club" href="#" id="slrWigWar">Wigan Warriors</li>
+                        </div></button>
+
+                            <li class="dropdown-item" href="#">League of Ireland</li>
+                            <li class="dropdown-item" href="#">NHL</li>
+                            <li class="dropdown-item d-sm-none d-block" href="contact.html">Contact</li>
+                            </ul>
                         </div>
                     </div>
                     <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
