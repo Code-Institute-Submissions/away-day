@@ -1,3 +1,0 @@
-Birmingham City
-Middlesbrough
-Millwall
