@@ -53,7 +53,11 @@ a:hover {
     color: #ffffff;
     word-spacing: 24px;
     font-size: 36px;
-    text-align: right;
+    text-align: right; /* unsure whether I prefer center to match buttons or right to match footer and logo */
+}
+
+.head-social a i:hover {
+    color: #8a2be2;
 }
 
 #dtSelector {
