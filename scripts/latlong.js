@@ -212,7 +212,7 @@ let gaaDublin = {
     lat: 53.360496, lng: -6.251235
 }
 
-let gaaFermanagh = {
+let gaaFerman = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -228,7 +228,7 @@ let gaaKildare = {
     lat: 99.999999, lng: 99.999999
 }
 
-let gaaKilkenny = {
+let gaaKilken = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -240,11 +240,11 @@ let gaaLeitrim = {
     lat: 99.999999, lng: 99.999999
 }
 
-let gaaLimerick = {
+let gaaLim = {
     lat: 99.999999, lng: 99.999999
 }
 
-let gaaLongford = {
+let gaaLongf = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -260,7 +260,7 @@ let gaaMeath = {
     lat: 99.999999, lng: 99.999999
 }
 
-let gaaMonaghan = {
+let gaaMona = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -268,7 +268,7 @@ let gaaOffaly = {
     lat: 99.999999, lng: 99.999999
 }
 
-let gaaRoscommon = {
+let gaaRos = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -276,7 +276,7 @@ let gaaSligo = {
     lat: 54.257355, lng: -8.465722
 }
 
-let gaaTipperary = {
+let gaaTipp = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -284,11 +284,11 @@ let gaaTyrone = {
     lat: 99.999999, lng: 99.999999
 }
 
-let gaaWaterford = {
+let gaaWater = {
     lat: 52.254657, lng: -7.128762
 }
 
-let gaaWestmeath = {
+let gaaWestm = {
     lat: 99.999999, lng: 99.999999
 }
 
