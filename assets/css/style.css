@@ -77,9 +77,15 @@ a:hover {
     list-style: none;
 }
 
+#bunClublist,
+#eplClublist,
+#flcClublist,
+#gaaClublist,
+#loiClublist,
+#nhlClublist,
 #slrClublist {
     /* display: inline activated by event listeners in main.js */
-    display: none;
+    display: flex;
 }
 
 .dropdown-item:hover {
@@ -93,6 +99,7 @@ a:hover {
 
 .dropdown-club > img {
     height: 50px;
+    margin: 2px;
     width: 50px;
 }
 
