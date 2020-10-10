@@ -526,7 +526,7 @@ let slrLeeRhi = {
     lat: 53.816331, lng: -1.582257
 }
 
-let slrStHlns = {
+let slrSaints = {
     lat: 53.447313, lng: -2.726213
 }
 
@@ -549,51 +549,41 @@ let slrWigWar = {
 /* League of Ireland */
 
 let loiBohemi = {
-    lat: 53.361751,
-    lng: -6.275308
+    lat: 53.361751, lng: -6.275308
 }
 
 let loiCorCty = {
-    lat: 51.885509,
-    lng: -8.467874
+    lat: 51.885509, lng: -8.467874
 }
 
 let loiDerCty = {
-    lat: 54.990601,
-    lng: -7.336107
+    lat: 54.990601, lng: -7.336107
 }
 
 let loiDundalk = {
-    lat: 53.998930,
-    lng: -6.416433
+    lat: 53.998930, lng: -6.416433
 }
 
 let loiShaRov = {
-    lat: 53.283324,
-    lng: -6.373823
+    lat: 53.283324, lng: -6.373823
 }
 
 let loiSliRov = {
-    lat: 54.269872,
-    lng: -8.487382
+    lat: 54.269872, lng: -8.487382
 }
 
 let loiShelbo = {
-    lat: 53.367465,
-    lng: -6.251664
+    lat: 53.367465, lng: -6.251664
 }
 
 let loiStPats = {
-    lat: 53.340936,
-    lng: -6.316799
+    lat: 53.340936, lng: -6.316799
 }
 
 let loiUCDAFC = {
-    lat: 53.310339,
-    lng: -6.228142
+    lat: 53.310339, lng: -6.228142
 }
 
 let loiWaterf = {
-    lat: 52.245894,
-    lng: -7.125159
+    lat: 52.245894, lng: -7.125159
 }
