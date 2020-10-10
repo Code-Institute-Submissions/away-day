@@ -322,15 +322,15 @@ let nhlFlames = {
     lat: 99.999999, lng: 99.999999
 }
 
-let nhlHurricanes = {
+let nhlCanes = {
     lat: 99.999999, lng: 99.999999
 }
 
-let nhlAvalanche = {
+let nhlAvs = {
     lat: 99.999999, lng: 99.999999
 }
 
-let nhlBlackhawks = {
+let nhlBHawks = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -339,6 +339,10 @@ let nhlJackets = {
 }
 
 let nhlStars = {
+    lat: 99.999999, lng: 99.999999
+}
+
+let nhlWings = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -358,7 +362,11 @@ let nhlWild = {
     lat: 99.999999, lng: 99.999999
 }
 
-let nhlCanadiens = {
+let nhlHabs = {
+    lat: 99.999999, lng: 99.999999
+}
+
+let nhlPreds = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -366,7 +374,7 @@ let nhlDevils = {
     lat: 99.999999, lng: 99.999999
 }
 
-let nhlIslanders = {
+let nhlIsland = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -374,7 +382,7 @@ let nhlRangers = {
     lat: 99.999999, lng: 99.999999
 }
 
-let nhlOttawa = {
+let nhlSens = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -394,7 +402,7 @@ let nhlBlues = {
     lat: 99.999999, lng: 99.999999
 }
 
-let nhlLightning = {
+let nhlTampa = {
     lat: 99.999999, lng: 99.999999
 }
 
