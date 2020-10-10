@@ -1,30 +1,65 @@
-/* Main JS to go here
-
-$("div").on( "click", "button", function( event ) {
-  $(event.delegateTarget ).css( "background-color", "green");
-}); */
-
+/* Drop-Downs */
 $(document).ready(function() {
-    $("#slrDrop").on("click",function() {
-        /* $(".dropdown-submenu").css("display", "none"); hides any league menus that are already open */
-
-        $("#slrClublist").css("display", "flex"); /* now working but need it to wrap via Bootstrap */
-        console.log("SUCCESS"); /* then displays the relevant league menu */
-        /* re-centre map based on lat and long */
+    $("#bunDrop").on("click",function() {
+        $(".dropdown-submenu").css("display", "none") /*hides any menus that are already open */
+        $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
+        $("#bunClublist").addClass("d-flex flex-wrap");
+        $("#bunClublist").css("display", "flex");
+        console.log("SUCCESS"); /* test */
+        /* re-centre map and zoom based on lat and long */
     });
-    /* other league function duplicated here */
-});
 
-$(document).ready(function() {
-    $(".box").on("click",function() {
-        var classNames = $(this).attr("class").split(" ");
-        var boxClass = classNames[0];
-        var className = classNames[1];
-        if ($(this).css("background-color") == "rgb(255, 0, 0)") {
-            $("." + className).css("background-color","#000");
-        } else {
-            $("." + boxClass).css("background-color", "#000");
-            $("." + className).css("background-color", "red");
-        }
-    })
-})
+    $("#flcDrop").on("click",function() {
+        $(".dropdown-submenu").css("display", "none") /*hides any menus that are already open */
+        $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
+        $("#flcClublist").addClass("d-flex flex-wrap");
+        $("#flcClublist").css("display", "flex");
+        console.log("SUCCESS"); /* test */
+        /* re-centre map and zoom based on lat and long */
+    });
+
+    $("#eplDrop").on("click",function() {
+        $(".dropdown-submenu").css("display", "none") /*hides any menus that are already open */
+        $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
+        $("#eplClublist").addClass("d-flex flex-wrap");
+        $("#eplClublist").css("display", "flex");
+        console.log("SUCCESS"); /* test */
+        /* re-centre map and zoom based on lat and long */
+    });
+
+    $("#gaaDrop").on("click",function() {
+        $(".dropdown-submenu").css("display", "none") /*hides any menus that are already open */
+        $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
+        $("#gaaClublist").addClass("d-flex flex-wrap");
+        $("#gaaClublist").css("display", "flex");
+        console.log("SUCCESS"); /* test */
+        /* re-centre map and zoom based on lat and long */
+    });
+
+    $("#loiDrop").on("click",function() {
+        $(".dropdown-submenu").css("display", "none") /*hides any menus that are already open */
+        $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
+        $("#loiClublist").addClass("d-flex flex-wrap");
+        $("#loiClublist").css("display", "flex");
+        console.log("SUCCESS"); /* test */
+        /* re-centre map and zoom based on lat and long */
+    });
+
+    $("#nhlDrop").on("click",function() {
+        $(".dropdown-submenu").css("display", "none") /*hides any menus that are already open */
+        $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
+        $("#nhlClublist").addClass("d-flex flex-wrap");
+        $("#nhlClublist").css("display", "flex");
+        console.log("SUCCESS"); /* test */
+        /* re-centre map and zoom based on lat and long */
+    });
+    
+    $("#slrDrop").on("click",function() {
+        $(".dropdown-submenu").css("display", "none") /*hides any menus that are already open */
+        $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
+        $("#slrClublist").addClass("d-flex flex-wrap");
+        $("#slrClublist").css("display", "flex");
+        console.log("SUCCESS"); /* test */
+        /* re-centre map and zoom based on lat and long */
+    });
+});
