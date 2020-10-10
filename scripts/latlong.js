@@ -4,11 +4,11 @@ let bunArminia = {
     lat: 52.031920, lng: 8.516527
 }
 
-let bunAugsburg = {
+let bunAugs07 = {
     lat: 48.355273, lng: 10.875904
 }
 
-let bunLeverkusen = {
+let bunBayer04 = {
     lat: 51.038144, lng: 7.002157
 }
 
@@ -20,7 +20,7 @@ let bunDortmund = {
     lat: 99.999999, lng: 99.999999
 }
 
-let bunBorMon = {
+let bunBorMGB = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -28,11 +28,11 @@ let bunEinFra = {
     lat: 99.999999, lng: 99.999999
 }
 
-let bunFreiburg = {
+let bunSCFrei = {
     lat: 99.999999, lng: 99.999999
 }
 
-let bunHerthaB = {
+let bunHertha = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -40,11 +40,7 @@ let bunHoffen = {
     lat: 99.999999, lng: 99.999999
 }
 
-let bun1FCKln = {
-    lat: 99.999999, lng: 99.999999
-}
-
-let bunMainz05 = {
+let bun1FCKoln = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -52,11 +48,15 @@ let bunLeipzig = {
     lat: 99.999999, lng: 99.999999
 }
 
+let bunMainz = {
+    lat: 99.999999, lng: 99.999999
+}
+
 let bunSchalke = {
     lat: 99.999999, lng: 99.999999
 }
 
-let bunVFBStu = {
+let bunStuttg = {
     lat: 99.999999, lng: 99.999999
 }
 
@@ -64,11 +64,11 @@ let bunUnionB = {
     lat: 99.999999, lng: 99.999999
 }
 
-let bunWerBre = {
+let bunWerder = {
     lat: 99.999999, lng: 99.999999
 }
 
-let bunVFLWol = {
+let bunWolfsb = {
     lat: 99.999999, lng: 99.999999
 }
 
