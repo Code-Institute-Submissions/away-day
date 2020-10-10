@@ -89,7 +89,7 @@ a:hover {
 #nhlClublist,
 #slrClublist {
     /* display: inline activated by event listeners in main.js */
-    display: flex;
+    display: none;
 }
 
 .dropdown-item:hover {
