@@ -62,14 +62,38 @@ a:hover {
     color: #ffffff;
 }
 
-#dtSelector:active {
-    /* Overwrites btn-outline-secondary Bootstrap class properties, this is currently still displaying the default */
+#dtSelector:focus {
+    /* Overwrites btn-outline-secondary Bootstrap class properties */
     background-color: #8a2be2;
 }
 
 #dtSelector:hover {
     /* Overwrites btn-outline-secondary Bootstrap class properties */
     background-color: #8a2be2;
+}
+
+.dropdown-submenu {
+    /* Removes bullet points from club lists */
+    list-style: none;
+}
+
+#slrClublist {
+    /* display: inline activated by event listeners in main.js */
+    display: none;
+}
+
+.dropdown-item:hover {
+    background-color: #8a2be2;
+    color: #ffffff;
+}
+
+.dropdown-club {
+    display: inline;
+}
+
+.dropdown-club > img {
+    height: 50px;
+    width: 50px;
 }
 
 #mobSelector {
