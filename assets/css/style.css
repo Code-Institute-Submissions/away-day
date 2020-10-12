@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 body {
-    background-color: #e7e6e6;
+    background-color: #efefef;
     color: #05e680;
     font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
@@ -15,12 +15,15 @@ a:hover {
 }
 
 .map-button {
+    background-color: #05e680;
+    color: #ffffff;
+    font-size: 24px;
     height: 80px;
     width: 90%;
 }
 
 .map-button:hover {
-    background-color: #05e680;
+    background-color: #8a2be2;
     color: #ffffff;
 }
 
