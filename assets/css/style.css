@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 body {
-    background-color: #05e680;
-    color: #ffffff;
+    background-color: #e7e6e6;
+    color: #05e680;
     font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -20,7 +20,8 @@ a:hover {
 }
 
 .map-button:hover {
-    color: #05e680;
+    background-color: #05e680;
+    color: #ffffff;
 }
 
 /* Map */
@@ -36,6 +37,11 @@ a:hover {
 }
 
 /* Header */
+
+header {
+    background-color: #05e680;
+    color: #ded9d9;
+}
 
 .logo {
     color: #ffffff;
@@ -59,6 +65,8 @@ a:hover {
 .head-social a i:hover {
     color: #8a2be2;
 }
+
+/* Drop-Down */
 
 #dtSelector {
     /* Overwrites btn-outline-secondary Bootstrap outline */
@@ -111,6 +119,12 @@ a:hover {
 }
 
 /* Footer */
+
+footer {
+    /* needs to stick to bottom of page */
+    background-color: #05e680;
+    color: #ded9d9;
+}
 
 .footer div {
     font-size: 22px;
