@@ -1,597 +1,597 @@
 /* Bundesliga */
 
-let bunArminia = {
-    lat: 52.031920, lng: 8.516527
-}
+const bunArminia = [
+    52.031920, 8.516527
+]
 
-let bunAugs07 = {
-    lat: 48.355273, lng: 10.875904
-}
+const bunAugs07 = [
+    48.355273, 10.875904
+]
 
-let bunBayer04 = {
-    lat: 51.038144, lng: 7.002157
-}
+const bunBayer04 = [
+    51.038144, 7.002157
+]
 
-let bunBayern = {
-    lat: 48.218678, lng: 11.624804
-}
+const bunBayern = [
+    48.218678, 11.624804
+]
 
-let bunDortmund = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunDortmund = [
+    99.999999, 99.999999
+]
 
-let bunBorMGB = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunBorMGB = [
+    99.999999, 99.999999
+]
 
-let bunEinFra = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunEinFra = [
+    99.999999, 99.999999
+]
 
-let bunSCFrei = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunSCFrei = [
+    99.999999, 99.999999
+]
 
-let bunHertha = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunHertha = [
+    99.999999, 99.999999
+]
 
-let bunHoffen = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunHoffen = [
+    99.999999, 99.999999
+]
 
-let bun1FCKoln = {
-    lat: 99.999999, lng: 99.999999
-}
+const bun1FCKoln = [
+    99.999999, 99.999999
+]
 
-let bunLeipzig = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunLeipzig = [
+    99.999999, 99.999999
+]
 
-let bunMainz = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunMainz = [
+    99.999999, 99.999999
+]
 
-let bunSchalke = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunSchalke = [
+    99.999999, 99.999999
+]
 
-let bunStuttg = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunStuttg = [
+    99.999999, 99.999999
+]
 
-let bunUnionB = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunUnionB = [
+    99.999999, 99.999999
+]
 
-let bunWerder = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunWerder = [
+    99.999999, 99.999999
+]
 
-let bunWolfsb = {
-    lat: 99.999999, lng: 99.999999
-}
+const bunWolfsb = [
+    99.999999, 99.999999
+]
 
 /* Championship */
 
-let flcBarnsley = {
-    lat: 53.552195, lng: -1.467781
-}
+let flcBarnsley = [
+    53.552195, -1.467781
+]
 
-let flcBirCty = {
-    lat: 52.475680, lng: -1.868044
-}
+let flcBirCty = [
+    52.475680, -1.868044
+]
 
-let flcBlaRov = {
-    lat: 53.728503, lng: -2.489116
-}
+let flcBlaRov = [
+    53.728503, -2.489116
+]
 
-let flcBourne = {
-    lat: 50.735213, lng: -1.838267
-}
+let flcBourne = [
+    50.735213, -1.838267
+]
 
-let flcBrentf = {
-    lat: 51.490683, lng: -0.288730
-}
+let flcBrentf = [
+    51.490683, -0.288730
+]
 
-let flcBriCty = {
-    lat: 51.440148, lng: -2.620163
-}
+let flcBriCty = [
+    51.440148, -2.620163
+]
 
-let flcCarCty = {
-    lat: 51.472770, lng: -3.203034
-}
+let flcCarCty = [
+    51.472770, -3.203034
+]
 
-let flcCovCty = {
-    lat: 52.475680, lng: -1.868044
-}
+let flcCovCty = [
+    52.475680, -1.868044
+]
 
-let flcDerCou = {
-    lat: 52.914937, lng: -1.447248
-}
+let flcDerCou = [
+    52.914937, -1.447248
+]
 
-let flcHudTow = {
-    lat: 53.654194, lng: -1.768365
-}
+let flcHudTow = [
+    53.654194, -1.768365
+]
 
-let flcLutTow = {
-    lat: 51.884147, lng: -0.431487
-}
+let flcLutTow = [
+    51.884147, -0.431487
+]
 
-let flcMiBoro = {
-    lat: 54.578218, lng: -1.216750
-}
+let flcMiBoro = [
+    54.578218, -1.216750
+]
 
-let flcMillwall = {
-    lat: 51.485908, lng: -0.050878
-}
+let flcMillwall = [
+    51.485908, -0.050878
+]
 
-let flcNorCty = {
-    lat: 52.622028, lng: 1.309118
-}
+let flcNorCty = [
+    52.622028, 1.309118
+]
 
-let flcNotFor = {
-    lat: 52.939948, lng: -1.132911
-}
+let flcNotFor = [
+    52.939948, -1.132911
+]
 
-let flcPreston = {
-    lat: 53.772229, lng: -2.688216
-}
+let flcPreston = [
+    53.772229, -2.688216
+]
 
-let flcQPRang = {
-    lat: 51.509319, lng: -0.232108
-}
+let flcQPRang = [
+    51.509319, -0.232108
+]
 
-let flcReading = {
-    lat: 51.422398, lng: -0.982545
-}
+let flcReading = [
+    51.422398, -0.982545
+]
 
-let flcRotUtd = {
-    lat: 53.426874, lng: -1.362421
-}
+let flcRotUtd = [
+    53.426874, -1.362421
+]
 
-let flcSheWed = {
-    lat: 53.411400, lng: -1.500750
-}
+let flcSheWed = [
+    53.411400, -1.500750
+]
 
-let flcStoCty = {
-    lat: 52.988429, lng: -2.175439
-}
+let flcStoCty = [
+    52.988429, -2.175439
+]
 
-let flcSwaCty = {
-    lat: 51.642683, lng: -3.934559
-}
+let flcSwaCty = [
+    51.642683, -3.934559
+]
 
-let flcWatford = {
-    lat: 51.649876, lng: -0.401648
-}
+let flcWatford = [
+    51.649876, -0.401648
+]
 
-let flcWycWan = {
-    lat: 51.630529, lng: -0.800300
-}
+let flcWycWan = [
+    51.630529, -0.800300
+]
 
 /* GAA*/
 
-let gaaAntrim = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaAntrim = [
+    99.999999, 99.999999
+]
 
-let gaaArmagh = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaArmagh = [
+    99.999999, 99.999999
+]
 
-let gaaCarlow = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaCarlow = [
+    99.999999, 99.999999
+]
 
-let gaaCavan = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaCavan = [
+    99.999999, 99.999999
+]
 
-let gaaClare = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaClare = [
+    99.999999, 99.999999
+]
 
-let gaaCork = {
-    lat: 51.899744, lng: -8.435278
-}
+let gaaCork = [
+    51.899744, -8.435278
+]
 
-let gaaDerry = {
-    lat: 54.993008, lng: -7.333548
-}
+let gaaDerry = [
+    54.993008, -7.333548
+]
 
-let gaaDonegal = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaDonegal = [
+    99.999999, 99.999999
+]
 
-let gaaDown = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaDown = [
+    99.999999, 99.999999
+]
 
-let gaaDublin = {
-    lat: 53.360496, lng: -6.251235
-}
+let gaaDublin = [
+    53.360496, -6.251235
+]
 
-let gaaFerman = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaFerman = [
+    99.999999, 99.999999
+]
 
-let gaaGalway = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaGalway = [
+    99.999999, 99.999999
+]
 
-let gaaKerry = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaKerry = [
+    99.999999, 99.999999
+]
 
-let gaaKildare = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaKildare = [
+    99.999999, 99.999999
+]
 
-let gaaKilken = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaKilken = [
+    99.999999, 99.999999
+]
 
-let gaaLaois = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaLaois = [
+    99.999999, 99.999999
+]
 
-let gaaLeitrim = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaLeitrim = [
+    99.999999, 99.999999
+]
 
-let gaaLim = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaLim = [
+    99.999999, 99.999999
+]
 
-let gaaLongf = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaLongf = [
+    99.999999, 99.999999
+]
 
-let gaaLouth = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaLouth = [
+    99.999999, 99.999999
+]
 
-let gaaMayo = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaMayo = [
+    99.999999, 99.999999
+]
 
-let gaaMeath = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaMeath = [
+    99.999999, 99.999999
+]
 
-let gaaMona = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaMona = [
+    99.999999, 99.999999
+]
 
-let gaaOffaly = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaOffaly = [
+    99.999999, 99.999999
+]
 
-let gaaRos = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaRos = [
+    99.999999, 99.999999
+]
 
-let gaaSligo = {
-    lat: 54.257355, lng: -8.465722
-}
+let gaaSligo = [
+    54.257355, -8.465722
+]
 
-let gaaTipp = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaTipp = [
+    99.999999, 99.999999
+]
 
-let gaaTyrone = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaTyrone = [
+    99.999999, 99.999999
+]
 
-let gaaWater = {
-    lat: 52.254657, lng: -7.128762
-}
+let gaaWater = [
+    52.254657, -7.128762
+]
 
-let gaaWestm = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaWestm = [
+    99.999999, 99.999999
+]
 
-let gaaWexford = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaWexford = [
+    99.999999, 99.999999
+]
 
-let gaaWicklow = {
-    lat: 99.999999, lng: 99.999999
-}
+let gaaWicklow = [
+    99.999999, 99.999999
+]
 
 /* NHL*/
 
-let nhlDucks = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlDucks = [
+    99.999999, 99.999999
+]
 
-let nhlCoyotes = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlCoyotes = [
+    99.999999, 99.999999
+]
 
-let nhlBruins = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlBruins = [
+    99.999999, 99.999999
+]
 
-let nhlSabres = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlSabres = [
+    99.999999, 99.999999
+]
 
-let nhlFlames = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlFlames = [
+    99.999999, 99.999999
+]
 
-let nhlCanes = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlCanes = [
+    99.999999, 99.999999
+]
 
-let nhlAvs = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlAvs = [
+    99.999999, 99.999999
+]
 
-let nhlBHawks = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlBHawks = [
+    99.999999, 99.999999
+]
 
-let nhlJackets = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlJackets = [
+    99.999999, 99.999999
+]
 
-let nhlStars = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlStars = [
+    99.999999, 99.999999
+]
 
-let nhlWings = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlWings = [
+    99.999999, 99.999999
+]
 
-let nhlOilers = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlOilers = [
+    99.999999, 99.999999
+]
 
-let nhlPanthers = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlPanthers = [
+    99.999999, 99.999999
+]
 
-let nhlKings = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlKings = [
+    99.999999, 99.999999
+]
 
-let nhlWild = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlWild = [
+    99.999999, 99.999999
+]
 
-let nhlHabs = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlHabs = [
+    99.999999, 99.999999
+]
 
-let nhlPreds = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlPreds = [
+    99.999999, 99.999999
+]
 
-let nhlDevils = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlDevils = [
+    99.999999, 99.999999
+]
 
-let nhlIsland = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlIsland = [
+    99.999999, 99.999999
+]
 
-let nhlRangers = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlRangers = [
+    99.999999, 99.999999
+]
 
-let nhlSens = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlSens = [
+    99.999999, 99.999999
+]
 
-let nhlFlyers = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlFlyers = [
+    99.999999, 99.999999
+]
 
-let nhlPenguins = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlPenguins = [
+    99.999999, 99.999999
+]
 
-let nhlSharks = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlSharks = [
+    99.999999, 99.999999
+]
 
-let nhlBlues = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlBlues = [
+    99.999999, 99.999999
+]
 
-let nhlTampa = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlTampa = [
+    99.999999, 99.999999
+]
 
-let nhlLeafs = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlLeafs = [
+    99.999999, 99.999999
+]
 
-let nhlCanucks = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlCanucks = [
+    99.999999, 99.999999
+]
 
-let nhlKnights = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlKnights = [
+    99.999999, 99.999999
+]
 
-let nhlCapitals = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlCapitals = [
+    99.999999, 99.999999
+]
 
-let nhlJets = {
-    lat: 99.999999, lng: 99.999999
-}
+let nhlJets = [
+    99.999999, 99.999999
+]
 
 /* Premier League*/
 
-let eplArsenal = {
-    lat: 51.555119, lng: -0.108315
-}
+let eplArsenal = [
+    51.555119, -0.108315
+]
 
-let eplAstVil = {
-    lat: 52.509344, lng: -1.885077
-}
+let eplAstVil = [
+    52.509344, -1.885077
+]
 
-let eplBriAlb = {
-    lat: 50.861666, lng: -0.083798
-}
+let eplBriAlb = [
+    50.861666, -0.083798
+]
 
-let eplBurnley = {
-    lat: 53.788920, lng: -2.230139
-}
+let eplBurnley = [
+    53.788920, -2.230139
+]
 
-let eplChelsea = {
-    lat: 51.481711, lng: -0.190867
-}
+let eplChelsea = [
+    51.481711, -0.190867
+]
 
-let eplCryPal = {
-    lat: 51.398206, lng: -0.085412
-}
+let eplCryPal = [
+    51.398206, -0.085412
+]
 
-let eplEverton = {
-    lat: 53.438699, lng: -2.966390
-}
+let eplEverton = [
+    53.438699, -2.966390
+]
 
-let eplFulham = {
-    lat: 51.474689, lng: -0.221389
-}
+let eplFulham = [
+    51.474689, -0.221389
+]
 
-let eplLeeUtd = {
-    lat: 53.777766, lng: -1.572214
-}
+let eplLeeUtd = [
+    53.777766, -1.572214
+]
 
-let eplLeiCty = {
-    lat: 52.620248, lng: -1.142294
-}
+let eplLeiCty = [
+    52.620248, -1.142294
+]
 
-let eplLiverp = {
-    lat: 53.430797, lng: -2.960969
-}
+let eplLiverp = [
+    53.430797, -2.960969
+]
 
-let eplManCty = {
-    lat: 53.483032, lng: -2.200471
-}
+let eplManCty = [
+    53.483032, -2.200471
+]
 
-let eplManUtd = {
-    lat: 53.463050, lng: -2.291088
-}
+let eplManUtd = [
+    53.463050, -2.291088
+]
 
-let eplNewUtd = {
-    lat: 54.975505, lng: -1.621579
-}
+let eplNewUtd = [
+    54.975505, -1.621579
+]
 
-let eplSheUtd = {
-    lat: 53.370407, lng: -1.470744
-}
+let eplSheUtd = [
+    53.370407, -1.470744
+]
 
-let eplSoutha = {
-    lat: 50.905765, lng: -1.391138
-}
+let eplSoutha = [
+    50.905765, -1.391138
+]
 
-let eplTSpurs = {
-    lat: 51.604100, lng: -0.066446
-}
+let eplTSpurs = [
+    51.604100, -0.066446
+]
 
-let eplWestBrom = {
-    lat: 52.508960, lng: -1.963938
-}
+let eplWestBrom = [
+    52.508960, -1.963938
+]
 
-let eplWestHam = {
-    lat: 51.538626, lng: -0.016449
-}
+let eplWestHam = [
+    51.538626, -0.016449
+]
 
-let eplWolves = {
-    lat: 52.590184, lng: -2.130412
-}
+let eplWolves = [
+    52.590184, -2.130412
+]
 
 /* Super League*/
 
-let slrCasTig = {
-    lat: 53.729517, lng: -1.340833
-}
+let slrCasTig = [
+    53.729517, -1.340833
+]
 
-let slrCatDra = {
-    lat: 42.722828, lng: 2.885358
-}
+let slrCatDra = [
+    42.722828, 2.885358
+]
 
-let slrHudGia = {
-    lat: 53.654194, lng: -1.768365
-}
+let slrHudGia = [
+    53.654194, -1.768365
+]
 
-let slrHullFC = {
-    lat: 53.746286, lng: -0.367702
-}
+let slrHullFC = [
+    53.746286, -0.367702
+]
 
-let slrHullKR = {
-    lat: 53.754022, lng: -0.265279
-}
+let slrHullKR = [
+    53.754022, -0.265279
+]
 
-let slrLeeRhi = {
-    lat: 53.816331, lng: -1.582257
-}
+let slrLeeRhi = [
+    53.816331, -1.582257
+]
 
-let slrSaints = {
-    lat: 53.447313, lng: -2.726213
-}
+let slrSaints = [
+    53.447313, -2.726213
+]
 
-let slrSalRed = {
-    lat: 53.469339, lng: -2.374945
-}
+let slrSalRed = [
+    53.469339, -2.374945
+]
 
-let slrWakTri = {
-    lat: 53.669707, lng: -1.479360
-}
+let slrWakTri = [
+    53.669707, -1.479360
+]
 
-let slrWarWol = {
-    lat: 53.394812, lng: -2.595800
-}
+let slrWarWol = [
+    53.394812, -2.595800
+]
 
-let slrWigWar = {
-    lat: 53.547562, lng: -2.654000
-}
+let slrWigWar = [
+    53.547562, -2.654000
+]
 
 /* League of Ireland */
 
-let loiBohemi = {
-    lat: 53.361751, lng: -6.275308
-}
+let loiBohemi = [
+    53.361751, -6.275308
+]
 
-let loiCorCty = {
-    lat: 51.885509, lng: -8.467874
-}
+let loiCorCty = [
+    51.885509, -8.467874
+]
 
-let loiDerCty = {
-    lat: 54.990601, lng: -7.336107
-}
+let loiDerCty = [
+    54.990601, -7.336107
+]
 
-let loiDundalk = {
-    lat: 53.998930, lng: -6.416433
-}
+let loiDundalk = [
+    53.998930, -6.416433
+]
 
-let loiShaRov = {
-    lat: 53.283324, lng: -6.373823
-}
+let loiShaRov = [
+    53.283324, -6.373823
+]
 
-let loiSliRov = {
-    lat: 54.269872, lng: -8.487382
-}
+let loiSliRov = [
+    54.269872, -8.487382
+]
 
-let loiShelbo = {
-    lat: 53.367465, lng: -6.251664
-}
+let loiShelbo = [
+    53.367465, -6.251664
+]
 
-let loiStPats = {
-    lat: 53.340936, lng: -6.316799
-}
+let loiStPats = [
+    53.340936, -6.316799
+]
 
-let loiUCDAFC = {
-    lat: 53.310339, lng: -6.228142
-}
+let loiUCDAFC = [
+    53.310339, -6.228142
+]
 
-let loiWaterf = {
-    lat: 52.245894, lng: -7.125159
-}
+let loiWaterf = [
+    52.245894, -7.125159
+]
