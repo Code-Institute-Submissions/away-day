@@ -43,10 +43,14 @@ function initMap() {
     https://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button
     https://www.ronvangorp.com/change-link-url-with-jquery/
 
-    For the latter there is likely to be better information once you read the Google Tutorial
+    For the former, add to all buttons, then pass the ID to the template literal below (keep array numbers as they are)
+    For the latter there is likely to be better information once you read the Google Tutorial.
+
+    https://www.google.com/maps/dir/?api=1&parameters - link displays directions
+
+    %2c in the link below is the way to properly encode a comma
     */
-    console.log(`https://www.google.com/maps/@?api=1&map_action=map&ll=${bunArminia[0]},${bunArminia[1]}`);
- 
+    console.log(`https://www.google.com/maps/@?api=1&map_action=map&center=${bunArminia[0]}%2c%20${bunArminia[1]}&zoom=10`); 
 }
 
 /* Sitepoint tuturial (see README) uses this script to build a script reference with custom parameters, could use this
