@@ -3,6 +3,10 @@
 
 var map;
 
+const bunArminia = [
+    52.031920, 8.516527
+];
+
 function initMap() {
     map = new google.maps.Map(document.getElementById("map-api"), {
         zoom: 6,
@@ -33,6 +37,16 @@ function initMap() {
     var markerCluster = new MarkerClusterer(map, markers, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
     });
+
+    /* format works! Now follow the below links for tips on passing IDs onclick, then changing the src attr on the script (will also require an ID)
+    
+    https://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button
+    https://www.ronvangorp.com/change-link-url-with-jquery/
+
+    For the latter there is likely to be better information once you read the Google Tutorial
+    */
+    console.log(`https://www.google.com/maps/@?api=1&map_action=map&ll=${bunArminia[0]},${bunArminia[1]}`);
+ 
 }
 
 /* Sitepoint tuturial (see README) uses this script to build a script reference with custom parameters, could use this
