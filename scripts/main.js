@@ -5,8 +5,7 @@ $(document).ready(function() {
         $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
         $("#bunClublist").addClass("d-flex flex-wrap");
         $("#bunClublist").css("display", "flex");
-        $("dtSelector").stopPropagation(); /* not working as expected, or at all */
-        console.log("SUCCESS"); /* test */
+        console.log("BUN SUCCESS"); /* test */
         /* re-centre map and zoom based on lat and long */
     });
 
@@ -15,8 +14,7 @@ $(document).ready(function() {
         $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
         $("#flcClublist").addClass("d-flex flex-wrap");
         $("#flcClublist").css("display", "flex");
-        $("dtSelector").stopPropagation(); /* not working as expected, or at all */
-        console.log("SUCCESS"); /* test */
+        console.log("FLC SUCCESS"); /* test */
         /* re-centre map and zoom based on lat and long */
     });
 
@@ -25,8 +23,7 @@ $(document).ready(function() {
         $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
         $("#eplClublist").addClass("d-flex flex-wrap");
         $("#eplClublist").css("display", "flex");
-        $("dtSelector").stopPropagation(); /* not working as expected, or at all */
-        console.log("SUCCESS"); /* test */
+        console.log("EPL SUCCESS"); /* test */
         /* re-centre map and zoom based on lat and long */
     });
 
@@ -35,8 +32,7 @@ $(document).ready(function() {
         $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
         $("#gaaClublist").addClass("d-flex flex-wrap");
         $("#gaaClublist").css("display", "flex");
-        $("dtSelector").stopPropagation(); /* not working as expected, or at all */
-        console.log("SUCCESS"); /* test */
+        console.log("GAA SUCCESS"); /* test */
         /* re-centre map and zoom based on lat and long */
     });
 
@@ -45,8 +41,7 @@ $(document).ready(function() {
         $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
         $("#loiClublist").addClass("d-flex flex-wrap");
         $("#loiClublist").css("display", "flex");
-        $("dtSelector").stopPropagation(); /* not working as expected, or at all */
-        console.log("SUCCESS"); /* test */
+        console.log("LOI SUCCESS"); /* test */
         /* re-centre map and zoom based on lat and long */
     });
 
@@ -55,8 +50,7 @@ $(document).ready(function() {
         $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
         $("#nhlClublist").addClass("d-flex flex-wrap");
         $("#nhlClublist").css("display", "flex");
-        $("dtSelector").stopPropagation(); /* not working as expected, or at all */
-        console.log("SUCCESS"); /* test */
+        console.log("NHL SUCCESS"); /* test */
         /* re-centre map and zoom based on lat and long */
     });
     
@@ -65,8 +59,7 @@ $(document).ready(function() {
         $(".dropdown-submenu").removeClass("d-flex flex-wrap"); /*hides any menus that are already open */
         $("#slrClublist").addClass("d-flex flex-wrap");
         $("#slrClublist").css("display", "flex");
-        $("dtSelector").stopPropagation(); /* not working as expected, or at all */
-        console.log("SUCCESS"); /* test */
+        console.log("SLR SUCCESS"); /* test */
         /* re-centre map and zoom based on lat and long */
     });
 });
