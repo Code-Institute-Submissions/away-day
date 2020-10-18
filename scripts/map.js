@@ -1,6 +1,15 @@
 /* initMap function taken from Code Institute tutorial, all other information
 sourced from Google API documentation (see README) unless otherwise stated */
+
 var map;
+
+/* Map Customisers */
+
+const directions = document.getElementById("directions");
+const food = document.getElementById("food");
+const pubs = document.getElementById("pubs");
+const hotels = document.getElementById("hotels");
+const coffee = document.getElementById("coffee");
 
 /* Bundesliga */
 
@@ -61,21 +70,21 @@ const flcCovCty = document.getElementById("flcCovCty");
 const flcCovCtyLL = {lat: 52.475680, lng: -1.868044};
 const flcDerCou = document.getElementById("flcDerCou");
 const flcDerCouLL = {lat: 52.914937, lng: -1.447248};
-const flcHudTwn = document.getElementById("flcHudTow");
+const flcHudTwn = document.getElementById("flcHudTwn");
 const flcHudTwnLL = {lat: 53.654194, lng: -1.768365};
-const flcLutTwn = document.getElementById("flcLutTow");
+const flcLutTwn = document.getElementById("flcLutTwn");
 const flcLutTwnLL = {lat: 51.884147, lng: -0.431487};
-const flcMBoro = document.getElementById("flcMiBoro");
+const flcMBoro = document.getElementById("flcMBoro");
 const flcMBoroLL = {lat: 54.578218, lng: -1.216750};
 const flcMillwall = document.getElementById("flcMillwall");
 const flcMillwallLL = {lat: 51.485908, lng: -0.050878};
 const flcNorCty = document.getElementById("flcNorCty");
 const flcNorCtyLL = {lat: 52.622028, lng: 1.309118};
-const flcForest = document.getElementById("flcNotFor");
+const flcForest = document.getElementById("flcForest");
 const flcForestLL = {lat: 52.939948, lng: -1.132911};
 const flcPreston = document.getElementById("flcPreston");
 const flcPrestonLL = {lat: 53.772229, lng: -2.688216};
-const flcQPR = document.getElementById("flcQPRang");
+const flcQPR = document.getElementById("flcQPR");
 const flcQPRLL = {lat: 51.509319, lng: -0.232108};
 const flcReading = document.getElementById("flcReading");
 const flcReadingLL = {lat: 51.422398, lng: -0.982545};
@@ -256,15 +265,15 @@ const eplNewUtd = document.getElementById("eplNewUtd");
 const eplNewUtdLL = {lat: 54.975505, lng: -1.621579};
 const eplSheUtd = document.getElementById("eplSheUtd");
 const eplSheUtdLL = {lat: 53.370407, lng: -1.470744};
-const eplSoutha = document.getElementById("eplSoutha");
-const eplSouthaLL = {lat: 50.905765, lng: -1.391138};
+const eplSaints = document.getElementById("eplSaints");
+const eplSaintsLL = {lat: 50.905765, lng: -1.391138};
 const eplTSpurs = document.getElementById("eplTSpurs");
 const eplTSpursLL = {lat: 51.604100, lng: -0.066446};
 const eplWestBrom = document.getElementById("eplWestBrom");
 const eplWestBromLL = {lat: 52.508960, lng: -1.963938};
 const eplWestHam = document.getElementById("eplWestHam");
 const eplWestHamLL = {lat: 51.538626, lng: -0.016449};
-const eplWolves = document.getElementById("eplWolvesa");
+const eplWolves = document.getElementById("eplWolves");
 const eplWolvesLL = {lat: 52.590184, lng: -2.130412};
 
 /* Super League*/
@@ -1097,7 +1106,29 @@ function initMap() {
     google.maps.event.addDomListener(loiWaterf, 'click', function() {
         map.setCenter(loiWaterfLL);
         map.setZoom(15);
-});
+    });
+
+    /* Places Customisation */
+
+    google.maps.event.addDomListener(directions, 'click', function() {
+        console.log("DIRECTIONS SUCCESS");
+    });
+
+    google.maps.event.addDomListener(pubs, 'click', function() {
+        console.log("PUBS SUCCESS");
+    });
+
+    google.maps.event.addDomListener(food, 'click', function() {
+        console.log("FOOD SUCCESS");
+    });
+
+    google.maps.event.addDomListener(hotels, 'click', function() {
+        console.log("HOTELS SUCCESS");
+    });
+
+    google.maps.event.addDomListener(coffee, 'click', function() {
+        console.log("COFFEE SUCCESS");
+    });
 };
 
 
