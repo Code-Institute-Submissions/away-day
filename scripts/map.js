@@ -237,16 +237,16 @@ const nhlJetsLL = {lat: 49.892657, lng: -97.143664};
 
 const eplArsenal = document.getElementById("eplArsenal");
 const eplArsenalLL = {lat: 51.555119, lng: -0.108315};
-const eplAstVil = document.getElementById("eplAstVil");
-const eplAstVilLL = {lat: 52.509344, lng: -1.885077};
+const eplVilla = document.getElementById("eplVilla");
+const eplVillaLL = {lat: 52.509344, lng: -1.885077};
 const eplBriAlb = document.getElementById("eplBriAlb");
 const eplBriAlbLL = {lat: 50.861666, lng: -0.083798};
 const eplBurnley = document.getElementById("eplBurnley");
 const eplBurnleyLL = {lat: 53.788920, lng: -2.230139};
 const eplChelsea = document.getElementById("eplChelsea");
 const eplChelseaLL = {lat: 51.481711, lng: -0.190867};
-const eplCryPal = document.getElementById("eplCryPal");
-const eplCryPalLL = {lat: 51.398206, lng: -0.085412};
+const eplPalace = document.getElementById("eplPalace");
+const eplPalaceLL = {lat: 51.398206, lng: -0.085412};
 const eplEverton = document.getElementById("eplEverton");
 const eplEvertonLL = {lat: 53.438699, lng: -2.966390};
 const eplFulham = document.getElementById("eplFulham");
@@ -267,8 +267,8 @@ const eplSheUtd = document.getElementById("eplSheUtd");
 const eplSheUtdLL = {lat: 53.370407, lng: -1.470744};
 const eplSaints = document.getElementById("eplSaints");
 const eplSaintsLL = {lat: 50.905765, lng: -1.391138};
-const eplTSpurs = document.getElementById("eplTSpurs");
-const eplTSpursLL = {lat: 51.604100, lng: -0.066446};
+const eplSpurs = document.getElementById("eplSpurs");
+const eplSpursLL = {lat: 51.604100, lng: -0.066446};
 const eplWestBrom = document.getElementById("eplWestBrom");
 const eplWestBromLL = {lat: 52.508960, lng: -1.963938};
 const eplWestHam = document.getElementById("eplWestHam");
@@ -312,7 +312,7 @@ const loiDerCtyLL = {lat: 54.990601, lng: -7.336107};
 const loiDundalk = document.getElementById("loiDundalk");
 const loiDundalkLL = {lat: 53.998930, lng: -6.416433};
 const loiFHarps = document.getElementById("loiFHarps");
-const loiFHarpsLL = {lat: 53.310339, lng: -6.228142};
+const loiFHarpsLL = {lat: 54.797961, lng: -7.778669};
 const loiShaRov = document.getElementById("loiShaRov");
 const loiShaRovLL = {lat: 53.283324, lng: -6.373823};
 const loiSliRov = document.getElementById("loiSliRov");
@@ -989,8 +989,8 @@ function initMap() {
         map.setZoom(15);
     });
 
-    google.maps.event.addDomListener(eplWBA, 'click', function() {
-        map.setCenter(eplWBALL);
+    google.maps.event.addDomListener(eplWestBrom, 'click', function() {
+        map.setCenter(eplWestBromLL);
         map.setZoom(15);
     });
 
@@ -1090,6 +1090,11 @@ function initMap() {
 
     google.maps.event.addDomListener(loiShaRov, 'click', function() {
         map.setCenter(loiShaRovLL);
+        map.setZoom(15);
+    });
+
+    google.maps.event.addDomListener(loiShels, 'click', function() {
+        map.setCenter(loiShelsLL);
         map.setZoom(15);
     });
 
