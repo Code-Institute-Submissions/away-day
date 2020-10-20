@@ -1133,23 +1133,6 @@ function initMap() {
 
 
 
-$("#bunArminia").on("click",function() {
-    /* %2c in the link below is the way to properly encode a comma */
-    console.log(`https://www.google.com/maps/@?api=1&map_action=map&center=${bunArminia[0]}%2c%20${bunArminia[1]}&zoom=13`);
-});
-
-/* function bunArminia() {
-    map = new google.maps.Map(document.getElementById("map-api"), {
-    center: {
-        lat: bunArminia[0],
-        lng: bunArminia[1],
-    zoom: 14;
-$(document).ready(function() {
-    $(".dropdown-club").on("click",function(bunArminia) {
-
-
-} */
-
 /* Sitepoint tuturial (see README) uses this script to build a script reference with custom parameters, could use this
    for onclick events for each club button, e.g. 'callback=initMap' + eplWolves + 'search=pubs' or something?
 
