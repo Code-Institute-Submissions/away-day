@@ -107,5 +107,5 @@ For an in-depth guide to cloning repositories, click [here](https://www.howtogee
 
 ## Credits
 - Map help: https://www.sitepoint.com/google-maps-javascript-api-the-right-way/
-- 
-- 
+- Map tutorial: https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx
+- Google tutorials: https://developers.google.com/maps/documentation
