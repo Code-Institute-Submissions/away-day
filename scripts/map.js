@@ -1122,6 +1122,20 @@ function initMap() {
 
     google.maps.event.addDomListener(pubs, 'click', function() {
         console.log("PUBS SUCCESS");
+        var request = {
+            location: map.getCenter(),
+            radius: 2500,
+            rankBy: google.maps.places.RankBy.PROMINENCE,
+            type: ['bar']
+            /* restrict to top 5 */
+        };
+
+        var service = new google.maps.places.PlacesService(map);
+
+        service.nearbySearch(request, function(results) {
+            console.log(results);
+            /* see restaurant comments */
+        });
     });
 
     google.maps.event.addDomListener(food, 'click', function() {
@@ -1132,6 +1146,7 @@ function initMap() {
             radius: 2500,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['restaurant']
+            /* restrict to top 5 */
         };
 
         var service = new google.maps.places.PlacesService(map);
@@ -1153,9 +1168,39 @@ function initMap() {
 
     google.maps.event.addDomListener(hotels, 'click', function() {
         console.log("HOTELS SUCCESS");
+
+        var request = {
+            location: map.getCenter(),
+            radius: 2500,
+            rankBy: google.maps.places.RankBy.PROMINENCE,
+            type: ['lodging']
+            /* restrict to top 5 */
+        };
+
+        var service = new google.maps.places.PlacesService(map);
+
+        service.nearbySearch(request, function(results) {
+            console.log(results);
+            /* see restaurant comments */
+        });
     });
 
     google.maps.event.addDomListener(coffee, 'click', function() {
         console.log("COFFEE SUCCESS");
+
+        var request = {
+            location: map.getCenter(),
+            radius: 2500,
+            rankBy: google.maps.places.RankBy.PROMINENCE,
+            type: ['cafe']
+            /* restrict to top 5 */
+        };
+
+        var service = new google.maps.places.PlacesService(map);
+
+        service.nearbySearch(request, function(results) {
+            console.log(results);
+            /* see restaurant comments */
+        });
     });
 };
