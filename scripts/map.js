@@ -1157,10 +1157,17 @@ function initMap() {
         
         /* replace 'function(results) {' with 'callback)', then add in below after the console.log;
 
+  
+
+
         function callback(results, status) {
             if (status == google.maps.places.PlacesServiceStatus.OK) {
-                for (var i = 0; i < 5; i++) {
-                    return new google.maps.Marker(results[i]);
+                for (let i = 0; i < 5; i++) {
+                    var marker = new google.maps.Marker({
+                        position: results[i].position,
+                        /* icon: icons[features[i].type].icon,
+                        map: map,
+                    });
                 }
             }
         }; */
