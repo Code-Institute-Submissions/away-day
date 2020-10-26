@@ -3,6 +3,7 @@ sourced from Google API documentation (see README) unless otherwise stated */
 
 var map;
 var mapCenter;
+var infowindow;
 
 /* Map Customisers */
 
@@ -1089,9 +1090,13 @@ function initMap() {
         console.log("DIRECTIONS SUCCESS");
     });
 
+    /* Event Listener and Marker Creation for Pubs */
+
     google.maps.event.addDomListener(pubs, 'click', function() {
         console.log("PUBS SUCCESS");
-        var request = {
+        /* add in a line that clears any already existing markers */
+
+        let pubsRequest = {
             location: map.getCenter(),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
@@ -1099,16 +1104,25 @@ function initMap() {
             /* restrict to top 5 */
         };
 
-        var service = new google.maps.places.PlacesService(map);
+        let service = new google.maps.places.PlacesService(map);
 
-        service.nearbySearch(request, function(results) {
-            console.log(results);
-            /* see restaurant comments */
+        service.nearbySearch(pubsRequest, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                for (let i = 0; i < 6; i++) {
+                    createMarker(results[i]);
+                }
+                /* pubsRequest.location allows the map to stay centred on the stadium chosen */
+                map.setCenter(pubsRequest.location);
+                map.setZoom(14);
+            }
         });
     });
 
+    /* Event Listener and Marker Creation for Food */
+
     google.maps.event.addDomListener(food, 'click', function() {
         console.log("FOOD SUCCESS");
+        /* add in a line that clears any already existing markers */
 
         let foodRequest = {
             location: map.getCenter(),
@@ -1122,18 +1136,23 @@ function initMap() {
 
         service.nearbySearch(foodRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
-                for (let i = 0; i < results.length; i++) {
+                for (let i = 0; i < 6; i++) {
                     createMarker(results[i]);
                 }
-                map.setCenter(results[0].geometry.location);
+                /* foodRequest.location allows the map to stay centred on the stadium chosen */
+                map.setCenter(foodRequest.location);
+                map.setZoom(14);
             }
         });
     });
 
-    google.maps.event.addDomListener(hotels, 'click', function() {
-        console.log("HOTELS SUCCESS");
+    /* Event Listener and Marker Creation for Hotels */
 
-        var request = {
+    google.maps.event.addDomListener(hotels, 'click', function() {
+        console.log("HOTEL SUCCESS");
+        /* add in a line that clears any already existing markers */
+
+        let hotelRequest = {
             location: map.getCenter(),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
@@ -1141,18 +1160,27 @@ function initMap() {
             /* restrict to top 5 */
         };
 
-        var service = new google.maps.places.PlacesService(map);
+        let service = new google.maps.places.PlacesService(map);
 
-        service.nearbySearch(request, function(results) {
-            console.log(results);
-            /* see restaurant comments */
+        service.nearbySearch(hotelRequest, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                for (let i = 0; i < 6; i++) {
+                    createMarker(results[i]);
+                }
+                /* hotelRequest.location allows the map to stay centred on the stadium chosen */
+                map.setCenter(hotelRequest.location);
+                map.setZoom(14);
+            }
         });
     });
 
-    google.maps.event.addDomListener(coffee, 'click', function() {
-        console.log("COFFEE SUCCESS");
+    /* Event Listener and Marker Creation for Cafes */
 
-        var request = {
+    google.maps.event.addDomListener(coffee, 'click', function() {
+        console.log("CAFE SUCCESS");
+        /* add in a line that clears any already existing markers */
+
+        let cafeRequest = {
             location: map.getCenter(),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
@@ -1160,14 +1188,23 @@ function initMap() {
             /* restrict to top 5 */
         };
 
-        var service = new google.maps.places.PlacesService(map);
+        let service = new google.maps.places.PlacesService(map);
 
-        service.nearbySearch(request, function(results) {
-            console.log(results);
-            /* see restaurant comments */
+        service.nearbySearch(cafeRequest, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                for (let i = 0; i < 6; i++) {
+                    createMarker(results[i]);
+                }
+                /* cafeRequest.location allows the map to stay centred on the stadium chosen */
+                map.setCenter(cafeRequest.location);
+                map.setZoom(14);
+            }
         });
     });
 };
+
+/* This is the callback function for the creation of markers, source is the Code Labs tutorial in the README.md */
+/* Infowindows not currently working */
 
 function createMarker(place) {
     const marker = new google.maps.Marker({
