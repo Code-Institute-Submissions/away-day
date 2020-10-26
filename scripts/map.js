@@ -336,37 +336,6 @@ function initMap() {
             },
         mapTypeId: 'hybrid'
         });
-/* Everything beyond this point only needs to display once a club name is clicked */
-
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    var locations = [
-        {lat: 53.771963, lng: -2.688759}, 
-        {lat: 53.568498, lng: -2.938022},
-        {lat: 53.337334, lng: -6.257684},
-        {lat: 52.850788, lng: -9.203393}
-    ];
-
-    var markers = locations.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-            /*, icon: "images/crests/epl/arsenal.png" --- can add custom markers using this at league level */
-        });
-    })
-
-    /* format works! Now follow the below links for tips on passing IDs onclick for search types (pub, etc.), then changing the src attr on the script (will also require an ID)
-    
-    https://stackoverflow.com/questions/4825295/javascript-onclick-to-get-the-id-of-the-clicked-button
-    https://www.ronvangorp.com/change-link-url-with-jquery/
-
-    For the former, add to all buttons, then pass the ID to the template literal below (keep array numbers as they are)
-    For the latter there is likely to be better information once you read the Google Tutorial.
-
-    https://www.google.com/maps/dir/?api=1&parameters - link displays directions
-
-    
-    */ 
 
     /* Event Listeners */
 
@@ -1114,7 +1083,7 @@ function initMap() {
         map.setZoom(16);
     });
 
-    /* Places Customisation - most code here is taken from the Google API documentation found in the README */
+    /* Places Customisation - most code here is taken from the Google API and Google Code Labs tutorials found in the README */
 
     google.maps.event.addDomListener(directions, 'click', function() {
         console.log("DIRECTIONS SUCCESS");
@@ -1124,7 +1093,7 @@ function initMap() {
         console.log("PUBS SUCCESS");
         var request = {
             location: map.getCenter(),
-            radius: 2500,
+            radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['bar']
             /* restrict to top 5 */
@@ -1141,36 +1110,24 @@ function initMap() {
     google.maps.event.addDomListener(food, 'click', function() {
         console.log("FOOD SUCCESS");
 
-        var request = {
+        let foodRequest = {
             location: map.getCenter(),
-            radius: 2500,
+            radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['restaurant']
             /* restrict to top 5 */
         };
 
-        var service = new google.maps.places.PlacesService(map);
+        let service = new google.maps.places.PlacesService(map);
 
-        service.nearbySearch(request, function(results) {
-            console.log(results);
-        });
-        
-        /* replace 'function(results) {' with 'callback)', then add in below after the console.log;
-
-  
-
-
-        function callback(results, status) {
-            if (status == google.maps.places.PlacesServiceStatus.OK) {
-                for (let i = 0; i < 5; i++) {
-                    var marker = new google.maps.Marker({
-                        position: results[i].position,
-                        /* icon: icons[features[i].type].icon,
-                        map: map,
-                    });
+        service.nearbySearch(foodRequest, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+                for (let i = 0; i < results.length; i++) {
+                    createMarker(results[i]);
                 }
+                map.setCenter(results[0].geometry.location);
             }
-        }; */
+        });
     });
 
     google.maps.event.addDomListener(hotels, 'click', function() {
@@ -1178,7 +1135,7 @@ function initMap() {
 
         var request = {
             location: map.getCenter(),
-            radius: 2500,
+            radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['lodging']
             /* restrict to top 5 */
@@ -1197,7 +1154,7 @@ function initMap() {
 
         var request = {
             location: map.getCenter(),
-            radius: 2500,
+            radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['cafe']
             /* restrict to top 5 */
@@ -1209,5 +1166,16 @@ function initMap() {
             console.log(results);
             /* see restaurant comments */
         });
+    });
+};
+
+function createMarker(place) {
+    const marker = new google.maps.Marker({
+        map,
+        position: place.geometry.location,
+    });
+    google.maps.event.addListener(marker, "click", () => {
+        infowindow.setContent(place.name);
+        infowindow.open(map);
     });
 };
