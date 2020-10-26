@@ -17,7 +17,7 @@ Welcome to my interactive front-end development milestone project. For this proj
 
 ### User Stories
 
-Testing for each of the below user stories is included within the [testing log](#).
+Testing for each of the below user stories is included within the [testing log](TESTING.md).
 
 1. As a fan, I would like to get directions to the stadium;
 2. As a fan, I would like to find the nearest pub to the stadium;
@@ -40,6 +40,7 @@ Testing for each of the below user stories is included within the [testing log](
 - Rollout to more leagues, sports and countries
 
 ## Technologies Used
+
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
     - 
 - [CSS3](https://en.wikipedia.org/wiki/CSS3)
@@ -100,12 +101,13 @@ Assuming you already have Git [installed](https://git-scm.com/download/), anybod
     Open the command prompt/terminal on your machine;
     Type the command 'cd' followed by the directory you wish to store the repository in;
     Go to the top of the [GitHub repository](https://github.com/kiehozero/away-day/) and click the green 'Code' drop-down button;
-    Copy the [link](https://github.com/kiehozero/away-day.git) provided;
+    Copy the [link provided](https://github.com/kiehozero/away-day.git);
     Return to the Command Prompt and type 'git clone' followed by the copied address.
 
 For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/), from which my steps above were taken.
 
 ## Credits
-- Map help: https://www.sitepoint.com/google-maps-javascript-api-the-right-way/
-- Map tutorial: https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx
-- Google tutorials: https://developers.google.com/maps/documentation
+- [Map help](https://www.sitepoint.com/google-maps-javascript-api-the-right-way/)
+- [Map tutorial](https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx)
+- [Google tutorials](https://developers.google.com/maps/documentation)
+- [Google Code Labs tutorial](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0)
