@@ -1101,13 +1101,13 @@ function initMap() {
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['bar']
-            /* restrict to top 5 */
         };
 
         let service = new google.maps.places.PlacesService(map);
 
         service.nearbySearch(pubsRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+                /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 6; i++) {
                     createMarker(results[i]);
                 }
@@ -1129,13 +1129,13 @@ function initMap() {
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['restaurant']
-            /* restrict to top 5 */
         };
 
         let service = new google.maps.places.PlacesService(map);
 
         service.nearbySearch(foodRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+                /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 6; i++) {
                     createMarker(results[i]);
                 }
@@ -1157,13 +1157,13 @@ function initMap() {
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['lodging']
-            /* restrict to top 5 */
         };
 
         let service = new google.maps.places.PlacesService(map);
 
         service.nearbySearch(hotelRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+                /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 6; i++) {
                     createMarker(results[i]);
                 }
@@ -1180,18 +1180,19 @@ function initMap() {
         console.log("CAFE SUCCESS");
         /* add in a line that clears any already existing markers */
 
+
         let cafeRequest = {
             location: map.getCenter(),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: ['cafe']
-            /* restrict to top 5 */
         };
 
         let service = new google.maps.places.PlacesService(map);
 
         service.nearbySearch(cafeRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+                /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 6; i++) {
                     createMarker(results[i]);
                 }
