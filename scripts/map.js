@@ -1178,6 +1178,7 @@ function initMap() {
 
     google.maps.event.addDomListener(coffee, 'click', function() {
         console.log("CAFE SUCCESS");
+        let results = [];
         /* add in a line that clears any already existing markers */
 
 
@@ -1196,7 +1197,7 @@ function initMap() {
                 for (let i = 0; i < 6; i++) {
                     createMarker(results[i]);
                 }
-                /* cafeRequest.location allows the map to stay centred on the stadium chosen */
+                /* hotelRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(cafeRequest.location);
                 map.setZoom(14);
             }
