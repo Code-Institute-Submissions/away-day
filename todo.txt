@@ -7,4 +7,4 @@
     This will allow more map space on larger devices.
 7 NICE TO HAVE: drag club crest to logo to re-centre map to that club
 8 README
-9 TESTING including Jasmine
+9 TESTING including Jasmine?
