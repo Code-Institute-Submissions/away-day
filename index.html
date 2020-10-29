@@ -25,49 +25,38 @@
 </head>
 <body>
     <header class="container-fluid shadow">
-        <nav>
-            <div class="row no-gutters">
-                <div class="col-sm-2 col-md-3 my-auto">
-                    <a href="index.html" class="logo">
-                        <img class="d-sm-none d-block" src="images/site/logo-64px.png">
-                        <span class="d-none d-md-block">AwayDay</span>
-                    </a>
-                </div>
+        <nav class="navbar navbar-expand-md">
+            <div class="col-sm-2 col-md-3 my-auto">
+                <a href="index.html" class="logo">
+                    <img class="d-sm-none d-block" src="images/site/logo-64px.png" alt="AwayDay logo">
+                    <span class="d-none d-md-block">AwayDay</span>
+                </a>
+            </div>
 
-                <div class="col-sm-10 col-md-6 mx-auto my-auto">
-                    <div class="dropdown">
-                    <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
-
+            <div class="col-sm-10 col-md-6 mx-auto my-auto">
+                <div class="dropdown">
+                <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
                     <!--NAVIGATION DROP-DOWN (MOBILE ONLY)-->
-                        <button 
-                            class="navbar-toggler ml-auto d-sm-none d-block"
-                            type="button"
-                            id="mobSelector"
-                            data-toggle="dropdown"
-                            data-target="#leagueSelection"
-                            aria-controls="leagueSelection"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span>
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                            </span>
-                        </button>
+                    <button 
+                        class="navbar-toggler ml-auto d-sm-none d-block"
+                        type="button"
+                        id="mobSelector"
+                        data-toggle="collapse"
+                        data-target="#leagueSelection"
+                        aria-controls="leagueSelection"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span>
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </span>
+                    </button>
 
-                    <!--NAVIGATION DROP-DOWN (DESKTOP AND TABLET)-->
-                    <!--Needs to fit on same line as icon-->
-                        <button
-                            class="btn btn-outline-secondary btn-block dropdown-toggle d-none d-sm-block"
-                            type="button" 
-                            id="dtSelector" 
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false">
-                            Choose Your Opponent
-                        </button>
-                    
                     <!--DROP-DOWN MENU ITEMS-->
-                        <ul class="dropdown-menu btn-block" aria-labelledby="leagueSelection">
-                            <li class="dropdown-item" id="eplDrop">Premier League</li>
+                    <div class="collapse navbar-collapse" id="leagueSelection">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="dropdown-item" id="eplDrop">
+                                <img src="images/markers/epl.png" id="epl-icon" alt="English Premier League Logo">
+                            </li>
                                 <div class="dropdown-submenu" id="eplClublist">
                                     <li class="dropdown-club" id="eplArsenal" role="button">
                                         <img src="images/crests/epl/eplArsenal.png" alt="Arsenal">
@@ -131,7 +120,9 @@
                                     </li>
                                 </div>
 
-                            <li class="dropdown-item" id="flcDrop">Championship</li>
+                            <li class="dropdown-item" id="flcDrop">
+                                <img src="images/markers/eflc.png" id="flc-icon" alt="English Football Championship Logo">
+                            </li>
                                 <div class="dropdown-submenu" id="flcClublist">
                                     <li class="dropdown-club" id="flcBarnsl" role="button">
                                         <img src="images/crests/flc/flcBarnsl.png" alt="Barnsley">
@@ -207,7 +198,9 @@
                                     </li>
                                 </div>
 
-                            <li class="dropdown-item" id="bunDrop">Bundesliga</li>
+                            <li class="dropdown-item" id="bunDrop">
+                                <img src="images/markers/bundesliga.png" id="bun-icon" alt="Deutsche Bundesliga Logo">
+                            </li>
                                 <div class="dropdown-submenu" id="bunClublist">
                                     <li class="dropdown-club" id="bunArminia" role="button">
                                         <img src="images/crests/bun/bunArminia.png" alt="Arminia Bielefeld">
@@ -265,7 +258,9 @@
                                     </li>
                                 </div>
 
-                            <li class="dropdown-item" id="gaaDrop">Gaelic Games</li>
+                            <li class="dropdown-item" id="gaaDrop">
+                                <img src="images/markers/gaa.png" id="gaa-icon" alt="Gaelic Athletic Association Logo">
+                            </li>
                                 <div class="dropdown-submenu" id="gaaClublist">
                                     <li class="dropdown-club" id="gaaAntrim" role="button">
                                         <img src="images/crests/gaa/gaaAntrim.png" alt="Antrim">
@@ -365,7 +360,9 @@
                                     </li>
                                 </div>
 
-                            <li class="dropdown-item" id="slrDrop">Super League</li>
+                            <li class="dropdown-item" id="slrDrop">
+                                <img src="images/markers/super-league.png" id="slr-icon" alt="Super League Rugby Logo">
+                            </li>
                                 <div class="dropdown-submenu" id="slrClublist">
                                     <li class="dropdown-club" id="slrCasTig" role="button">
                                         <img src="images/crests/slr/slrCasTig.png" alt="Castleford Tigers">
@@ -402,7 +399,9 @@
                                     </li>
                                 </div>
 
-                            <li class="dropdown-item" id="loiDrop">League of Ireland</li>
+                            <li class="dropdown-item" id="loiDrop">
+                                <img src="images/markers/loi-crest.png" id="loi-icon" alt="League of Ireland Logo">
+                            </li>
                                 <div class="dropdown-submenu" id="loiClublist">
                                     <li class="dropdown-club" id="loiBohs" role="button">
                                         <img src="images/crests/loi/loiBohs.png" alt="Bohemians">
@@ -436,7 +435,9 @@
                                     </li>
                                 </div>
                             
-                            <li class="dropdown-item" id="nhlDrop">NHL</li>
+                            <li class="dropdown-item" id="nhlDrop">
+                                <img src="images/markers/nhl-shield.png" id="nhl-icon" alt="National Hockey League Logo">
+                            </li>
                                 <div class="dropdown-submenu" id="nhlClublist">
                                     <li class="dropdown-club" id="nhlDucks" role="button">
                                         <img src="images/crests/nhl/nhlDucks.png" alt="Anaheim Ducks">
@@ -537,13 +538,13 @@
                         </ul>
                     </div>
                 </div>
-                    <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
+            </div>
+            <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
                 
-                <div class="col-md-3 d-none d-sm-block head-social my-auto">
-                    <a href="contact.html" ><i class="far fa-envelope"></i></a>
-                    <a href="http://www.twitter.com/" target="_blank" ><i class="fab fa-twitter"></i></a>
-                    <a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                </div>
+            <div class="col-md-3 d-none d-sm-block head-social my-auto">
+                <a href="contact.html" ><i class="far fa-envelope"></i></a>
+                <a href="http://www.twitter.com/" target="_blank" ><i class="fab fa-twitter"></i></a>
+                <a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
             </div>
         </nav>
     </header>

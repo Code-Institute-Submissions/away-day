@@ -57,6 +57,16 @@ header {
     text-transform: uppercase;
 }
 
+#epl-icon,
+#bun-icon,
+#flc-icon,
+#gaa-icon,
+#loi-icon,
+#nhl-icon,
+#slr-icon {
+    height: 30px;
+}
+
 .head-social,
 .head-social a {
     color: #ffffff;
