@@ -103,18 +103,6 @@ header {
     list-style: none;
 }
 
-#bunClublist,
-#eplClublist,
-#flcClublist,
-#gaaClublist,
-#loiClublist,
-#nhlClublist,
-#slrClublist {
-    /* display: inline activated by event listeners in main.js */
-    display: none;
-    text-align: center;
-}
-
 .dropdown-item {
     text-align: center;
 }

@@ -1,7 +1,7 @@
 1 REMOVE MARKERS on clicking a different search icon
 2 REMOVE MARKERS on clicking a different club
 3 GET DIRECTIONS
-4 DROPDOWN STYLING add dropdown functionality to league icons
+4 DROPDOWN STYLING reduce sizing
 5 DROPDOWN STYLING stays open when league is selected
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
     This will allow more map space on larger devices.

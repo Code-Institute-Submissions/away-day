@@ -111,3 +111,4 @@ For an in-depth guide to cloning repositories, click [here](https://www.howtogee
 - [Map tutorial](https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx)
 - [Google tutorials](https://developers.google.com/maps/documentation)
 - [Google Code Labs tutorial](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0)
+- [StackOverflow](https://stackoverflow.com/questions/18616040/bootstrap-horizontal-drop-down) - this link was the one that got the horizontal drop-down bar sorted
