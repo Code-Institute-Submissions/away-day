@@ -63,8 +63,9 @@ header {
 #gaa-icon,
 #loi-icon,
 #nhl-icon,
-#slr-icon {
-    height: 30px;
+#slr-icon
+ {
+    height: 40px;
 }
 
 .head-social,

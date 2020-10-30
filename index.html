@@ -28,13 +28,12 @@
         <nav class="navbar navbar-expand-md">
             <div class="col-sm-2 col-md-3 my-auto">
                 <a href="index.html" class="logo">
-                    <img class="d-sm-none d-block" src="images/site/logo-64px.png" alt="AwayDay logo">
+                    <img class="d-sm-none d-inline" src="images/site/logo-64px.png" alt="AwayDay logo">
                     <span class="d-none d-md-block">AwayDay</span>
                 </a>
             </div>
 
             <div class="col-sm-10 col-md-6 mx-auto my-auto">
-                <div class="dropdown">
                 <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
                     <!--NAVIGATION DROP-DOWN (MOBILE ONLY)-->
                     <button 
@@ -54,491 +53,555 @@
                     <!--DROP-DOWN MENU ITEMS-->
                     <div class="collapse navbar-collapse" id="leagueSelection">
                         <ul class="navbar-nav mx-auto">
-                            <li class="dropdown-item" id="eplDrop">
-                                <img src="images/markers/epl.png" id="epl-icon" alt="English Premier League Logo">
-                            </li>
-                                <div class="dropdown-submenu" id="eplClublist">
-                                    <li class="dropdown-club" id="eplArsenal" role="button">
+
+                            <li class="nav-item dropdown" id="eplDrop">
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="eplDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <img src="images/markers/epl.png" id="epl-icon" alt="English Premier League Logo">
+                                </a>
+
+                                <ul class="dropdown-menu" id="eplClublist" aria-labelledby="eplDropdown">
+                                    <li class="dropdown-item list-inline-item" id="eplArsenal" role="button">
                                         <img src="images/crests/epl/eplArsenal.png" alt="Arsenal">
                                     </li>
-                                    <li class="dropdown-club" id="eplVilla" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplVilla" role="button">
                                         <img src="images/crests/epl/eplVilla.png" alt="Aston Villa">
                                     </li>
-                                    <li class="dropdown-club" id="eplBriAlb" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplBriAlb" role="button">
                                         <img src="images/crests/epl/eplBriAlb.png" alt="Brighton and Hove Albion">
                                     </li>
-                                    <li class="dropdown-club" id="eplBurnley" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplBurnley" role="button">
                                         <img src="images/crests/epl/eplBurnley.png" alt="Burnley">
                                     </li>
-                                    <li class="dropdown-club" id="eplChelsea" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplChelsea" role="button">
                                         <img src="images/crests/epl/eplChelsea.png" alt="Chelsea">
                                     </li>
-                                    <li class="dropdown-club" id="eplPalace" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplPalace" role="button">
                                         <img src="images/crests/epl/eplPalace.png" alt="Crystal Palace">
                                     </li>
-                                    <li class="dropdown-club" id="eplEverton" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplEverton" role="button">
                                         <img src="images/crests/epl/eplEverton.png" alt="Everton">
                                     </li>
-                                    <li class="dropdown-club" id="eplFulham" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplFulham" role="button">
                                         <img src="images/crests/epl/eplFulham.png" alt="Fulham">
                                     </li>
-                                    <li class="dropdown-club" id="eplLeeds" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplLeeds" role="button">
                                         <img src="images/crests/epl/eplLeeds.png" alt="Leeds United">
                                     </li>
-                                    <li class="dropdown-club" id="eplLeiCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplLeiCty" role="button">
                                         <img src="images/crests/epl/eplLeiCty.png" alt="Leicester City">
                                     </li>
-                                    <li class="dropdown-club" id="eplLiverp" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplLiverp" role="button">
                                         <img src="images/crests/epl/eplLiverp.png" alt="Liverpool">
                                     </li>
-                                    <li class="dropdown-club" id="eplManCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplManCty" role="button">
                                         <img src="images/crests/epl/eplManCty.png" alt="Manchester City">
                                     </li>
-                                    <li class="dropdown-club" id="eplManUtd" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplManUtd" role="button">
                                         <img src="images/crests/epl/eplManUtd.png" alt="Manchester United">
                                     </li>
-                                    <li class="dropdown-club" id="eplNewUtd" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplNewUtd" role="button">
                                         <img src="images/crests/epl/eplNewUtd.png" alt="Newcastle United">
                                     </li>
-                                    <li class="dropdown-club" id="eplSheUtd" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplSheUtd" role="button">
                                         <img src="images/crests/epl/eplSheUtd.png" alt="Sheffield United">
                                     </li>
-                                    <li class="dropdown-club" id="eplSaints" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplSaints" role="button">
                                         <img src="images/crests/epl/eplSaints.png" alt="Southampton">
                                     </li>
-                                    <li class="dropdown-club" id="eplSpurs" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplSpurs" role="button">
                                         <img src="images/crests/epl/eplSpurs.png" alt="Tottenham Hotspur">
                                     </li>
-                                    <li class="dropdown-club" id="eplWestBrom" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplWestBrom" role="button">
                                         <img src="images/crests/epl/eplWBA.png" alt="West Bromwich Albion">
                                     </li>
-                                    <li class="dropdown-club" id="eplWestHam" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplWestHam" role="button">
                                         <img src="images/crests/epl/eplWestHam.png" alt="West Ham United">
                                     </li>
-                                    <li class="dropdown-club" id="eplWolves" role="button">
+                                    <li class="dropdown-item list-inline-item" id="eplWolves" role="button">
                                         <img src="images/crests/epl/eplWolves.png" alt="Wolverhampton Wanderers">
                                     </li>
-                                </div>
-
-                            <li class="dropdown-item" id="flcDrop">
-                                <img src="images/markers/eflc.png" id="flc-icon" alt="English Football Championship Logo">
+                                </ul>
                             </li>
-                                <div class="dropdown-submenu" id="flcClublist">
+
+                            <li class="nav-item dropdown" id="flcDrop">
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="flcDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                        <img src="images/markers/eflc.png" id="flc-icon" alt="English Football Championship Logo">
+                                </a>
+
+                                <ul class="dropdown-menu" id="flcClublist" aria-labelledby="flcDropdown">
                                     <li class="dropdown-club" id="flcBarnsl" role="button">
                                         <img src="images/crests/flc/flcBarnsl.png" alt="Barnsley">
                                     </li>
-                                    <li class="dropdown-club" id="flcBirCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcBirCty" role="button">
                                         <img src="images/crests/flc/flcBirCty.png" alt="Birmingham City">
                                     </li>
-                                    <li class="dropdown-club" id="flcBlaRov" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcBlaRov" role="button">
                                         <img src="images/crests/flc/flcBlaRov.png" alt="Blackburn Rovers">
                                     </li>
-                                    <li class="dropdown-club" id="flcBourne" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcBourne" role="button">
                                         <img src="images/crests/flc/flcBourne.png" alt="Bournemouth">
                                     </li>
-                                    <li class="dropdown-club" id="flcBrentf" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcBrentf" role="button">
                                         <img src="images/crests/flc/flcBrentf.png" alt="Brentford">
                                     </li>
-                                    <li class="dropdown-club" id="flcBriCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcBriCty" role="button">
                                         <img src="images/crests/flc/flcBriCty.png" alt="Bristol City">
                                     </li>
-                                    <li class="dropdown-club" id="flcCarCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcCarCty" role="button">
                                         <img src="images/crests/flc/flcCarCty.png" alt="Cardiff City">
                                     </li>
-                                    <li class="dropdown-club" id="flcCovCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcCovCty" role="button">
                                         <img src="images/crests/flc/flcCovCty.png" alt="Coventry City">
                                     </li>
-                                    <li class="dropdown-club" id="flcDerCou" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcDerCou" role="button">
                                         <img src="images/crests/flc/flcDerCou.png" alt="Derby County">
                                     </li>
-                                    <li class="dropdown-club" id="flcHudTwn" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcHudTwn" role="button">
                                         <img src="images/crests/flc/flcHudTwn.png" alt="Huddersfield Town">
                                     </li>
-                                    <li class="dropdown-club" id="flcLutTwn" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcLutTwn" role="button">
                                         <img src="images/crests/flc/flcLutTwn.png" alt="Luton Town">
                                     </li>
-                                    <li class="dropdown-club" id="flcMBoro" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcMBoro" role="button">
                                         <img src="images/crests/flc/flcMBoro.png" alt="Middlesbrough">
                                     </li>
-                                    <li class="dropdown-club" id="flcMillwall" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcMillwall" role="button">
                                         <img src="images/crests/flc/flcMillwall.png" alt="Millwall">
                                     </li>
-                                    <li class="dropdown-club" id="flcNorCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcNorCty" role="button">
                                         <img src="images/crests/flc/flcNorCty.png" alt="Norwich City">
                                     </li>
-                                    <li class="dropdown-club" id="flcForest" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcForest" role="button">
                                         <img src="images/crests/flc/flcForest.png" alt="Nottingham Forest">
                                     </li>
-                                    <li class="dropdown-club" id="flcPreston" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcPreston" role="button">
                                         <img src="images/crests/flc/flcPreston.png" alt="Preston North End">
                                     </li>
-                                    <li class="dropdown-club" id="flcQPR" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcQPR" role="button">
                                         <img src="images/crests/flc/flcQPR.png" alt="Queen's Park Rangers">
                                     </li>
-                                    <li class="dropdown-club" id="flcReading" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcReading" role="button">
                                         <img src="images/crests/flc/flcReading.png" alt="Reading">
                                     </li>
-                                    <li class="dropdown-club" id="flcRotUtd" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcRotUtd" role="button">
                                         <img src="images/crests/flc/flcRotUtd.png" alt="Rotherham United">
                                     </li>
-                                    <li class="dropdown-club" id="flcSheWed" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcSheWed" role="button">
                                         <img src="images/crests/flc/flcSheWed.png" alt="Sheffield Wednesday">
                                     </li>
-                                    <li class="dropdown-club" id="flcStoCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcStoCty" role="button">
                                         <img src="images/crests/flc/flcStoCty.png" alt="Stoke City">
                                     </li>
-                                    <li class="dropdown-club" id="flcSwaCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcSwaCty" role="button">
                                         <img src="images/crests/flc/flcSwaCty.png" alt="Swansea City">
                                     </li>
-                                    <li class="dropdown-club" id="flcWatford" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcWatford" role="button">
                                         <img src="images/crests/flc/flcWatford.png" alt="Watford">
                                     </li>
-                                    <li class="dropdown-club" id="flcWycWan" role="button">
+                                    <li class="dropdown-item list-inline-item" id="flcWycWan" role="button">
                                         <img src="images/crests/flc/flcWycWan.png" alt="Wycombe Wanderers">
                                     </li>
-                                </div>
-
-                            <li class="dropdown-item" id="bunDrop">
-                                <img src="images/markers/bundesliga.png" id="bun-icon" alt="Deutsche Bundesliga Logo">
+                                </ul>
                             </li>
-                                <div class="dropdown-submenu" id="bunClublist">
+
+                            <li class="nav-item dropdown" id="bunDrop">
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="bunDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                        <img src="images/markers/bundesliga.png" id="bun-icon" alt="Deutsche Bundesliga Logo">
+                                </a>
+
+                                <ul class="dropdown-menu" id="bunClublist" aria-labelledby="bunDropdown">
                                     <li class="dropdown-club" id="bunArminia" role="button">
                                         <img src="images/crests/bun/bunArminia.png" alt="Arminia Bielefeld">
                                     </li>
-                                    <li class="dropdown-club" id="bunAugs07" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunAugs07" role="button">
                                         <img src="images/crests/bun/bunAugs07.png" alt="FC Augsburg 1907">
                                     </li>
-                                    <li class="dropdown-club" id="bunBayer04" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunBayer04" role="button">
                                         <img src="images/crests/bun/bunBayer04.png" alt="Bayer 04 Leverkusen">
                                     </li>
-                                    <li class="dropdown-club" id="bunBayern" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunBayern" role="button">
                                         <img src="images/crests/bun/bunBayern.png" alt="Bayern">
                                     </li>
-                                    <li class="dropdown-club" id="bunDortmund" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunDortmund" role="button">
                                         <img src="images/crests/bun/bunDortmund.png" alt="Borussia Dortmund">
                                     </li>
-                                    <li class="dropdown-club" id="bunBorMGB" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunBorMGB" role="button">
                                         <img src="images/crests/bun/bunBorMGB.png" alt="Borussia Mönchengladbach">
                                     </li>
-                                    <li class="dropdown-club" id="bunEinFra" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunEinFra" role="button">
                                         <img src="images/crests/bun/bunEinFra.png" alt="Eintracht Frankfurt">
                                     </li>
-                                    <li class="dropdown-club" id="bunSCFrei" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunSCFrei" role="button">
                                         <img src="images/crests/bun/bunSCFrei.png" alt="SC Freiburg">
                                     </li>
-                                    <li class="dropdown-club" id="bunHertha" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunHertha" role="button">
                                         <img src="images/crests/bun/bunHertha.png" alt="Hertha Berlin">
                                     </li>
-                                    <li class="dropdown-club" id="bunHoffen" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunHoffen" role="button">
                                         <img src="images/crests/bun/bunHoffen.png" alt="1899 Hoffenheim">
                                     </li>
-                                    <li class="dropdown-club" id="bun1FCKoln" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bun1FCKoln" role="button">
                                         <img src="images/crests/bun/bun1FCKoln.png" alt="1. FC Köln">
                                     </li>
-                                    <li class="dropdown-club" id="bunMainz" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunMainz" role="button">
                                         <img src="images/crests/bun/bunMainz.png" alt="Mainz 05">
                                     </li>
-                                    <li class="dropdown-club" id="bunLeipzig" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunLeipzig" role="button">
                                         <img src="images/crests/bun/bunLeipzig.png" alt="Leipzig">
                                     </li>
-                                    <li class="dropdown-club" id="bunSchalke" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunSchalke" role="button">
                                         <img src="images/crests/bun/bunSchalke.png" alt="Schalke 04">
                                     </li>
-                                    <li class="dropdown-club" id="bunStuttg" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunStuttg" role="button">
                                         <img src="images/crests/bun/bunStuttg.png" alt="VfB Stuttgart">
                                     </li>
-                                    <li class="dropdown-club" id="bunUnionB" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunUnionB" role="button">
                                         <img src="images/crests/bun/bunUnionB.png" alt="1. FC Union Berlin">
                                     </li>
-                                    <li class="dropdown-club" id="bunWerder" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunWerder" role="button">
                                         <img src="images/crests/bun/bunWerder.png" alt="Werder Bremen">
                                     </li>
-                                    <li class="dropdown-club" id="bunWolfsb" role="button">
+                                    <li class="dropdown-item list-inline-item" id="bunWolfsb" role="button">
                                         <img src="images/crests/bun/bunWolfsb.png" alt="VfL Wolfsburg">
                                     </li>
-                                </div>
-
-                            <li class="dropdown-item" id="gaaDrop">
-                                <img src="images/markers/gaa.png" id="gaa-icon" alt="Gaelic Athletic Association Logo">
+                                </ul>
                             </li>
-                                <div class="dropdown-submenu" id="gaaClublist">
+
+                            <li class="nav-item dropdown" id="gaaDrop">
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="gaaDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                        <img src="images/markers/gaa.png" id="gaa-icon" alt="Gaelic Athletic Association Logo">
+                                </a>
+
+                                <ul class="dropdown-menu" id="gaaClublist" aria-labelledby="gaaDropdown">
                                     <li class="dropdown-club" id="gaaAntrim" role="button">
                                         <img src="images/crests/gaa/gaaAntrim.png" alt="Antrim">
                                     </li>
-                                    <li class="dropdown-club" id="gaaArmagh" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaArmagh" role="button">
                                         <img src="images/crests/gaa/gaaArmagh.png" alt="Armagh">
                                     </li>
-                                    <li class="dropdown-club" id="gaaCarlow" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaCarlow" role="button">
                                         <img src="images/crests/gaa/gaaCarlow.png" alt="Carlow">
                                     </li>
-                                    <li class="dropdown-club" id="gaaCavan" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaCavan" role="button">
                                         <img src="images/crests/gaa/gaaCavan.png" alt="Cavan">
                                     </li>
-                                    <li class="dropdown-club" id="gaaClare" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaClare" role="button">
                                         <img src="images/crests/gaa/gaaClare.png" alt="Clare">
                                     </li>
-                                    <li class="dropdown-club" id="gaaCork" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaCork" role="button">
                                         <img src="images/crests/gaa/gaaCork.png" alt="Cork">
                                     </li>
-                                    <li class="dropdown-club" id="gaaDerry" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaDerry" role="button">
                                         <img src="images/crests/gaa/gaaDerry.png" alt="Derry">
                                     </li>
-                                    <li class="dropdown-club" id="gaaDonegal" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaDonegal" role="button">
                                         <img src="images/crests/gaa/gaaDonegal.png" alt="Donegal">
                                     </li>
-                                    <li class="dropdown-club" id="gaaDown" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaDown" role="button">
                                         <img src="images/crests/gaa/gaaDown.png" alt="Down">
                                     </li>
-                                    <li class="dropdown-club" id="gaaDublin" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaDublin" role="button">
                                         <img src="images/crests/gaa/gaaDublin.png" alt="Dublin">
                                     </li>
-                                    <li class="dropdown-club" id="gaaFerman" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaFerman" role="button">
                                         <img src="images/crests/gaa/gaaFerman.png" alt="Fermanagh">
                                     </li>
-                                    <li class="dropdown-club" id="gaaGalway" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaGalway" role="button">
                                         <img src="images/crests/gaa/gaaGalway.png" alt="Galway">
                                     </li>
-                                    <li class="dropdown-club" id="gaaKerry" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaKerry" role="button">
                                         <img src="images/crests/gaa/gaaKerry.png" alt="Kerry">
                                     </li>
-                                    <li class="dropdown-club" id="gaaKildare" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaKildare" role="button">
                                         <img src="images/crests/gaa/gaaKildare.png" alt="Kildare">
                                     </li>
-                                    <li class="dropdown-club" id="gaaKilken" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaKilken" role="button">
                                         <img src="images/crests/gaa/gaaKilken.png" alt="Kilkenny">
                                     </li>
-                                    <li class="dropdown-club" id="gaaLaois" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaLaois" role="button">
                                         <img src="images/crests/gaa/gaaLaois.png" alt="Laois">
                                     </li>
-                                    <li class="dropdown-club" id="gaaLeitrim" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaLeitrim" role="button">
                                         <img src="images/crests/gaa/gaaLeitrim.png" alt="Leitrim">
                                     </li>
-                                    <li class="dropdown-club" id="gaaLim" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaLim" role="button">
                                         <img src="images/crests/gaa/gaaLim.png" alt="Limerick">
                                     </li>
-                                    <li class="dropdown-club" id="gaaLong" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaLong" role="button">
                                         <img src="images/crests/gaa/gaaLong.png" alt="Longford">
                                     </li>
-                                    <li class="dropdown-club" id="gaaLouth" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaLouth" role="button">
                                         <img src="images/crests/gaa/gaaLouth.png" alt="Louth">
                                     </li>
-                                    <li class="dropdown-club" id="gaaMayo" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaMayo" role="button">
                                         <img src="images/crests/gaa/gaaMayo.png" alt="Mayo">
                                     </li>
-                                    <li class="dropdown-club" id="gaaMeath" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaMeath" role="button">
                                         <img src="images/crests/gaa/gaaMeath.png" alt="Meath">
                                     </li>
-                                    <li class="dropdown-club" id="gaaMona" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaMona" role="button">
                                         <img src="images/crests/gaa/gaaMona.png" alt="Monaghan">
                                     </li>
-                                    <li class="dropdown-club" id="gaaOffaly" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaOffaly" role="button">
                                         <img src="images/crests/gaa/gaaOffaly.png" alt="Offaly">
                                     </li>
-                                    <li class="dropdown-club" id="gaaRos" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaRos" role="button">
                                         <img src="images/crests/gaa/gaaRos.png" alt="Roscommon">
                                     </li>
-                                    <li class="dropdown-club" id="gaaSligo" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaSligo" role="button">
                                         <img src="images/crests/gaa/gaaSligo.png" alt="Sligo">
                                     </li>
-                                    <li class="dropdown-club" id="gaaTipp" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaTipp" role="button">
                                         <img src="images/crests/gaa/gaaTipp.png" alt="Tipperary">
                                     </li>
-                                    <li class="dropdown-club" id="gaaTyrone" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaTyrone" role="button">
                                         <img src="images/crests/gaa/gaaTyrone.png" alt="Tyrone">
                                     </li>
-                                    <li class="dropdown-club" id="gaaWater" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaWater" role="button">
                                         <img src="images/crests/gaa/gaaWater.png" alt="Waterford">
                                     </li>
-                                    <li class="dropdown-club" id="gaaWestm" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaWestm" role="button">
                                         <img src="images/crests/gaa/gaaWestm.png" alt="Westmeath">
                                     </li>
-                                    <li class="dropdown-club" id="gaaWexford" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaWexford" role="button">
                                         <img src="images/crests/gaa/gaaWexford.png" alt="Wexford">
                                     </li>
-                                    <li class="dropdown-club" id="gaaWicklow" role="button">
+                                    <li class="dropdown-item list-inline-item" id="gaaWicklow" role="button">
                                         <img src="images/crests/gaa/gaaWicklow.png" alt="Wicklow">
                                     </li>
-                                </div>
-
-                            <li class="dropdown-item" id="slrDrop">
-                                <img src="images/markers/super-league.png" id="slr-icon" alt="Super League Rugby Logo">
+                                </ul>
                             </li>
-                                <div class="dropdown-submenu" id="slrClublist">
+
+                            <li class="nav-item dropdown" id="slrDrop">
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="slrDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                        <img src="images/markers/super-league.png" id="slr-icon" alt="Super League Rugby Logo">
+                                </a>
+
+                                <ul class="dropdown-menu" id="slrClublist" aria-labelledby="slrDropdown">
                                     <li class="dropdown-club" id="slrCasTig" role="button">
                                         <img src="images/crests/slr/slrCasTig.png" alt="Castleford Tigers">
                                     </li>
-                                    <li class="dropdown-club" id="slrCatDra" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrCatDra" role="button">
                                         <img src="images/crests/slr/slrCatDra.png" alt="Catalans Dragons">
                                     </li>
-                                    <li class="dropdown-club" id="slrHudGia" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrHudGia" role="button">
                                         <img src="images/crests/slr/slrHudGia.png" alt="Huddersfield Giants">
                                     </li>
-                                    <li class="dropdown-club" id="slrHullFC" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrHullFC" role="button">
                                         <img src="images/crests/slr/slrHullFC.png" alt="Hull FC">
                                     </li>
-                                    <li class="dropdown-club" id="slrHullKR" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrHullKR" role="button">
                                         <img src="images/crests/slr/slrHullKR.png" alt="Hull Kingston Rovers">
                                     </li>
-                                    <li class="dropdown-club" id="slrLeeRhi" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrLeeRhi" role="button">
                                         <img src="images/crests/slr/slrLeeRhi.png" alt="Leeds Rhinos">
                                     </li>
-                                    <li class="dropdown-club" id="slrSalRed" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrSalRed" role="button">
                                         <img src="images/crests/slr/slrSalRed.png" alt="Salford Red Devils">
                                     </li>
-                                    <li class="dropdown-club" id="slrSaints" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrSaints" role="button">
                                         <img src="images/crests/slr/slrSaints.png" alt="St. Helens">
                                     </li>
-                                    <li class="dropdown-club" id="slrWakTri" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrWakTri" role="button">
                                         <img src="images/crests/slr/slrWakTri.png" alt="Wakefield Trinity">
                                     </li>
-                                    <li class="dropdown-club" id="slrWarWol" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrWarWol" role="button">
                                         <img src="images/crests/slr/slrWarWol.png" alt="Warrington Wolves">
                                     </li>
-                                    <li class="dropdown-club" id="slrWigWar" role="button">
+                                    <li class="dropdown-item list-inline-item" id="slrWigWar" role="button">
                                         <img src="images/crests/slr/slrWigWar.png" alt="Wigan Warriors">
                                     </li>
-                                </div>
-
-                            <li class="dropdown-item" id="loiDrop">
-                                <img src="images/markers/loi-crest.png" id="loi-icon" alt="League of Ireland Logo">
+                                </ul>
                             </li>
-                                <div class="dropdown-submenu" id="loiClublist">
+
+                            <li class="nav-item dropdown" id="loiDrop">
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="loiDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                        <img src="images/markers/loi-crest.png" id="loi-icon" alt="League of Ireland Logo">
+                                </a>
+
+                                <ul class="dropdown-menu" id="loiClublist" aria-labelledby="loiDropdown">
                                     <li class="dropdown-club" id="loiBohs" role="button">
                                         <img src="images/crests/loi/loiBohs.png" alt="Bohemians">
                                     </li>
-                                    <li class="dropdown-club" id="loiCorkCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiCorkCty" role="button">
                                         <img src="images/crests/loi/loiCorkCty.png" alt="Cork City">
                                     </li>
-                                    <li class="dropdown-club" id="loiDerCty" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiDerCty" role="button">
                                         <img src="images/crests/loi/loiDerCty.png" alt="Derry City">
                                     </li>
-                                    <li class="dropdown-club" id="loiDundalk" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiDundalk" role="button">
                                         <img src="images/crests/loi/loiDundalk.png" alt="Dundalk">
                                     </li>
-                                    <li class="dropdown-club" id="loiFHarps" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiFHarps" role="button">
                                         <img src="images/crests/loi/loiFHarps.png" alt="Finn Harps">
                                     </li>
-                                    <li class="dropdown-club" id="loiShaRov" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiShaRov" role="button">
                                         <img src="images/crests/loi/loiShaRov.png" alt="Shamrock Rovers">
                                     </li>
-                                    <li class="dropdown-club" id="loiShels" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiShels" role="button">
                                         <img src="images/crests/loi/loiShels.png" alt="Shelbourne">
                                     </li>
-                                    <li class="dropdown-club" id="loiSliRov" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiSliRov" role="button">
                                         <img src="images/crests/loi/loiSliRov.png" alt="Sligo Rovers">
                                     </li>
-                                    <li class="dropdown-club" id="loiPats" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiPats" role="button">
                                         <img src="images/crests/loi/loiPats.png" alt="St. Patrick's Athletic">
                                     </li>
-                                    <li class="dropdown-club" id="loiWaterf" role="button">
+                                    <li class="dropdown-item list-inline-item" id="loiWaterf" role="button">
                                         <img src="images/crests/loi/loiWaterf.png" alt="Waterford">
                                     </li>
-                                </div>
-                            
-                            <li class="dropdown-item" id="nhlDrop">
-                                <img src="images/markers/nhl-shield.png" id="nhl-icon" alt="National Hockey League Logo">
+                                </ul>
                             </li>
-                                <div class="dropdown-submenu" id="nhlClublist">
+                            
+                            <li class="nav-item dropdown" id="nhlDrop">
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="nhlDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                        <img src="images/markers/nhl-shield.png" id="nhl-icon" alt="National Hockey League Logo">
+                                </a>
+
+                                <ul class="dropdown-menu" id="nhlClublist" aria-labelledby="nhlDropdown">
                                     <li class="dropdown-club" id="nhlDucks" role="button">
                                         <img src="images/crests/nhl/nhlDucks.png" alt="Anaheim Ducks">
                                     </li>
-                                    <li class="dropdown-club" id="nhlCoyotes" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlCoyotes" role="button">
                                         <img src="images/crests/nhl/nhlCoyotes.png" alt="Arizona Coyotes">
                                     </li>
-                                    <li class="dropdown-club" id="nhlBruins" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlBruins" role="button">
                                         <img src="images/crests/nhl/nhlBruins.png" alt="Boston Bruins">
                                     </li>
-                                    <li class="dropdown-club" id="nhlSabres" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlSabres" role="button">
                                         <img src="images/crests/nhl/nhlSabres.png" alt="Buffalo Sabres">
                                     </li>
-                                    <li class="dropdown-club" id="nhlFlames" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlFlames" role="button">
                                         <img src="images/crests/nhl/nhlFlames.png" alt="Calgary Flames">
                                     </li>
-                                    <li class="dropdown-club" id="nhlCanes" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlCanes" role="button">
                                         <img src="images/crests/nhl/nhlCanes.png" alt="Carolina Hurricanes">
                                     </li>
-                                    <li class="dropdown-club" id="nhlBHawks" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlBHawks" role="button">
                                         <img src="images/crests/nhl/nhlBHawks.png" alt="Chicago Blackhawks">
                                     </li>
-                                    <li class="dropdown-club" id="nhlAvs" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlAvs" role="button">
                                         <img src="images/crests/nhl/nhlAvs.png" alt="Colorado Avalanche">
                                     </li>
-                                    <li class="dropdown-club" id="nhlJackets" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlJackets" role="button">
                                         <img src="images/crests/nhl/nhlJackets.png" alt="Columbus Blue Jackets">
                                     </li>
-                                    <li class="dropdown-club" id="nhlStars" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlStars" role="button">
                                         <img src="images/crests/nhl/nhlStars.png" alt="Dallas Stars">
                                     </li>
-                                    <li class="dropdown-club" id="nhlWings" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlWings" role="button">
                                         <img src="images/crests/nhl/nhlWings.png" alt="Detroit Red Wings">
                                     </li>
-                                    <li class="dropdown-club" id="nhlOilers" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlOilers" role="button">
                                         <img src="images/crests/nhl/nhlOilers.png" alt="Edmonton Oilers">
                                     </li>
-                                    <li class="dropdown-club" id="nhlPanthers" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlPanthers" role="button">
                                         <img src="images/crests/nhl/nhlPanthers.png" alt="Florida Panthers">
                                     </li>
-                                    <li class="dropdown-club" id="nhlKings" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlKings" role="button">
                                         <img src="images/crests/nhl/nhlKings.png" alt="Los Angeles Kings">
                                     </li>
-                                    <li class="dropdown-club" id="nhlWild" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlWild" role="button">
                                         <img src="images/crests/nhl/nhlWild.png" alt="Minnesota Wild">
                                     </li>
-                                    <li class="dropdown-club" id="nhlHabs" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlHabs" role="button">
                                         <img src="images/crests/nhl/nhlHabs.png" alt="Montreal Canadiens">
                                     </li>
-                                    <li class="dropdown-club" id="nhlPreds" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlPreds" role="button">
                                         <img src="images/crests/nhl/nhlPreds.png" alt="Nashville Predators">
                                     </li>
-                                    <li class="dropdown-club" id="nhlDevils" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlDevils" role="button">
                                         <img src="images/crests/nhl/nhlDevils.png" alt="New Jersey Devils">
                                     </li>
-                                    <li class="dropdown-club" id="nhlIsland" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlIsland" role="button">
                                         <img src="images/crests/nhl/nhlIsland.png" alt="New York Islanders">
                                     </li>
-                                    <li class="dropdown-club" id="nhlRangers" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlRangers" role="button">
                                         <img src="images/crests/nhl/nhlRangers.png" alt="New York Rangers">
                                     </li>
-                                    <li class="dropdown-club" id="nhlSens" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlSens" role="button">
                                         <img src="images/crests/nhl/nhlSens.png" alt="Ottawa Senators">
                                     </li>
-                                    <li class="dropdown-club" id="nhlFlyers" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlFlyers" role="button">
                                         <img src="images/crests/nhl/nhlFlyers.png" alt="Philadelphia Flyers">
                                     </li>
-                                    <li class="dropdown-club" id="nhlPenguins" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlPenguins" role="button">
                                         <img src="images/crests/nhl/nhlPenguins.png" alt="Pittsburgh Penguins">
                                     </li>
-                                    <li class="dropdown-club" id="nhlSharks" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlSharks" role="button">
                                         <img src="images/crests/nhl/nhlSharks.png" alt="San Jose Sharks">
                                     </li>
-                                    <li class="dropdown-club" id="nhlBlues" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlBlues" role="button">
                                         <img src="images/crests/nhl/nhlBlues.png" alt="St. Louis Blues">
                                     </li>
-                                    <li class="dropdown-club" id="nhlTampa" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlTampa" role="button">
                                         <img src="images/crests/nhl/nhlTampa.png" alt="Tampa Bay Lightning">
                                     </li>
-                                    <li class="dropdown-club" id="nhlLeafs" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlLeafs" role="button">
                                         <img src="images/crests/nhl/nhlLeafs.png" alt="Toronto Maple Leafs">
                                     </li>
-                                    <li class="dropdown-club" id="nhlCanucks" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlCanucks" role="button">
                                         <img src="images/crests/nhl/nhlCanucks.png" alt="Vancouver Canucks">
                                     </li>
-                                    <li class="dropdown-club" id="nhlKnights" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlKnights" role="button">
                                         <img src="images/crests/nhl/nhlKnights.png" alt="Vegas Golden Knights">
                                     </li>
-                                    <li class="dropdown-club" id="nhlCapitals" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlCapitals" role="button">
                                         <img src="images/crests/nhl/nhlCapitals.png" alt="Washington Capitals">
                                     </li>
-                                    <li class="dropdown-club" id="nhlJets" role="button">
+                                    <li class="dropdown-item list-inline-item" id="nhlJets" role="button">
                                         <img src="images/crests/nhl/nhlJets.png" alt="Winnipeg Jets">
                                     </li>
-                                </div>
+                                </ul>
+                            </li>
                             
-                            <li class="dropdown-item d-sm-none d-block" href="contact.html">Contact</li>
+                            <li class="dropdown-item d-sm-none d-block" href="contact.html">Contact
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </div>
             <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
                 
             <div class="col-md-3 d-none d-sm-block head-social my-auto">
@@ -648,10 +711,10 @@
         defer
         src="scripts/map.js">
     </script>
-        <script 
+    <!--<script 
         async
         defer
         src="scripts/main.js">
-    </script>
+    </script>-->
 </body>
 </html>
