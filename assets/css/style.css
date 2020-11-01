@@ -85,6 +85,7 @@ header {
 .dropdown-menu {
     /* Overwrites default Bootstrap parameters */
     min-width: 560px;
+    /* needs to be centre-aligned on desktop and tablet mode only */
 }
 
 #dtSelector {
