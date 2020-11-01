@@ -203,6 +203,8 @@ footer {
     footer {
         display: none;
     }
+
+    /* will need to add some JS to force the dropdown to collapse once a club is selected */
 }
 
 @media (min-width: 576px) and (max-width: 940px) {
