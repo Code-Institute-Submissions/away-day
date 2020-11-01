@@ -1,13 +1,14 @@
 1 REMOVE MARKERS on clicking a different search icon
 2 REMOVE MARKERS on clicking a different club
 3 GET DIRECTIONS
-4 DROPDOWN STYLING reduce sizing - "Bugfix: horizontal dropdown working, just needs items resizing after click using main.js"
-5 DROPDOWN STYLING stays open when league is selected
+4 DROPDOWN STYLING centre-align ul on display
+5 DROPDOWN STYLING collapse on crest click (mobile)
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
     This will allow more map space on larger devices.
 7 INFO WINDOWS
 8 ALT TAGS ON IMGS
 9 NICE TO HAVE: drag club crest to logo to re-centre map to that club
 10: NICE TO HAVE: modal instead of contact page
+11: DARK MODE: JS to switch all elements with green to black, 
 11 README
 12 TESTING including Jasmine?

@@ -2,6 +2,8 @@
 
 Welcome to my interactive front-end development milestone project. For this project I chose to create Away Day, a website that harnesses Google APIs to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
 
+The idea behind this project is that the most dedicated sports fans will know their hometown inside out, but they can spend up to half of their time following their team away from home. AwayDay gives fans the best hotels, restaurants, pubs and cafes within a couple of clicks, taking the 
+
 ## User Experience
 
 ### Styling
@@ -11,7 +13,7 @@ Welcome to my interactive front-end development milestone project. For this proj
 - Colour Selection 
  - #8a2be2: purple/violet
  - #05e680: green
- - #ffffff: white
+ - #ffffff
 - Icons
 - Miscellaneous Design Decisions
 
@@ -28,7 +30,18 @@ Testing for each of the below user stories is included within the [testing log](
 ## Features
 
 ### Existing Features
-- locate ground for any Premier League or Championship club
+- locate ground for any club in the following leagues:
+    - Football/Soccer
+        - [English Championship](https://www.efl.com/clubs-and-competitions/sky-bet-championship/);
+        - [English Premier League](https://www.premierleague.com/);
+        - [German Bundesliga](https://www.bundesliga.com/en/bundesliga);
+        - [League of Ireland Premier Division](https://sseairtricityleague.ie/);
+    - Gaelic Football and Hurling
+        - [Gaelic Athletic Association](https://www.gaa.ie/);
+    - Ice Hockey
+        - [National Hockey League](https://www.nhl.com/);
+    - Rugby League
+        - [European Super League](https://superleague.co.uk/);
 - find pubs
 - find hotels
 - find nightclubs
@@ -38,6 +51,8 @@ Testing for each of the below user stories is included within the [testing log](
 
 - Share plans with friends
 - Rollout to more leagues, sports and countries
+- Fixture API implementation - the holy grail!
+- Travel API implementation
 
 ## Technologies Used
 
@@ -69,7 +84,9 @@ Testing for each of the below user stories is included within the [testing log](
     - 
 - [Google Maps Javascript API]()
     - 
-- [Google Location API]()
+- [Google Places API]()
+    - 
+- [Google Directions API]()
     - 
 
 ## Testing
