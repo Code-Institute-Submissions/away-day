@@ -47,10 +47,11 @@ Testing for each of the below user stories is included within the [testing log](
 - find nightclubs
 - get directions to ground from any location
 
-### Features to Implements
+### Features to Implement
 
 - Share plans with friends
-- Rollout to more leagues, sports and countries
+- Rollout to more leagues, sports and countries - main priorities are Pro14 and English Premiership rugby union, NFL, NBA, MLB, NRL and AFL
+- A wider league selection would certainly require a re-structure of the drop-down options, I think the format I've used is already at the limit of what it can display well
 - Fixture API implementation - the holy grail!
 - Travel API implementation
 
