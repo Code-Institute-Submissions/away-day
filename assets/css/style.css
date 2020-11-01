@@ -83,7 +83,8 @@ header {
 /* Drop-Down */
 
 .dropdown-menu {
-    min-width: 280px;
+    /* Overwrites default Bootstrap parameters */
+    min-width: 560px;
 }
 
 #dtSelector {
@@ -93,12 +94,12 @@ header {
 }
 
 #dtSelector:focus {
-    /* Overwrites btn-outline-secondary Bootstrap class properties */
+    /* Overwrites btn-outline-secondary Bootstrap class parameters */
     background-color: #8a2be2;
 }
 
 #dtSelector:hover {
-    /* Overwrites btn-outline-secondary Bootstrap class properties */
+    /* Overwrites btn-outline-secondary Bootstrap class parameters */
     background-color: #8a2be2;
 }
 
@@ -107,30 +108,30 @@ header {
     list-style: none;
 }
 
-.dropdown-item {
-    height: 50px;
-    text-align: center;
-    width: 50px;
-}
-
-.dropdown-item:hover {
-    background-color: #8a2be2;
-    color: #ffffff;
-}
-
-.dropdown-club {
-    height: 50px;
+#bunClublist .dropdown-item,
+#eplClublist .dropdown-item,
+#flcClublist .dropdown-item,
+#gaaClublist .dropdown-item,
+#loiClublist .dropdown-item,
+#nhlClublist .dropdown-item,
+#slrClublist .dropdown-item {
     display: inline;
-    width: 50px;
 }
 
-.dropdown-club img {
+.dropdown-item img {
     /* add small size increase animation */
-    margin: 2px;
+    border: 0px;
+    height: 50px;
+    margin: 0px;
 }
 
 #mobSelector {
     color: #ffffff;
+}
+
+.list-inline-item:not(:last-child) {
+    /* overwrites default list-inline-item Bootstrap parameters */
+    margin-right: .0rem;
 }
 
 /* Footer */
@@ -138,7 +139,9 @@ header {
 footer {
     /* needs to stick to bottom of page */
     background-color: #05e680;
+    bottom: 0;
     color: #ded9d9;
+    position: absolute;
 }
 
 .footer div {
@@ -176,6 +179,29 @@ footer {
 
     #footer-right {
         text-align: center;
+    }
+
+    .dropdown-menu {
+    /* Overwrites default Bootstrap parameters */
+        min-width: 100%;
+    }
+
+    #map-box {
+        /* removes whitespace for mobile display */
+        height: 60vh;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100vw;
+    }
+
+    #map-api {
+        /* Stretches map width to full screen for mobile display */
+        min-height: 100%;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
     }
 }
 
