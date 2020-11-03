@@ -63,9 +63,20 @@ header {
 #gaa-icon,
 #loi-icon,
 #nhl-icon,
-#slr-icon
- {
+#slr-icon {
     height: 40px;
+}
+
+
+#epl-icon:hover,
+#bun-icon:hover,
+#flc-icon:hover,
+#gaa-icon:hover,
+#loi-icon:hover,
+#nhl-icon:hover,
+#slr-icon:hover {
+    background-color: #8a2be2;
+    border-radius: 2px;
 }
 
 .head-social,
