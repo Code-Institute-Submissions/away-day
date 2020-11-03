@@ -5,10 +5,9 @@
 5 DROPDOWN STYLING collapse on crest click (mobile)
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
     This will allow more map space on larger devices.
-7 INFO WINDOWS
-8 ALT TAGS ON IMGS
-9 NICE TO HAVE: drag club crest to logo to re-centre map to that club
-10: NICE TO HAVE: modal instead of contact page
-11: DARK MODE: JS to switch all elements with green to black, 
+7 ALT TAGS ON IMGS
+8 NICE TO HAVE: drag club crest to logo to re-centre map to that club
+9: NICE TO HAVE: modal instead of contact page
+10: DARK MODE: JS to switch all elements with green to black, 
 11 README
 12 TESTING including Jasmine?
