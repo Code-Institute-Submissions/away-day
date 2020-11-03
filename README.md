@@ -1,4 +1,4 @@
-<img src="#">
+<img src="images/site/logo-64px.png">
 
 Welcome to my interactive front-end development milestone project. For this project I chose to create Away Day, a website that harnesses Google APIs to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
 
@@ -24,8 +24,9 @@ Testing for each of the below user stories is included within the [testing log](
 1. As a fan, I would like to get directions to the stadium;
 2. As a fan, I would like to find the nearest pub to the stadium;
 3. As a fan, I would like to find a hotel to stay in;
-4. 
-5. 
+4. I need to call or email a particular destination
+5. My club or league is missing, I'd like to ask the site owner to add them to the next release
+
 
 ## Features
 
@@ -58,41 +59,57 @@ Testing for each of the below user stories is included within the [testing log](
 ## Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-    - 
+    - HTML is the language used to display and structure information on any website.
+
 - [CSS3](https://en.wikipedia.org/wiki/CSS3)
-    - 
+    - Cascading Style Sheets is the language used to style HTML content.
+
 - [Bootstrap](https://getbootstrap.com/)
-    - 
+    - Bootstrap's grid framework helped me bring my initial wireframe ideas to life.
+
 - [Javascript](https://www.javascript.com/)
-    - 
+    - The language that makes the web interactive.
+
 - [jQuery](https://jquery.com/)
-    - 
+    - An open-source Javascript library that simplifies interactive web design.
+
 - [Font Awesome](https://fontawesome.com/)
-    - 
+    - Font Awesome's free package provides a comprehensive icon suite that is fully customisable in CSS.
+    
 - [Google Fonts](https://fonts.google.com/)
-    - 
-- [GitPod](https://www.gitpod.io/)
-    - 
+    - Google's free service provided countless fonts to help your project stand out.
+
+- [Gitpod](https://www.gitpod.io/)
+    - A software development editor perfect for personal or collaborative use.
+
 - [GitHub](https://www.github.com/)
-    - 
+    - The world's leading code-hosting platform.
+
 - [EmailJS](https://www.emailjs.com/)
-    - 
+    - Client-side Javascript software that I used to create the this project's contact form.
+
 - [Balsamiq](https://www.balsamiq.com/)
-    - 
+    - An intuitive drafting tool that enables visual planning at the start of a project.
+
 - [Pixlr](https://www.pixlr.com/)
-    - 
+    - Pixlr is a great free software package that enabled me to quickly pick out hex colors and edit images;
+
 - [Favicon.io](https://favicon.io/)
+    - A quick and easy tool to create favicons for display in the address bar.
+
+- [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/overview)
+    - Allows installation and customisation of Google's map engine, as well as a large amount of requests, for no fee.
+
+- [Google Places API](https://developers.google.com/places/web-service/overview/)
+    - Google's world-leading destination library can be bolted on to the initial Javascript API request to return the details of millions of locations worldwide.
+
+- [Google Routes API](https://cloud.google.com/maps-platform/routes)
     - 
-- [Google Maps Javascript API]()
-    - 
-- [Google Places API]()
-    - 
-- [Google Directions API]()
-    - 
+
 
 ## Testing
 
-I have included a testing log within the repository.
+I have included a [testing log](TESTING.md) within the repository.
 
 >>> In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while mobile devices always drop into col-12 formatting.
 
@@ -100,7 +117,7 @@ I have included a testing log within the repository.
 
 ## Deployment
 
->>> I used [GitHub](https://www.github.com/) as the host for this project, and [GitPod](https://www.gitpod.io/) to write it, using just one branch.
+I used [GitHub](https://www.github.com/) as the host for this project, and [GitPod](https://www.gitpod.io/) to write it, using just one branch.
 
 I deployed this project to GitHub Pages using the following method:
 
