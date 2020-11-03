@@ -3,7 +3,8 @@ sourced from Google API documentation (see README) unless otherwise stated */
 
 var map;
 var mapCenter;
-var infowindow;
+var infoWindow;
+var service;
 
 /* Map Customisers */
 
@@ -1103,13 +1104,13 @@ function initMap() {
             type: ['bar']
         };
 
-        let service = new google.maps.places.PlacesService(map);
+        service = new google.maps.places.PlacesService(map);
 
         service.nearbySearch(pubsRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 6; i++) {
-                    createMarker(results[i]);
+                    marker(results[i]);
                 }
                 /* pubsRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(pubsRequest.location);
@@ -1131,13 +1132,13 @@ function initMap() {
             type: ['restaurant']
         };
 
-        let service = new google.maps.places.PlacesService(map);
+        service = new google.maps.places.PlacesService(map);
 
         service.nearbySearch(foodRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 6; i++) {
-                    createMarker(results[i]);
+                    marker(results[i]);
                 }
                 /* foodRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(foodRequest.location);
@@ -1159,13 +1160,13 @@ function initMap() {
             type: ['lodging']
         };
 
-        let service = new google.maps.places.PlacesService(map);
+        service = new google.maps.places.PlacesService(map);
 
         service.nearbySearch(hotelRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 6; i++) {
-                    createMarker(results[i]);
+                    marker(results[i]);
                 }
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(hotelRequest.location);
@@ -1181,7 +1182,6 @@ function initMap() {
         let results = [];
         /* add in a line that clears any already existing markers */
 
-
         let cafeRequest = {
             location: map.getCenter(),
             radius: 1000,
@@ -1189,13 +1189,13 @@ function initMap() {
             type: ['cafe']
         };
 
-        let service = new google.maps.places.PlacesService(map);
+        service = new google.maps.places.PlacesService(map);
 
         service.nearbySearch(cafeRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 6; i++) {
-                    createMarker(results[i]);
+                    marker(results[i]);
                 }
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(cafeRequest.location);
@@ -1205,16 +1205,48 @@ function initMap() {
     });
 };
 
-/* This is the callback function for the creation of markers, source is the Code Labs tutorial in the README.md */
-/* Infowindows not currently working */
+/* The marker, showDetails and getDetails functions for the creation of markers, infoWindows 
+and sourcing photos are taken from the Code Labs tutorial in the README.md */
 
-function createMarker(place) {
+function marker(place) {
+    /* const imgcafe = {
+        url: "images/markers/bar.svg",
+        size: new google.maps.Size(20, 20),
+        origin: new google.maps.Point(0, 0)
+    }; */
+
     const marker = new google.maps.Marker({
         map,
+        animation: google.maps.Animation.DROP,
         position: place.geometry.location,
+        title: place.name
+        /* icon: imgcafe */
     });
+    
     google.maps.event.addListener(marker, "click", () => {
-        infowindow.setContent(place.name);
-        infowindow.open(map);
+        let request = {
+            placeId: place.place_id,
+            fields: ['name', 'formatted_address', 'geometry', 'rating',
+                'website', 'photos']
+        };
+
+        /* Only fetch the details of a place when the user clicks on a marker.
+        * If we fetch the details for all place results as soon as we get
+        * the search response, we will hit API rate limits. */
+        service.getDetails(request, (placeResult, status) => {
+        showDetails(placeResult, marker, status)
+        });
     });
-};
+}
+
+function showDetails(placeResult, marker) {
+    
+    let placeInfowindow = new google.maps.InfoWindow();
+        let rating = "None";
+        if (placeResult.rating) rating = placeResult.rating;
+        placeInfowindow.setContent('<div class><strong>' + placeResult.name +
+            '</strong><br>' + 'Rating: ' + rating + '<br><a href="' + placeResult.website + '"</a>Website</div>');
+        placeInfowindow.open(marker.map, marker);
+        currentInfoWindow.close();
+        currentInfoWindow = placeInfowindow;
+}
