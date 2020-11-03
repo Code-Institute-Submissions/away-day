@@ -8,12 +8,15 @@ The idea behind this project is that the most dedicated sports fans will know th
 
 ### Styling
 
-- Wireframes
-- Fonts
-- Colour Selection 
- - #8a2be2: purple/violet
- - #05e680: green
+- A [Balsamiq](https://www.balsamiq.com/) wireframe for this project is included in the repository, with [desktop/tablet](wireframes/ADdesktab.pdf) and [mobile](wireframes/ADmobile.pdf) versions.
+
+I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com/):
+
+ - #05e680 is a light green that is the primary colour of the site. I used the satellite setting of the Google Maps API, so I wanted something that provided a good contrast to this, as well as evoking a sports field.
+ - #8a2be2 is a violet that acts as a secondary colour, seen predominantly when hovering on links or items that customise the map. 
  - #ffffff
+
+- Fonts
 - Icons
 - Miscellaneous Design Decisions
 
