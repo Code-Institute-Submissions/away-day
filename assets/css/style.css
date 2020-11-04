@@ -22,6 +22,11 @@ a:hover {
     width: 90%;
 }
 
+.map-button:hover {
+    background-color: #8a2be2;
+    color: #ffffff;
+}
+
 /* Map */
 
 #map-api {
@@ -60,18 +65,6 @@ header {
 #nhl-icon,
 #slr-icon {
     height: 40px;
-}
-
-
-#epl-icon:hover,
-#bun-icon:hover,
-#flc-icon:hover,
-#gaa-icon:hover,
-#loi-icon:hover,
-#nhl-icon:hover,
-#slr-icon:hover {
-    background-color: #8a2be2;
-    border-radius: 2px;
 }
 
 .head-social,
