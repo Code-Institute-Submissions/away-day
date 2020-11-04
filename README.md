@@ -1,4 +1,4 @@
-<img src="images/site/logo-64px.png">
+<img src="images/site/namebar.PNG">
 
 Welcome to my interactive front-end development milestone project. For this project I chose to create Away Day, a website that harnesses Google APIs to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
 
