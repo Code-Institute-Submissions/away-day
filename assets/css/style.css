@@ -22,11 +22,6 @@ a:hover {
     width: 90%;
 }
 
-.map-button:hover {
-    background-color: #8a2be2;
-    color: #ffffff;
-}
-
 /* Map */
 
 #map-api {
