@@ -43,7 +43,6 @@ a:hover {
 
 header {
     background-color: #05e680;
-    color: #ded9d9;
 }
 
 .logo {
@@ -65,18 +64,6 @@ header {
 #nhl-icon,
 #slr-icon {
     height: 40px;
-}
-
-.head-social,
-.head-social a {
-    color: #ffffff;
-    word-spacing: 24px;
-    font-size: 36px;
-    text-align: right; /* unsure whether I prefer center to match buttons or right to match footer and logo */
-}
-
-.head-social a i:hover {
-    color: #8a2be2;
 }
 
 /* Drop-Down */
@@ -140,7 +127,7 @@ footer {
     /* needs to stick to bottom of page */
     background-color: #05e680;
     bottom: 0;
-    color: #ded9d9;
+    color: #ffffff;
     position: absolute;
 }
 
@@ -169,6 +156,10 @@ footer {
 /* Media Queries */
 
 @media (max-width: 575px) {
+    .navbar {
+        padding: 0;
+    }
+
     .map-button {
         width: 30%;
     }
@@ -198,10 +189,6 @@ footer {
         /* Stretches map width to full screen for mobile display */
         min-height: 100%;
         width: 100%;
-    }
-
-    footer {
-        display: none;
     }
 
     /* will need to add some JS to force the dropdown to collapse once a club is selected */

@@ -13,4 +13,5 @@
 12 firm up infoWindow content
 13 sort out mobile display of header
 14 sign up for share button
-15 remove background hover and add in JQuery to replace img src with purple version of league logo 
+15 remove background hover and add in JQuery to replace img src with purple version of league logo
+16 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
