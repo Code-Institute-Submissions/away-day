@@ -195,5 +195,40 @@ footer {
 }
 
 @media (min-width: 576px) and (max-width: 940px) {
+    .logo {
+        font-size: 36px;
+    }
 
+    #epl-icon,
+    #bun-icon,
+    #flc-icon,
+    #gaa-icon,
+    #loi-icon,
+    #nhl-icon,
+    #slr-icon {
+        height: 30px;
+    }
+
+    .map-button {
+        width: 30%;
+    }
+
+    .dropdown-menu {
+        /* Overwrites default Bootstrap parameters */
+        min-width: 100%;
+    }
+
+    #map-box {
+        /* removes whitespace for mobile display */
+        height: 60vh;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100vw;
+    }
+
+    #map-api {
+        /* Stretches map width to full screen for mobile display */
+        min-height: 100%;
+        width: 100%;
+    }
 }
