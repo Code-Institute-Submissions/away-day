@@ -1206,7 +1206,7 @@ function initMap() {
 };
 
 /* The marker, showDetails and getDetails functions for the creation of markers, infoWindows 
-and sourcing photos are taken from the Code Labs tutorial in the README.md */
+and sourcing photos below are taken from the Code Labs tutorial in the README.md */
 
 function marker(place) {
     /* const imgcafe = {
@@ -1230,9 +1230,7 @@ function marker(place) {
                 'website', 'photos']
         };
 
-        /* Only fetch the details of a place when the user clicks on a marker.
-        * If we fetch the details for all place results as soon as we get
-        * the search response, we will hit API rate limits. */
+        /* Returns details only after click to reduce API requests */
         service.getDetails(request, (placeResult, status) => {
         showDetails(placeResult, marker, status)
         });
@@ -1240,19 +1238,22 @@ function marker(place) {
 }
 
 function showDetails(placeResult, marker) {
-    
+
     let placeInfowindow = new google.maps.InfoWindow();
         let rating = "None";
         let placePhoto = placeResult.photos[0].getUrl();
         if (placeResult.rating) rating = placeResult.rating;
         placeInfowindow.setContent(
-            '<div class><strong>' + placeResult.name +
-            '</strong><br><img src="' + placePhoto + '" alt="' + placeResult.name + 
-            '" width="200px" height="200px"><br>' + 'Rating: ' + rating + '<br><a href="' 
-            + placeResult.website + '"</a>Website</div>');
+            '<div><div style="text-transform: uppercase; color: #8e2be2"><b>' + placeResult.name +
+            '</b></div><br><img src="' + placePhoto + '" alt="' + placeResult.name + 
+            '" width="200px" height="200px"><br><br>' + 'Rating: ' + rating + '<br><a href="' 
+            + placeResult.website + '" target="_blank" style="color: #05e680">Website</a></div>');
         placeInfowindow.open(marker.map, marker);
         /* needs code to close any open windows: look in section 4E of the tutorial for some ideas around adding classes then removing
         any items that contain said classes.*/
         currentInfoWindow.close();
         currentInfoWindow = placeInfowindow;
 }
+
+/* add event listener here to prompt map to recentre to relevant when clicking gm-ui-hover-effect*/
+
