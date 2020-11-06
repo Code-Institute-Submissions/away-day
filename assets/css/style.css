@@ -160,6 +160,47 @@ footer {
     color: #8a2be2;
 }
 
+/* Modal */
+
+.modal-content {
+    /* overrides Bootstrap defaults */
+    background-color: #5a6268;
+    border-radius: 5px;
+}
+
+.modal-header {
+    /* overrides Bootstrap defaults */
+    color: #05e680;
+}
+
+.btn-secondary {
+    /* overrides Bootstrap defaults */
+    background-color: #05e680;
+    color: #5a6268;
+}
+
+.btn-secondary:hover {
+    /* overrides Bootstrap defaults */
+    border-color: #05e680;
+}
+
+.form-control {
+    /* overrides Bootstrap defaults */
+    background-color: #ced4da;
+    margin: 3px;
+}
+
+.close {
+    /* overrides Bootstrap defaults */
+    color: #ced4da;
+    text-shadow: none;
+}
+
+.close:hover {
+    /* overrides Bootstrap defaults */
+    color: #05e680;
+}
+
 /* Media Queries */
 
 @media (max-width: 575px) {
