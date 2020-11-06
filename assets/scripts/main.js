@@ -135,9 +135,30 @@ $(document).ready(function() {
     $("dropdown-item").on("click",function() {
         $("#mobSelector").addClass("collapsed");
         $("#mobSelector").attr("aria-expanded", "false");
+        $("div #leagueSelection").removeClass("show");
     });
 
-    /* add on.click for mobile
+    /* Button highlights to indicate current selection */
+
+    $("#food").on("click", function() {
+        $(".map-button").css("background-color","#05e680");
+        $(this).css("background-color","#8a2be2");
+    });
+
+    $("#pubs").on("click", function() {
+        $(".map-button").css("background-color","#05e680");
+        $(this).css("background-color","#8a2be2");
+    });
+
+    $("#coffee").on("click", function() {
+        $(".map-button").css("background-color","#05e680");
+        $(this).css("background-color","#8a2be2");
+    });
+
+    $("#hotels").on("click", function() {
+        $(".map-button").css("background-color","05e680");
+        $(this).css("background-color","#8a2be2");
+    });
 
     /* add club crest animation down here */
 
