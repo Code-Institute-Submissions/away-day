@@ -23,6 +23,16 @@
         src="https://platform-api.sharethis.com/js/sharethis.js#property=5fa5586808fc500013d1f5f4&product=inline-share-buttons"
         async="async">
     </script>
+    <script 
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script
+        type="text/javascript">
+        (function() {
+            emailjs.init("user_W4dj8lHY3F2fCc19kl6tw");
+        })();
+    </script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
@@ -677,17 +687,45 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Got feedback for <span class="uppercase">AwayDay?</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form onsubmit="return sendMail(this);">
+                        <input
+                            type="text"
+                            name="name"
+                            id="full_name"
+                            class="form-control"
+                            placeholder="Name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            id="email_address"
+                            class="form-control"
+                            placeholder="Email"
+                            required
+                        />
+                        <textarea
+                            rows="5"
+                            name="feedback"
+                            id="feedback"
+                            class="form-control"
+                            placeholder="Feedback"
+                            required>
+                        </textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">
+                                    Send Request
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -732,6 +770,9 @@
         async
         defer
         src="assets/scripts/modal.js">
+    </script>
+    <script
+        src="assets/scripts/contact.js">
     </script>
 </body>
 </html>
