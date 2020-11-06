@@ -58,6 +58,87 @@ $(document).ready(function() {
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
     });
 
+    /* Click variant for mobile display */
+
+    $("#bunDrop").on("click",function() {
+        $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
+        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+    });
+
+    $("#eplDrop").on("click",function() {
+        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+        $("#epl-icon").attr("src", "images/dropdowns/epl-8a2be2.png");
+        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+    });
+
+    $("#flcDrop").on("click",function() {
+        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+        $("#flc-icon").attr("src", "images/dropdowns/flc-8a2be2.png");
+        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+    });
+
+    $("#gaaDrop").on("click",function() {
+        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+        $("#gaa-icon").attr("src", "images/dropdowns/gaa-8a2be2.png");
+        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+    });
+
+    $("#loiDrop").on("click",function() {
+        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+        $("#loi-icon").attr("src", "images/dropdowns/loi-8a2be2.png");
+        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+    });
+
+    $("#nhlDrop").on("click",function() {
+        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+        $("#nhl-icon").attr("src", "images/dropdowns/nhl-8a2be2.png");
+        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+    });
+
+    $("#slrDrop").on("click",function() {
+        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+        $("#slr-icon").attr("src", "images/dropdowns/slr-8a2be2.png");
+    });
+
+    /* add on.click for dropdown collapse not working  yet */
+
+    $("dropdown-item").on("click",function() {
+        $("#mobSelector").addClass("collapsed");
+        $("#mobSelector").attr("aria-expanded", "false");
+    });
+
+    /* add on.click for mobile
+
     /* add club crest animation down here */
-    
+
 });

@@ -1248,6 +1248,7 @@ function showDetails(placeResult, marker) {
         placeInfowindow.open(marker.map, marker);
         /* needs code to close any open windows: look in section 4E of the tutorial for some ideas around adding classes then removing
         any items that contain said classes.*/
+        /* picture needs to be smaller on mobile display */
         currentInfoWindow.close();
         currentInfoWindow = placeInfowindow;
 }
