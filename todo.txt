@@ -5,9 +5,8 @@
 5 DROPDOWN STYLING collapse on crest click (mobile)
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
     This will allow more map space on larger devices. 
-7 NICE TO HAVE modal instead of contact page
-8 NICE TO HAVE DARK MODE: JS to switch all elements with green to black, 
-9 README
-10 sort out mobile display of header
-12 share button integration
-13 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
+7 NICE TO HAVE DARK MODE: JS to switch all elements with green to black, 
+8 README
+9 sort out mobile display of header
+10 share button integration
+11 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
