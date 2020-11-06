@@ -9,6 +9,10 @@ body {
     text-transform: lowercase;
 }
 
+a {
+    color: #ffffff;
+}
+
 a:hover {
     color: #8a2be2;
     text-decoration: none;

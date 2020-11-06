@@ -1,14 +1,13 @@
 1 REMOVE MARKERS on clicking a different search icon or club
 2 REMOVE MARKERS on clicking a different club
-3 GET DIRECTIONS
+3 SEARCH BAR
+4 FAIL WHALE PAGE
 5 DROPDOWN STYLING collapse on crest click (mobile)
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
     This will allow more map space on larger devices. 
-7: NICE TO HAVE: modal instead of contact page
-8: NICE TO HAVE DARK MODE: JS to switch all elements with green to black, 
+7 NICE TO HAVE modal instead of contact page
+8 NICE TO HAVE DARK MODE: JS to switch all elements with green to black, 
 9 README
-10 TESTING including Jasmine?
-11 change caret colour on dropdown
-13 sort out mobile display of header
-14 sign up for share button
-16 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
+10 sort out mobile display of header
+12 share button integration
+13 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked

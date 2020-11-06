@@ -1,1 +1,0 @@
-/* Automated testing to go here */
