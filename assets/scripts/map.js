@@ -1,6 +1,3 @@
-/* initMap function taken from Code Institute tutorial, all other information
-sourced from Google API documentation (see README) unless otherwise stated */
-
 var map;
 var mapCenter;
 var infoWindow;
@@ -328,6 +325,7 @@ const loiWaterf = document.getElementById("loiWaterf");
 const loiWaterfLL = {lat: 52.245894, lng: -7.125159};
 
 /* Map Setup */
+/* initMap function taken from Code Institute tutorial */
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map-api"), {
@@ -1085,7 +1083,7 @@ function initMap() {
         map.setZoom(16);
     });
 
-    /* Places Customisation - most code here is taken from the Google API and Google Code Labs tutorials found in the README */
+    /* Places Customisation - code here roughly follows Google API and Google Code Labs tutorials found in the README */
 
     google.maps.event.addDomListener(directions, 'click', function() {
         console.log("DIRECTIONS SUCCESS");
@@ -1109,7 +1107,7 @@ function initMap() {
         service.nearbySearch(pubsRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
-                for (let i = 0; i < 6; i++) {
+                for (let i = 0; i < 5; i++) {
                     marker(results[i]);
                 }
                 /* pubsRequest.location allows the map to stay centred on the stadium chosen */
@@ -1137,7 +1135,7 @@ function initMap() {
         service.nearbySearch(foodRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
-                for (let i = 0; i < 6; i++) {
+                for (let i = 0; i < 5; i++) {
                     marker(results[i]);
                 }
                 /* foodRequest.location allows the map to stay centred on the stadium chosen */
@@ -1165,7 +1163,7 @@ function initMap() {
         service.nearbySearch(hotelRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
-                for (let i = 0; i < 6; i++) {
+                for (let i = 0; i < 5; i++) {
                     marker(results[i]);
                 }
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
@@ -1179,7 +1177,6 @@ function initMap() {
 
     google.maps.event.addDomListener(coffee, 'click', function() {
         console.log("CAFE SUCCESS");
-        let results = [];
         /* add in a line that clears any already existing markers */
 
         let cafeRequest = {
@@ -1194,7 +1191,7 @@ function initMap() {
         service.nearbySearch(cafeRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
-                for (let i = 0; i < 6; i++) {
+                for (let i = 0; i < 5; i++) {
                     marker(results[i]);
                 }
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
