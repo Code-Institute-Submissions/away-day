@@ -102,14 +102,15 @@ header {
 #loiClublist .dropdown-item,
 #nhlClublist .dropdown-item,
 #slrClublist .dropdown-item {
+    /* padding removal overwrites some default Bootstrap styling that was throwing out the alignment */
     display: inline;
+    padding: 0;
 }
 
 .dropdown-item img {
     /* add small size increase animation */
-    border: 0px 10px 0px 10px;
     height: 50px;
-    margin: 0px;
+    margin: 5px;
 }
 
 #mobSelector {
