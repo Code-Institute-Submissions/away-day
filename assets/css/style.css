@@ -70,7 +70,9 @@ header {
 
 .dropdown-menu {
     /* Overwrites default Bootstrap parameters */
-    min-width: 560px;
+    border: 2px solid #8a2be2;
+    min-width: 480px;
+    padding: .5rem;
     /* needs to be centre-aligned on desktop and tablet mode only */
 }
 
