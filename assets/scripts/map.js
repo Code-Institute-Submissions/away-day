@@ -7,7 +7,6 @@ var service;
 
 /* Map Customisers */
 
-const directions = document.getElementById("directions");
 const food = document.getElementById("food");
 const pubs = document.getElementById("pubs");
 const hotels = document.getElementById("hotels");
@@ -327,6 +326,7 @@ const loiWaterf = document.getElementById("loiWaterf");
 const loiWaterfLL = {lat: 52.245894, lng: -7.125159};
 
 /* Map Setup */
+
 /* initMap function taken from Code Institute tutorial */
 
 function initMap() {
@@ -338,7 +338,7 @@ function initMap() {
             },
         mapTypeId: 'hybrid'
         });
-
+    
     /* Event Listeners */
 
     /* Bundesliga */
@@ -1085,11 +1085,69 @@ function initMap() {
         map.setZoom(16);
     });
 
-    /* Places Customisation - code here roughly follows Google API and Google Code Labs tutorials found in the README */
+    /* Search Box Setup */
 
-    google.maps.event.addDomListener(directions, 'click', function() {
-        console.log("DIRECTIONS SUCCESS");
+    const input = document.getElementById("pac-input");
+    const searchBox = new google.maps.places.SearchBox(input);
+    /* map.controls[google.maps.ControlPosition.TOP_LEFT].push(input); This code is in the original tutorial, I've removed it */ 
+
+    // Bias the SearchBox results towards current map's viewport.
+    map.addListener("bounds_changed", () => {
+        searchBox.setBounds(map.getBounds());
     });
+    let markers = [];
+
+    // Listen for the event fired when the user selects a prediction and retrieve more details for that place.
+    searchBox.addListener("places_changed", () => {
+        const places = searchBox.getPlaces();
+
+        if (places.length == 0) {
+            return;
+        }
+
+        // Clear out the old markers.
+        markers.forEach((marker) => {
+            marker.setMap(null);
+        });
+        markers = [];
+
+        // For each place, get the icon, name and location.
+        const bounds = new google.maps.LatLngBounds();
+        places.forEach((place) => {
+            if (!place.geometry) {
+                console.log("Returned place contains no geometry");
+            return;
+            }
+            const icon = {
+                url: place.icon,
+                size: new google.maps.Size(71, 71),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(25, 25),
+            };
+
+            // Create a marker for each place.
+            markers.push(
+                new google.maps.Marker({
+                    map,
+                    icon,
+                    title: place.name,
+                    position: place.geometry.location,
+                })
+            );
+
+            if (place.geometry.viewport) {
+                // Only geocodes have viewport.
+                bounds.union(place.geometry.viewport);
+            } else {
+                bounds.extend(place.geometry.location);
+            }
+        });
+    map.fitBounds(bounds);
+    });
+
+
+    /* Places Customisation - code here roughly follows Google API and Google Code Labs tutorials found in the README */
 
     /* Event Listener and Marker Creation for Pubs */
 
