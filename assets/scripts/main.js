@@ -1,7 +1,4 @@
-/* Scripts for page interactivity */
-
 /* Drop-Downs */
-
 $(document).ready(function() {
     /* Change of icon when cursor enters a league dropdown */
     $("#bunDrop").on("mouseenter",function() {
@@ -63,96 +60,99 @@ $(document).ready(function() {
 
     /* Click variant for mobile display */
 
-    $("#bunDrop").on("click",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
-        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
-        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
-        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
-        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
-        /* below resets all dropdowns to white in case any have previously been selected */
-        $(".dropdown-toggle").css("color", "#ffffff");
-        $("#bunDropdown").css("color", "#8a2be2");
-    });
+    if ($(window).width() < 576) {
+        
+        $("#bunDropdown").on("click",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
+            $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+            $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+            $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+            $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+            /* below resets all dropdowns to white in case any have previously been selected */
+            $(".dropdown-toggle").css("color", "#ffffff");
+            $("#bunDropdown").css("color", "#8a2be2");
+        });
 
-    $("#eplDrop").on("click",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
-        $("#epl-icon").attr("src", "images/dropdowns/epl-8a2be2.png");
-        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
-        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
-        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
-        /* below resets all dropdowns to white in case any have previously been selected */
-        $(".dropdown-toggle").css("color", "#ffffff");
-        $("#eplDropdown").css("color", "#8a2be2");
-    });
+        $("#eplDropdown").on("click",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+            $("#epl-icon").attr("src", "images/dropdowns/epl-8a2be2.png");
+            $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+            $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+            $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+            /* below resets all dropdowns to white in case any have previously been selected */
+            $(".dropdown-toggle").css("color", "#ffffff");
+            $("#eplDropdown").css("color", "#8a2be2");
+        });
 
-    $("#flcDrop").on("click",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
-        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
-        $("#flc-icon").attr("src", "images/dropdowns/flc-8a2be2.png");
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
-        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
-        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
-        /* below resets all dropdowns to white in case any have previously been selected */
-        $(".dropdown-toggle").css("color", "#ffffff");
-        $("#flcDropdown").css("color", "#8a2be2");
-    });
+        $("#flcDropdown").on("click",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+            $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+            $("#flc-icon").attr("src", "images/dropdowns/flc-8a2be2.png");
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+            $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+            $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+            /* below resets all dropdowns to white in case any have previously been selected */
+            $(".dropdown-toggle").css("color", "#ffffff");
+            $("#flcDropdown").css("color", "#8a2be2");
+        });
 
-    $("#gaaDrop").on("click",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
-        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
-        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-8a2be2.png");
-        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
-        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
-        /* below resets all dropdowns to white in case any have previously been selected */
-        $(".dropdown-toggle").css("color", "#ffffff");
-        $("#gaaDropdown").css("color", "#8a2be2");
-    });
+        $("#gaaDropdown").on("click",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+            $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+            $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-8a2be2.png");
+            $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+            $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+            /* below resets all dropdowns to white in case any have previously been selected */
+            $(".dropdown-toggle").css("color", "#ffffff");
+            $("#gaaDropdown").css("color", "#8a2be2");
+        });
 
-    $("#loiDrop").on("click",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
-        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
-        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
-        $("#loi-icon").attr("src", "images/dropdowns/loi-8a2be2.png");
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
-        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
-        /* below resets all dropdowns to white in case any have previously been selected */
-        $(".dropdown-toggle").css("color", "#ffffff");
-        $("#loiDropdown").css("color", "#8a2be2");
-    });
+        $("#loiDropdown").on("click",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+            $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+            $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+            $("#loi-icon").attr("src", "images/dropdowns/loi-8a2be2.png");
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+            $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+            /* below resets all dropdowns to white in case any have previously been selected */
+            $(".dropdown-toggle").css("color", "#ffffff");
+            $("#loiDropdown").css("color", "#8a2be2");
+        });
 
-    $("#nhlDrop").on("click",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
-        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
-        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
-        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-8a2be2.png");
-        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
-        /* below resets all dropdowns to white in case any have previously been selected */
-        $(".dropdown-toggle").css("color", "#ffffff");
-        $("#nhlDropdown").css("color", "#8a2be2");
-    });
+        $("#nhlDropdown").on("click",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+            $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+            $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+            $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-8a2be2.png");
+            $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+            /* below resets all dropdowns to white in case any have previously been selected */
+            $(".dropdown-toggle").css("color", "#ffffff");
+            $("#nhlDropdown").css("color", "#8a2be2");
+        });
 
-    $("#slrDrop").on("click",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
-        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
-        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
-        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
-        $("#slr-icon").attr("src", "images/dropdowns/slr-8a2be2.png");
-        /* below resets all dropdowns to white in case any have previously been selected */
-        $(".dropdown-toggle").css("color", "#ffffff");
-        $("#slrDropdown").css("color", "#8a2be2");
-    });
+        $("#slrDropdown").on("click",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+            $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+            $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+            $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+            $("#slr-icon").attr("src", "images/dropdowns/slr-8a2be2.png");
+            /* below resets all dropdowns to white in case any have previously been selected */
+            $(".dropdown-toggle").css("color", "#ffffff");
+            $("#slrDropdown").css("color", "#8a2be2");
+        });
+    };
 
     /* Dropdown collapse for mobile - not working yet */
 

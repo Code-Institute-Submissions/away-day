@@ -80,11 +80,6 @@ header {
     /* needs to be centre-aligned on desktop and tablet mode only */
 }
 
-.dropdown-submenu {
-    /* Removes bullet points from club lists */
-    list-style: none;
-}
-
 #bunClublist .dropdown-item,
 #eplClublist .dropdown-item,
 #flcClublist .dropdown-item,
