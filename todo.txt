@@ -4,9 +4,8 @@
 4 FAIL WHALE PAGE
 5 DROPDOWN STYLING collapse on crest click (mobile), mobile click styling to purple not working on last four leagues
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
-    This will allow more map space on larger devices. 
-7 NICE TO HAVE DARK MODE: JS to switch all elements with green to black, 
-8 README
-9 sort out mobile display of header
-10 share button integration
-11 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
+    This will allow more map space on larger devices.  
+7 README and TESTING
+8 sort out mobile display of header
+9 share button integration
+10 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
