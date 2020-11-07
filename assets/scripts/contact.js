@@ -1,4 +1,7 @@
+/* EmailJS requests */
+
 /* Copied from the Code Institute resume tutorial */
+
 function sendMail(contactForm) {
     emailjs.send("gmail", "template_vn6mied", {
         "name": contactForm.name.value, 
@@ -6,7 +9,7 @@ function sendMail(contactForm) {
         "feedback": contactForm.feedback.value
     })
     .then(
-        /* below console.logs are to test item */
+        /* Test responses */
         function(response) {
             console.log("SUCCESS", response);
         },

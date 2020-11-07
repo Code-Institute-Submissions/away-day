@@ -1,3 +1,5 @@
+/* Scripts for map-specific interactivity */
+
 var map;
 var mapCenter;
 var infoWindow;

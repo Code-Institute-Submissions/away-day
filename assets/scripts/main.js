@@ -1,4 +1,7 @@
+/* Scripts for page interactivity */
+
 /* Drop-Downs */
+
 $(document).ready(function() {
     /* Change of icon when cursor enters a league dropdown */
     $("#bunDrop").on("mouseenter",function() {
