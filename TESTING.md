@@ -7,7 +7,7 @@
 rules up in an attempt to force them elements to do what I wanted, but eventually realised the power of the Element Inspector
 in the browser and simply turned parameters on and off again until I found the solution that I needed. Some of the links I
 have [credited](README.md) helped me realise that with CSS there rule is often 'less is more'.
-- Harnessing power of Google Maps, getting and setting properties
+- Harnessing power of Google Maps, getting and setting properties, displaying markers and information
 - 
 - 
 - 
@@ -23,6 +23,7 @@ this unfixed as time was at a premium.
 - Mobile header display
 - ShareThis
 - Collapse dropdown on crest click (mobile only)
+- Remove markers upon new club or place search
 
 ## Validation
 
