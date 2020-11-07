@@ -1087,7 +1087,7 @@ function initMap() {
 
     /* Search Box Setup */
 
-    const input = document.getElementById("pac-input");
+    const input = document.getElementById("custom-input");
     const searchBox = new google.maps.places.SearchBox(input);
     /* map.controls[google.maps.ControlPosition.TOP_LEFT].push(input); This code is in the original tutorial, I've removed it */ 
 
@@ -1145,7 +1145,6 @@ function initMap() {
         });
     map.fitBounds(bounds);
     });
-
 
     /* Places Customisation - code here roughly follows Google API and Google Code Labs tutorials found in the README */
 
@@ -1266,18 +1265,20 @@ function initMap() {
 and sourcing photos below are taken from the Code Labs tutorial in the README.md */
 
 function marker(place) {
-    /* const imgcafe = {
-        url: "images/markers/bar.svg",
-        size: new google.maps.Size(20, 20),
-        origin: new google.maps.Point(0, 0)
-    }; */
+    const icon = {
+        url: place.icon,
+        size: new google.maps.Size(71, 71),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17, 34),
+        scaledSize: new google.maps.Size(25, 25),
+    };
 
     const marker = new google.maps.Marker({
         map,
+        icon,
         animation: google.maps.Animation.DROP,
         position: place.geometry.location,
         title: place.name
-        /* icon: imgcafe */
     });
     
     google.maps.event.addListener(marker, "click", () => {
@@ -1285,6 +1286,7 @@ function marker(place) {
             placeId: place.place_id,
             fields: ['name', 'formatted_address', 'geometry', 'rating',
                 'website', 'photos']
+            /* needs an event handler in case one of the fields is undefined */
         };
 
         /* Returns details only after click to reduce API requests */
