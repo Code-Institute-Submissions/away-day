@@ -68,6 +68,9 @@ $(document).ready(function() {
         $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
         $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+        /* below resets all dropdowns to white in case any have previously been selected */
+        $(".dropdown-toggle").css("color", "#ffffff");
+        $("#bunDropdown").css("color", "#8a2be2");
     });
 
     $("#eplDrop").on("click",function() {
@@ -78,6 +81,9 @@ $(document).ready(function() {
         $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
         $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+        /* below resets all dropdowns to white in case any have previously been selected */
+        $(".dropdown-toggle").css("color", "#ffffff");
+        $("#eplDropdown").css("color", "#8a2be2");
     });
 
     $("#flcDrop").on("click",function() {
@@ -88,6 +94,9 @@ $(document).ready(function() {
         $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
         $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+        /* below resets all dropdowns to white in case any have previously been selected */
+        $(".dropdown-toggle").css("color", "#ffffff");
+        $("#flcDropdown").css("color", "#8a2be2");
     });
 
     $("#gaaDrop").on("click",function() {
@@ -98,6 +107,9 @@ $(document).ready(function() {
         $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
         $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+        /* below resets all dropdowns to white in case any have previously been selected */
+        $(".dropdown-toggle").css("color", "#ffffff");
+        $("#gaaDrop").css("color", "#8a2be2");
     });
 
     $("#loiDrop").on("click",function() {
@@ -108,6 +120,9 @@ $(document).ready(function() {
         $("#loi-icon").attr("src", "images/dropdowns/loi-8a2be2.png");
         $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+        /* below resets all dropdowns to white in case any have previously been selected */
+        $(".dropdown-toggle").css("color", "#ffffff");
+        $("#loiDrop").css("color", "#8a2be2");
     });
 
     $("#nhlDrop").on("click",function() {
@@ -118,6 +133,9 @@ $(document).ready(function() {
         $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
         $("#nhl-icon").attr("src", "images/dropdowns/nhl-8a2be2.png");
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+        /* below resets all dropdowns to white in case any have previously been selected */
+        $(".dropdown-toggle").css("color", "#ffffff");
+        $("#nhlDrop").css("color", "#8a2be2");
     });
 
     $("#slrDrop").on("click",function() {
@@ -128,9 +146,12 @@ $(document).ready(function() {
         $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
         $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
         $("#slr-icon").attr("src", "images/dropdowns/slr-8a2be2.png");
+        /* below resets all dropdowns to white in case any have previously been selected */
+        $(".dropdown-toggle").css("color", "#ffffff");
+        $("#slrDrop").css("color", "#8a2be2");
     });
 
-    /* add on.click for dropdown collapse not working  yet */
+    /* Dropdown collapse for mobile - not working yet */
 
     $("dropdown-item").on("click",function() {
         $("#mobSelector").addClass("collapsed");
