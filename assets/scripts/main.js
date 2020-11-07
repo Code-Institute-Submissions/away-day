@@ -109,7 +109,7 @@ $(document).ready(function() {
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
         /* below resets all dropdowns to white in case any have previously been selected */
         $(".dropdown-toggle").css("color", "#ffffff");
-        $("#gaaDrop").css("color", "#8a2be2");
+        $("#gaaDropdown").css("color", "#8a2be2");
     });
 
     $("#loiDrop").on("click",function() {
@@ -122,7 +122,7 @@ $(document).ready(function() {
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
         /* below resets all dropdowns to white in case any have previously been selected */
         $(".dropdown-toggle").css("color", "#ffffff");
-        $("#loiDrop").css("color", "#8a2be2");
+        $("#loiDropdown").css("color", "#8a2be2");
     });
 
     $("#nhlDrop").on("click",function() {
@@ -135,7 +135,7 @@ $(document).ready(function() {
         $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
         /* below resets all dropdowns to white in case any have previously been selected */
         $(".dropdown-toggle").css("color", "#ffffff");
-        $("#nhlDrop").css("color", "#8a2be2");
+        $("#nhlDropdown").css("color", "#8a2be2");
     });
 
     $("#slrDrop").on("click",function() {
@@ -148,7 +148,7 @@ $(document).ready(function() {
         $("#slr-icon").attr("src", "images/dropdowns/slr-8a2be2.png");
         /* below resets all dropdowns to white in case any have previously been selected */
         $(".dropdown-toggle").css("color", "#ffffff");
-        $("#slrDrop").css("color", "#8a2be2");
+        $("#slrDropdown").css("color", "#8a2be2");
     });
 
     /* Dropdown collapse for mobile - not working yet */
