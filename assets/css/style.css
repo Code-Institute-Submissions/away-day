@@ -135,7 +135,7 @@ footer {
     background-color: #05e680;
     bottom: 0;
     color: #ffffff;
-    position: absolute;
+    position: fixed;
 }
 
 .footer div {
