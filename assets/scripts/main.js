@@ -1,65 +1,70 @@
-/* Drop-Downs */
+/* Site interactivity */
+
+/* Drop-down interactivity for desktop and tablets */
 $(document).ready(function() {
-    /* Change of icon when cursor enters a league dropdown */
-    $("#bunDrop").on("mouseenter",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
+    if ($(window).width() > 575) {
+        /* Change of icon when cursor enters a league dropdown */
+        $("#bunDrop").on("mouseenter",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
+        });
+
+        $("#eplDrop").on("mouseenter",function() {
+            $("#epl-icon").attr("src", "images/dropdowns/epl-8a2be2.png");
+        });
+
+        $("#flcDrop").on("mouseenter",function() {
+            $("#flc-icon").attr("src", "images/dropdowns/flc-8a2be2.png");
+        });
+
+        $("#gaaDrop").on("mouseenter",function() {
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-8a2be2.png");
+        });
+
+        $("#loiDrop").on("mouseenter",function() {
+            $("#loi-icon").attr("src", "images/dropdowns/loi-8a2be2.png") ;
+        });
+
+        $("#nhlDrop").on("mouseenter",function() {
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-8a2be2.png");
+        });
+
+        $("#slrDrop").on("mouseenter",function() {
+            $("#slr-icon").attr("src", "images/dropdowns/slr-8a2be2.png");
+        });
+
+        /* Change back to default icon upon cursor exit */
+        $("#bunDropdown").on("mouseleave",function() {
+            $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
+        });
+
+        $("#eplDropdown").on("mouseleave",function() {
+            $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
+        });
+
+        $("#flcDropdown").on("mouseleave",function() {
+            $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
+        });
+
+        $("#gaaDropdown").on("mouseleave",function() {
+            $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
+        });
+
+        $("#loiDropdown").on("mouseleave",function() {
+            $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
+        });
+
+        $("#nhlDropdown").on("mouseleave",function() {
+            $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
+        });
+
+        $("#slrDropdown").on("mouseleave",function() {
+            $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
     });
+    }
+});
 
-    $("#eplDrop").on("mouseenter",function() {
-        $("#epl-icon").attr("src", "images/dropdowns/epl-8a2be2.png");
-    });
-
-    $("#flcDrop").on("mouseenter",function() {
-        $("#flc-icon").attr("src", "images/dropdowns/flc-8a2be2.png");
-    });
-
-    $("#gaaDrop").on("mouseenter",function() {
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-8a2be2.png");
-    });
-
-    $("#loiDrop").on("mouseenter",function() {
-        $("#loi-icon").attr("src", "images/dropdowns/loi-8a2be2.png") ;
-    });
-
-    $("#nhlDrop").on("mouseenter",function() {
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-8a2be2.png");
-    });
-
-    $("#slrDrop").on("mouseenter",function() {
-        $("#slr-icon").attr("src", "images/dropdowns/slr-8a2be2.png");
-    });
-
-    /* Changes back to default icon upon cursor exit */
-    $("#bunDrop").on("mouseleave",function() {
-        $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
-    });
-
-    $("#eplDrop").on("mouseleave",function() {
-        $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
-    });
-
-    $("#flcDrop").on("mouseleave",function() {
-        $("#flc-icon").attr("src", "images/dropdowns/flc-ffffff.png");
-    });
-
-    $("#gaaDrop").on("mouseleave",function() {
-        $("#gaa-icon").attr("src", "images/dropdowns/gaa-ffffff.png");
-    });
-
-    $("#loiDrop").on("mouseleave",function() {
-        $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
-    });
-
-    $("#nhlDrop").on("mouseleave",function() {
-        $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
-    });
-
-    $("#slrDrop").on("mouseleave",function() {
-        $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
-    });
-
-    /* Click variant for mobile display */
-
+/* Drop-down interactivity for mobile display */
+$(document).ready(function() {
     if ($(window).width() < 576) {
         
         $("#bunDropdown").on("click",function() {
@@ -155,15 +160,15 @@ $(document).ready(function() {
     };
 
     /* Dropdown collapse for mobile - not working yet */
-
     $("dropdown-item").on("click",function() {
         $("#mobSelector").addClass("collapsed");
         $("#mobSelector").attr("aria-expanded", "false");
         $("div #leagueSelection").removeClass("show");
     });
+});
 
     /* Button highlights to indicate current selection */
-
+$(document).ready(function() {
     $("#food").on("click", function() {
         $(".map-button").css("background-color","#05e680");
         $(this).css("background-color","#8a2be2");
@@ -183,7 +188,6 @@ $(document).ready(function() {
         $(".map-button").css("background-color","05e680");
         $(this).css("background-color","#8a2be2");
     });
-
-    /* add club crest animation down here */
-
 });
+
+/* add club crest animation down here */
