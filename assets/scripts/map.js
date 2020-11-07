@@ -1243,10 +1243,17 @@ function showDetails(placeResult, marker) {
         let placePhoto = placeResult.photos[0].getUrl();
         if (placeResult.rating) rating = placeResult.rating;
         placeInfowindow.setContent(
-            '<div><div style="text-transform: uppercase; color: #8e2be2"><b>' + placeResult.name +
-            '</b></div><br><img src="' + placePhoto + '" alt="' + placeResult.name + 
-            '" width="200px" height="200px"><br><br>' + 'Rating: ' + rating + '<br><a href="' 
-            + placeResult.website + '" target="_blank" style="color: #05e680">Website</a><br></div>');
+            `<div>
+                <div style="text-transform: uppercase; color: #8e2be2"><b>${placeResult.name}</b></div>
+                <br>
+                <img src="${placePhoto}" alt="${placeResult.name}" width="200px" height="200px">
+                <br>
+                <br>
+                Rating: ${rating}
+                <br>
+                <a href="${placeResult.website}" target="_blank" style="color: #05e680">Website</a>
+                <br>
+                </div>`);
         placeInfowindow.open(marker.map, marker);
         /* needs code to close any open windows: look in section 4E of the tutorial for some ideas around adding classes then removing
         any items that contain said classes.*/
