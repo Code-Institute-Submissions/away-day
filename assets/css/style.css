@@ -80,22 +80,6 @@ header {
     /* needs to be centre-aligned on desktop and tablet mode only */
 }
 
-#dtSelector {
-    /* Overwrites btn-outline-secondary Bootstrap outline */
-    border-color: #ffffff;
-    color: #ffffff;
-}
-
-#dtSelector:focus {
-    /* Overwrites btn-outline-secondary Bootstrap class parameters */
-    background-color: #8a2be2;
-}
-
-#dtSelector:hover {
-    /* Overwrites btn-outline-secondary Bootstrap class parameters */
-    background-color: #8a2be2;
-}
-
 .dropdown-submenu {
     /* Removes bullet points from club lists */
     list-style: none;
@@ -206,6 +190,10 @@ footer {
 @media (max-width: 575px) {
     .navbar {
         padding: 0;
+    }
+
+    .logo {
+        font-size: 36px;
     }
 
     .map-button {
