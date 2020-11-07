@@ -2,7 +2,7 @@
 2 REMOVE MARKERS on clicking a different club
 3 SEARCH BAR
 4 FAIL WHALE PAGE
-5 DROPDOWN STYLING collapse on crest click (mobile)
+5 DROPDOWN STYLING collapse on crest click (mobile), mobile click styling to purple not working on last four leagues
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
     This will allow more map space on larger devices. 
 7 NICE TO HAVE DARK MODE: JS to switch all elements with green to black, 
