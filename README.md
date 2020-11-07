@@ -124,23 +124,23 @@ I used [GitHub](https://www.github.com/) as the host for this project, and [GitP
 
 I deployed this project to GitHub Pages using the following method:
 
-    Locate the desired repository in your repository list and open it;
-    Navigate to the Settings heading in the repository heading;
-    Locate the GitHub Pages heading at the bottom of the page;
-    Click the button beneath the Source sub-heading and change this from 'None' to 'Master Branch';
-    Once the page reloads, locate the GitHub Pages heading again;
-    If successful, a green box will appear beneath the heading with the link to your deployed page;
-    This page will only update with new content once that content has been pushed from your developer environment.
+1. Locate the desired repository in your repository list and open it;
+2. Navigate to the Settings heading in the repository heading;
+3. Locate the GitHub Pages heading at the bottom of the page;
+4. Click the button beneath the Source sub-heading and change this from 'None' to 'Master Branch';
+5. Once the page reloads, locate the GitHub Pages heading again;
+6. If successful, a green box will appear beneath the heading with the link to your deployed page;
+7. This page will only update with new content once that content has been pushed from your developer environment.
 
 ### Cloning
 
 Assuming you already have Git [installed](https://git-scm.com/download/), anybody can clone this repository by following these steps:
 
-    Open the command prompt/terminal on your machine;
-    Type the command 'cd' followed by the directory you wish to store the repository in;
-    Go to the top of the [GitHub repository](https://github.com/kiehozero/away-day/) and click the green 'Code' drop-down button;
-    Copy the [link provided](https://github.com/kiehozero/away-day.git);
-    Return to the Command Prompt and type 'git clone' followed by the copied address.
+- Open the command prompt/terminal on your machine;
+- Type the command 'cd' followed by the directory you wish to store the repository in;
+- Go to the top of the [GitHub repository](https://github.com/kiehozero/away-day/) and click the green 'Code' drop-down button;
+- Copy the [link provided](https://github.com/kiehozero/away-day.git);
+- Return to the Command Prompt and type 'git clone' followed by the copied address.
 
 For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/), from which my steps above were taken.
 
@@ -149,6 +149,7 @@ For an in-depth guide to cloning repositories, click [here](https://www.howtogee
 - [Map tutorial](https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx)
 - [Google tutorials](https://developers.google.com/maps/documentation)
 - [Google Code Labs tutorial](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0)
-- Modal HTML came from [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/)
+- jQuery's [documentation](https://api.jquery.com/) has an article on every function you'll ever think of
+- Modal shell HTML came from [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/)
 - Modal Contact form idea came from [here](https://tutorialdeep.com/knowhow/open-bootstrap-modal-on-button-click-jquery/)
 - [StackOverflow](https://stackoverflow.com/questions/18616040/bootstrap-horizontal-drop-down) - this link was the one that got the horizontal drop-down bar sorted
