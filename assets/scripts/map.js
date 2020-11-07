@@ -1322,5 +1322,5 @@ function showDetails(placeResult, marker) {
         currentInfoWindow = placeInfowindow;
 }
 
-/* add event listener here to prompt map to recentre to relevant when clicking gm-ui-hover-effect*/
+/* add event listener here to prompt map to recentre to relevant when clicking gm-ui-hover-effect */
 
