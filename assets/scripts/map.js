@@ -1264,7 +1264,7 @@ function initMap() {
 console.log("Successfully called Google Maps API");
 } catch (e) {
     alert(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
-    alert(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
+    console.log(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
     /* add a line in here for image display to replace alert above*/
 }
 
@@ -1325,8 +1325,9 @@ function showDetails(placeResult, marker) {
         /* needs code to close any open windows: look in section 4E of the tutorial for some ideas around adding classes then removing
         any items that contain said classes.*/
         /* picture needs to be smaller on mobile display */
+        /* below is not currently working
         currentInfoWindow.close();
-        currentInfoWindow = placeInfowindow;
+        currentInfoWindow = placeInfowindow; */
 }
 
 /* add event listener here to prompt map to recentre to relevant when clicking gm-ui-hover-effect */
