@@ -191,8 +191,15 @@ footer {
         font-size: 36px;
     }
 
-    .map-button {
+    #food,
+    #pubs,
+    #hotels,
+    #coffee {
         width: 30%;
+    }
+
+    #custom-input {
+        width: 63%;
     }
 
     #footer-left {
@@ -242,6 +249,10 @@ footer {
 
     .map-button {
         width: 30%;
+    }
+
+    #custom-input {
+        text-align: center;
     }
 
     .dropdown-menu {
