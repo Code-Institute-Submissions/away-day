@@ -1153,7 +1153,10 @@ function initMap() {
 
     google.maps.event.addDomListener(pubs, 'click', function() {
         console.log("PUBS SUCCESS");
-        /* add in a line that clears any already existing markers */
+        markers = [];
+        console.log(markers);
+        /
+        /* add in a loop above that clears any already existing markers */
 
         let pubsRequest = {
             location: map.getCenter(),
@@ -1169,6 +1172,7 @@ function initMap() {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
                     marker(results[i]);
+                    markers.push(marker);
                 }
                 /* pubsRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(pubsRequest.location);
@@ -1181,7 +1185,10 @@ function initMap() {
 
     google.maps.event.addDomListener(food, 'click', function() {
         console.log("FOOD SUCCESS");
-        /* add in a line that clears any already existing markers */
+        markers = [];
+        console.log(markers);
+        
+        /* add in a loop above that clears any already existing markers */
 
         let foodRequest = {
             location: map.getCenter(),
@@ -1197,6 +1204,7 @@ function initMap() {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
                     marker(results[i]);
+                    markers.push(marker);
                 }
                 /* foodRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(foodRequest.location);
@@ -1209,7 +1217,10 @@ function initMap() {
 
     google.maps.event.addDomListener(hotels, 'click', function() {
         console.log("HOTEL SUCCESS");
-        /* add in a line that clears any already existing markers */
+        markers = [];
+        console.log(markers);
+
+        /* add in a loop above that clears any already existing markers */
 
         let hotelRequest = {
             location: map.getCenter(),
@@ -1225,6 +1236,7 @@ function initMap() {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
                     marker(results[i]);
+                    markers.push(marker);
                 }
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(hotelRequest.location);
@@ -1237,7 +1249,10 @@ function initMap() {
 
     google.maps.event.addDomListener(coffee, 'click', function() {
         console.log("CAFE SUCCESS");
-        /* add in a line that clears any already existing markers */
+        markers = [];
+        console.log(markers);
+        
+        /* add in a loop above that clears any already existing markers */
 
         let cafeRequest = {
             location: map.getCenter(),
@@ -1253,7 +1268,10 @@ function initMap() {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
                     marker(results[i]);
+                    markers.push(marker);
                 }
+                console.log(markers);
+
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(cafeRequest.location);
                 map.setZoom(14);
