@@ -1,7 +1,7 @@
 1 REMOVE MARKERS on clicking a different search icon or club
 2 REMOVE MARKERS on clicking a different club
 3 SEARCH BAR - streamline code. Limit search results, link to infoWindow code
-4 FAIL WHALE PAGE
+4 FAIL WHALE PAGE - just need to 
 5 DROPDOWN STYLING collapse on crest click (mobile)
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
     This will allow more map space on larger devices.  
