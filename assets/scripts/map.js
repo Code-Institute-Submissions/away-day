@@ -4,6 +4,7 @@ var map;
 var mapCenter;
 var infoWindow;
 var service;
+var markers;
 
 /* Map Customisers */
 
@@ -1153,9 +1154,9 @@ function initMap() {
 
     google.maps.event.addDomListener(pubs, 'click', function() {
         console.log("PUBS SUCCESS");
-        markers = [];
+        results = [];
         console.log(markers);
-        /
+
         /* add in a loop above that clears any already existing markers */
 
         let pubsRequest = {
