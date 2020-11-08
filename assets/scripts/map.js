@@ -329,6 +329,7 @@ const loiWaterfLL = {lat: 52.245894, lng: -7.125159};
 
 /* initMap function taken from Code Institute tutorial */
 
+try {
 function initMap() {
     map = new google.maps.Map(document.getElementById("map-api"), {
         zoom: 6,
@@ -1259,7 +1260,13 @@ function initMap() {
             }
         });
     });
-};
+}
+console.log("Successfully called Google Maps API");
+} catch (e) {
+    alert(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
+    alert(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
+    /* add a line in here for image display to replace alert above*/
+}
 
 /* The marker, showDetails and getDetails functions for the creation of markers, infoWindows 
 and sourcing photos below are taken from the Code Labs tutorial in the README.md */

@@ -41,7 +41,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="images/favicons/site.webmanifest">
 </head>
-<body>
+<body onload="initMap()">
     <header class="container-fluid shadow">
         <nav class="navbar navbar-expand-sm">
             <div class="col-xs-9 col-md-3 my-auto">
@@ -757,6 +757,7 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous">
     </script>
+    <!--does this need to be here now you are no longer using the clusterer?-->
     <script 
         async
         defer
@@ -765,7 +766,7 @@
     <script 
         async
         defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH_zvksoHAvPplfV8AxqKSuPxXNdvTRJ4&libraries=places&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCH_zvksoHAvPplfV8AxqKSuPxXNdvTRJ4&libraries=places">
     </script>
     <script 
         async
