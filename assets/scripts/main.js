@@ -3,6 +3,7 @@
 /* Drop-down interactivity for desktop and tablets */
 $(document).ready(function() {
     if ($(window).width() > 575) {
+        
         /* Change of icon when cursor enters a league dropdown */
         $("#bunDrop").on("mouseenter",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
@@ -59,8 +60,8 @@ $(document).ready(function() {
 
         $("#slrDropdown").on("mouseleave",function() {
             $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
-    });
-    }
+        });
+    };
 });
 
 /* Drop-down interactivity for mobile display */
@@ -188,6 +189,4 @@ $(document).ready(function() {
         $(".map-button").css("background-color","05e680");
         $(this).css("background-color","#8a2be2");
     });
-});
-
-/* add club crest animation down here */
+})
