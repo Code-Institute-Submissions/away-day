@@ -6,4 +6,5 @@
     This will allow more map space on larger devices.  
 7 README and TESTING
 8 sort out mobile display of header
+9 centre that damn map vertically
 10 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
