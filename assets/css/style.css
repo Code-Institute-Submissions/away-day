@@ -36,7 +36,7 @@ a:hover {
 
 .instructions {
     /* adding mx-auto to the parent div will center this, but also messes with the map slightly in mobile view, maybe write a script 
-    that removes mx-auto from that div in mobile view?
+    that removes mx-auto from that div in mobile view? */
     border: 2px solid #8a2be2;
     border-radius: 10px;
     color: #8a2be2;
