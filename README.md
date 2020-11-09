@@ -7,6 +7,7 @@ The idea behind this project is that the most dedicated sports fans already know
 half of their time following their team away from home. AwayDay gives fans the best hotels, restaurants, pubs and cafes within a 
 couple of clicks, taking the hassle out of organising away trips.
 
+
 ## User Experience
 
 ### Styling
@@ -42,7 +43,9 @@ Testing for each of the below user stories is included within the [testing log](
 ## Features
 
 ### Existing Features
-- locate the stadium for any club in the following leagues:
+
+- The starting point for any user story on AwayDay is the dropdown menu. Selecting any club crest from the following leagues will
+display the location of their home stadium:
     - Football/Soccer
         - [English Championship](https://www.efl.com/clubs-and-competitions/sky-bet-championship/);
         - [English Premier League](https://www.premierleague.com/);
@@ -54,22 +57,30 @@ Testing for each of the below user stories is included within the [testing log](
         - [National Hockey League](https://www.nhl.com/);
     - Rugby League
         - [European Super League](https://superleague.co.uk/);
-- The four search refine buttons allow users to search for pubs, cafes, hotels and restaurants.
-- The search box allows for a user to search for any other type of business, or a particular place
+- The four search refine buttons allow users to the search for pubs, cafes, hotels and restaurants. This returns the top five 
+entries based on Google's Prominence ranking.
+- The search box allows for a user to find any other type of location beyond the four above, or a particular place using AutoComplete.
+- Each place that Google returns is then assigned a clickable marker that displays the place's name, rating and website, as well as that 
+location's top-ranked photograph.
 
 ### Features to Implement
 
 - Share plans with friends - I signed up to ShareThis during the project with a view to adding some pre-made share buttons to the 
-site, but I was getting quite a lot of console warnings about non-loadable content, so I've left that out of the first release.
+site, but was getting quite a lot of console warnings about non-loadable content, so this feature has been omitted from the 
+first release.
 - Directions - I'd like to include a feature to generation directions between any given marker and the stadium being visited, or 
 vice versa. I briefly explored the Directions API that Google offer but I already had my hands full with the Places API.
 - Rollout to more leagues, sports and countries - The only thing I need to achieve this is the latitude and longitude of each 
-club's home stadium. My current main priorities are NFL, NBA, NRL and AFL.
+club's home stadium, so this could be quite easy to implement. My current main priorities are NFL, NBA, NRL and AFL.
 - A wider league selection would certainly require a re-structure of the drop-down options, the format I've used is already at the 
-limit of what it can display well. The most obvious solution would be to group leagues by sport and introduce a secondary drop-down
+limit of what it can display well on smaller devices. The most obvious solution would be to group leagues by sport and introduce 
+a secondary drop-down.
 layer.
 - Fixture API implementation - the holy grail! There's a host of sports data APIs out there, especially for football, and I'd love 
 to be able to generate a team's fixtures, then select an opponent that way.
+- Itineraries - to store locations would be great for users who are planning far in advance of a trip, while a 'Current Location' 
+feature would allow users to bypass the club selection phase, especially if there are multiple dropdowns and they are looking for 
+somewhere to go immediately.
 
 ## Technologies Used
 

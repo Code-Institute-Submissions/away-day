@@ -1,11 +1,9 @@
-1 REMOVE MARKERS on clicking a different search icon or club
-2 REMOVE MARKERS on clicking a different club
+1 REMOVE MARKERS on clicking a different search icon
 3 SEARCH BAR - streamline code. Limit search results, link to infoWindow code
-4 FAIL WHALE PAGE - just need to 
+4 FAIL WHALE PAGE - just need to add an image in
 5 DROPDOWN STYLING collapse on crest click (mobile)
 6 USE ALERTS to display instructions, instead of having them typed in a side bar. 
     This will allow more map space on larger devices.  
 7 README and TESTING
 8 sort out mobile display of header
-9 share button integration
 10 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
