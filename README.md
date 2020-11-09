@@ -1,40 +1,48 @@
 <img src="images/site/namebar.PNG">
 
-Welcome to my interactive front-end development milestone project. For this project I chose to create Away Day, a website that harnesses Google APIs to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
+Welcome to my interactive front-end development milestone project. For this project I chose to create Away Day, a website that 
+harnesses Google APIs to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
 
-The idea behind this project is that the most dedicated sports fans will know their hometown inside out, but they can spend up to half of their time following their team away from home. AwayDay gives fans the best hotels, restaurants, pubs and cafes within a couple of clicks, taking the 
+The idea behind this project is that the most dedicated sports fans already know their hometown inside out, but they can spend up to 
+half of their time following their team away from home. AwayDay gives fans the best hotels, restaurants, pubs and cafes within a 
+couple of clicks, taking the hassle out of organising away trips.
 
 ## User Experience
 
 ### Styling
 
-- A [Balsamiq](https://www.balsamiq.com/) wireframe for this project is included in the repository, with [desktop/tablet](wireframes/ADdesktab.pdf) and [mobile](wireframes/ADmobile.pdf) versions.
+- A [Balsamiq](https://www.balsamiq.com/) wireframe for this project is included in the repository, with [desktop/tablet]
+(wireframes/ADdesktab.pdf) and [mobile](wireframes/ADmobile.pdf) versions.
 
 I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com/):
 
- - #05e680 is a light green that is the primary colour of the site. I used the satellite setting of the Google Maps API, so I wanted something that provided a good contrast to this, as well as evoking a sports field.
+ - #05e680 is a light green that is the primary colour of the site. I used the satellite setting of the Google Maps API, so 
+ I wanted something that provided a good contrast to this, as well as evoking a sports field.
  - #8a2be2 is a violet that acts as a secondary colour, seen predominantly when hovering on links or items that customise the map. 
- - #ffffff
 
-- Fonts
-- Icons
+- Fonts - Titillium provided a font that gave me both an upper and lower case view that I liked. Looking at fonts is generally a 
+pretty boring task but an important one nonetheless, Titillium provides upper case that allows for the creation of a good logo, 
+and a lower case that could be used across the site without looking tired or cliche.
+- The icons I used for the search refine buttons are taken from Font Awesome](https://fontawesome.com/)'s free package.
 - Miscellaneous Design Decisions
 
 ### User Stories
 
 Testing for each of the below user stories is included within the [testing log](TESTING.md).
 
-1. As a fan, I would like to get directions to the stadium;
-2. As a fan, I would like to find the nearest pub to the stadium;
-3. As a fan, I would like to find a hotel to stay in;
-4. I need to call or email a particular destination
-5. My club or league is missing, I'd like to ask the site owner to add them to the next release
+1. I'm travelling a long way for this match and need somewhere to stay overnight before the match;
+2. Our train arrives a couple of hours before the match, where is good for a beer?
+3. We've heard horror stories about the food at the ground we're visiting, can I find something decent to eat after the match?
+4. We were at the match yesterday and visited too many of the pubs your site recommended, can you find me a good hangover coffee?
+6. Just because I'm a football fan doesn't mean I want to drink all day, how can I search for some other things to do?
+7. A local friend recommended me somewhere to go, I just need to find it on the map;
+8. My club or league is missing, I'd like to ask the site owner to add them to the next release!
 
 
 ## Features
 
 ### Existing Features
-- locate ground for any club in the following leagues:
+- locate the stadium for any club in the following leagues:
     - Football/Soccer
         - [English Championship](https://www.efl.com/clubs-and-competitions/sky-bet-championship/);
         - [English Premier League](https://www.premierleague.com/);
@@ -46,18 +54,22 @@ Testing for each of the below user stories is included within the [testing log](
         - [National Hockey League](https://www.nhl.com/);
     - Rugby League
         - [European Super League](https://superleague.co.uk/);
-- find pubs
-- find hotels
-- find nightclubs
-- get directions to ground from any location
+- The four search refine buttons allow users to search for pubs, cafes, hotels and restaurants.
+- The search box allows for a user to search for any other type of business, or a particular place
 
 ### Features to Implement
 
-- Share plans with friends
-- Rollout to more leagues, sports and countries - main priorities are Pro14 and English Premiership rugby union, NFL, NBA, MLB, NRL and AFL
-- A wider league selection would certainly require a re-structure of the drop-down options, I think the format I've used is already at the limit of what it can display well
-- Fixture API implementation - the holy grail!
-- Travel API implementation
+- Share plans with friends - I signed up to ShareThis during the project with a view to adding some pre-made share buttons to the 
+site, but I was getting quite a lot of console warnings about non-loadable content, so I've left that out of the first release.
+- Directions - I'd like to include a feature to generation directions between any given marker and the stadium being visited, or 
+vice versa. I briefly explored the Directions API that Google offer but I already had my hands full with the Places API.
+- Rollout to more leagues, sports and countries - The only thing I need to achieve this is the latitude and longitude of each 
+club's home stadium. My current main priorities are NFL, NBA, NRL and AFL.
+- A wider league selection would certainly require a re-structure of the drop-down options, the format I've used is already at the 
+limit of what it can display well. The most obvious solution would be to group leagues by sport and introduce a secondary drop-down
+layer.
+- Fixture API implementation - the holy grail! There's a host of sports data APIs out there, especially for football, and I'd love 
+to be able to generate a team's fixtures, then select an opponent that way.
 
 ## Technologies Used
 
@@ -104,23 +116,27 @@ Testing for each of the below user stories is included within the [testing log](
     - Allows installation and customisation of Google's map engine, as well as a large amount of requests, for no fee.
 
 - [Google Places API](https://developers.google.com/places/web-service/overview/)
-    - Google's world-leading destination library can be bolted on to the initial Javascript API request to return the details of millions of locations worldwide.
-
-- [Google Routes API](https://cloud.google.com/maps-platform/routes)
-    - 
+    - Google's world-leading destination library can be bolted on to the initial Javascript API request to return the details 
+    of millions of locations worldwide.
 
 
 ## Testing
 
 I have included a [testing log](TESTING.md) within the repository.
 
->>> In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while mobile devices always drop into col-12 formatting.
+In terms of look and feel, the site is similar across all browsers. The tablet and desktop views are almost identical, while 
+mobile devices always drop into col-12 formatting. The mobile and tablet views both place buttons underneath a map that stretches to 
+fill the screen width. For mobile devices, I have included Bootstrap's trusty collapsible navbar.
 
->>> I tested this project primarily on Firefox but also Chrome and Edge, taking advantage of the screen size options to test using iPad, Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device.
+I tested this project primarily on Firefox but also Chrome and Edge, taking advantage of the screen size options to test using iPad, 
+Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device, as well as passing the initial site on to some friends
+for feedback.
 
 ## Deployment
 
-I used [GitHub](https://www.github.com/) as the host for this project, and [GitPod](https://www.gitpod.io/) to write it, using just one branch.
+I used [GitHub](https://www.github.com/) as the host for this project, and [GitPod](https://www.gitpod.io/) to write it, using 
+just a single branch. There were a few instances where I had to remove significant amounts of trial-and-error code after hours of testing,
+utilising forking and branching would definitely have helped cut down development time.
 
 I deployed this project to GitHub Pages using the following method:
 
@@ -142,15 +158,29 @@ Assuming you already have Git [installed](https://git-scm.com/download/), anybod
 - Copy the [link provided](https://github.com/kiehozero/away-day.git);
 - Return to the Command Prompt and type 'git clone' followed by the copied address.
 
-For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/), from which my steps above were taken.
+For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/), from 
+which the steps above were taken.
 
 ## Credits
-- [Map help](https://www.sitepoint.com/google-maps-javascript-api-the-right-way/)
-- [Map tutorial](https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx)
-- [Google tutorials](https://developers.google.com/maps/documentation)
-- [PlaceBox setup](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox?hl=ja)
-- [Google Code Labs tutorial](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0)
-- jQuery's [documentation](https://api.jquery.com/) has an article on every function you'll ever think of
-- Modal shell HTML came from [Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/)
-- Modal Contact form idea came from [here](https://tutorialdeep.com/knowhow/open-bootstrap-modal-on-button-click-jquery/)
-- [StackOverflow](https://stackoverflow.com/questions/18616040/bootstrap-horizontal-drop-down) - this link was the one that got the horizontal drop-down bar sorted
+- Some of the styling and map dos and don'ts from Sitepoint's great [tutorial]
+(https://www.sitepoint.com/google-maps-javascript-api-the-right-way/)
+- Envato Tut's [YouTube tutorial](https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx) helped me understand some of
+coding concepts behind the map.
+- Google's own [tutorials](https://developers.google.com/maps/documentation) give a great run-down of how to get started using maps. They 
+aren't too great for showing you how to customise beyond what they have already given, but their documentation and setup guides were 
+invaluable.
+- My mentor recommended adding a search box after my initial presentation. Luckily Google's [PlaceBox setup]
+(https://developers.google.com/maps/documentation/javascript/examples/places-searchbox?hl=ja) ensured that I flew through adding this to 
+the project.
+- A few of the more advanced JavaScript functions in the [map script](assets/scripts/map.js) were taken from a [Google Code Labs tutorial]
+(https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0) that I dug out from their documentation, namely the 
+infoWindow functions.
+- jQuery's [documentation](https://api.jquery.com/) has an article on every function you'll ever think of, it was one of the few parts of 
+learning JavaScript that seemed to make sense immediately.
+- I wanted to keep everything on a single HTML page, and providing a contact form via a modal was how I achieved this. Bootstrap's 
+[documentation](https://getbootstrap.com/docs/4.0/components/modal/) on this was straightforward and provided a good shell, while the 
+jQuery came from [Tutorial Deep](https://tutorialdeep.com/knowhow/open-bootstrap-modal-on-button-click-jquery/).
+- I waded into the warzone that is [StackOverflow] a
+few times, often emerging more confused than when I arrived, but [this]
+(https://stackoverflow.com/questions/18616040/bootstrap-horizontal-drop-down) thread helped untangle some styling dropdown issues. I've 
+definitely learnt in this project that less is often more with CSS and Bootstrap.
