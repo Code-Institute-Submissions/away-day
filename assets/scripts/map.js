@@ -1087,19 +1087,18 @@ function initMap() {
         map.setZoom(16);
     });
 
-    /* Search Box Setup */
+    /* Search Box Setup - template taken from the PlaceBox tutorial in the README, then customised */
 
     const input = document.getElementById("custom-input");
     const searchBox = new google.maps.places.SearchBox(input);
-    /* map.controls[google.maps.ControlPosition.TOP_LEFT].push(input); This code is in the original tutorial, I've removed it */ 
 
-    // Bias the SearchBox results towards current map's viewport.
+    /* Returns results within the current map window */
     map.addListener("bounds_changed", () => {
         searchBox.setBounds(map.getBounds());
     });
     let markers = [];
 
-    // Listen for the event fired when the user selects a prediction and retrieve more details for that place.
+    /* Returns results when a predictive item is selected */
     searchBox.addListener("places_changed", () => {
         const places = searchBox.getPlaces();
 
@@ -1107,19 +1106,20 @@ function initMap() {
             return;
         }
 
-        // Clear out the old markers.
+        /* Removes any markers that were added to the markers array by a previous iteration of the script */
         markers.forEach((marker) => {
             marker.setMap(null);
         });
         markers = [];
 
-        // For each place, get the icon, name and location.
+        /* Returns place name and location, as well as a custom icon based on the place's category */
         const bounds = new google.maps.LatLngBounds();
         places.forEach((place) => {
             if (!place.geometry) {
                 console.log("Returned place contains no geometry");
             return;
             }
+
             const icon = {
                 url: place.icon,
                 size: new google.maps.Size(71, 71),
@@ -1128,7 +1128,7 @@ function initMap() {
                 scaledSize: new google.maps.Size(25, 25),
             };
 
-            // Create a marker for each place.
+            /* Marker creation and push to array */
             markers.push(
                 new google.maps.Marker({
                     map,
@@ -1148,13 +1148,15 @@ function initMap() {
     map.fitBounds(bounds);
     });
 
+    /* Need to add infoWindow functionality for search box */
+
     /* Places Customisation - code here roughly follows Google API and Google Code Labs tutorials found in the README */
 
     /* Event Listener and Marker Creation for Pubs */
 
     google.maps.event.addDomListener(pubs, 'click', function() {
         console.log("PUBS SUCCESS");
-        results = [];
+        let markers = [ ];
         console.log(markers);
 
         /* add in a loop above that clears any already existing markers */
@@ -1175,6 +1177,8 @@ function initMap() {
                     marker(results[i]);
                     markers.push(marker);
                 }
+                console.log(markers);
+
                 /* pubsRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(pubsRequest.location);
                 map.setZoom(14);
@@ -1186,7 +1190,7 @@ function initMap() {
 
     google.maps.event.addDomListener(food, 'click', function() {
         console.log("FOOD SUCCESS");
-        markers = [];
+        let markers = [ ];
         console.log(markers);
         
         /* add in a loop above that clears any already existing markers */
@@ -1207,6 +1211,8 @@ function initMap() {
                     marker(results[i]);
                     markers.push(marker);
                 }
+                console.log(markers);
+
                 /* foodRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(foodRequest.location);
                 map.setZoom(14);
@@ -1218,7 +1224,7 @@ function initMap() {
 
     google.maps.event.addDomListener(hotels, 'click', function() {
         console.log("HOTEL SUCCESS");
-        markers = [];
+        let markers = [ ];
         console.log(markers);
 
         /* add in a loop above that clears any already existing markers */
@@ -1239,6 +1245,8 @@ function initMap() {
                     marker(results[i]);
                     markers.push(marker);
                 }
+                console.log(markers);
+                
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
                 map.setCenter(hotelRequest.location);
                 map.setZoom(14);
@@ -1250,7 +1258,7 @@ function initMap() {
 
     google.maps.event.addDomListener(coffee, 'click', function() {
         console.log("CAFE SUCCESS");
-        markers = [];
+        let markers = [ ];
         console.log(markers);
         
         /* add in a loop above that clears any already existing markers */
@@ -1291,6 +1299,9 @@ console.log("Successfully called Google Maps API");
 and sourcing photos below are taken from the Code Labs tutorial in the README.md */
 
 function marker(place) {
+
+    let markers = [];
+
     const icon = {
         url: place.icon,
         size: new google.maps.Size(71, 71),
@@ -1306,6 +1317,8 @@ function marker(place) {
         position: place.geometry.location,
         title: place.name
     });
+
+    markers.push(marker);
     
     google.maps.event.addListener(marker, "click", () => {
         let request = {
