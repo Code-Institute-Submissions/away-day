@@ -12,8 +12,8 @@ couple of clicks, taking the hassle out of organising away trips.
 
 ### Styling
 
-- A [Balsamiq](https://www.balsamiq.com/) wireframe for this project is included in the repository, with [desktop/tablet]
-(wireframes/ADdesktab.pdf) and [mobile](wireframes/ADmobile.pdf) versions.
+- A [Balsamiq](https://www.balsamiq.com/) wireframe for this project is included in the repository, with 
+[desktop/tablet](wireframes/ADdesktab.pdf) and [mobile](wireframes/ADmobile.pdf) versions.
 
 I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com/):
 
@@ -24,7 +24,7 @@ I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com/
 - Fonts - Titillium provided a font that gave me both an upper and lower case view that I liked. Looking at fonts is generally a 
 pretty boring task but an important one nonetheless, Titillium provides upper case that allows for the creation of a good logo, 
 and a lower case that could be used across the site without looking tired or cliche.
-- The icons I used for the search refine buttons are taken from Font Awesome](https://fontawesome.com/)'s free package.
+- The icons I used for the search refine buttons are taken from [Font Awesome](https://fontawesome.com/)'s free package.
 - Miscellaneous Design Decisions
 
 ### User Stories
@@ -174,25 +174,25 @@ For an in-depth guide to cloning repositories, click [here](https://www.howtogee
 which the steps above were taken.
 
 ## Credits
-- Some of the styling and map dos and don'ts from Sitepoint's great [tutorial]
-(https://www.sitepoint.com/google-maps-javascript-api-the-right-way/)
+- Some of the styling and map dos and don'ts from Sitepoint's great 
+[tutorial](https://www.sitepoint.com/google-maps-javascript-api-the-right-way/)
 - Envato Tut's [YouTube tutorial](https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx) helped me understand some of
 coding concepts behind the map.
 - Google's own [tutorials](https://developers.google.com/maps/documentation) give a great run-down of how to get started using maps. They 
 aren't too great for showing you how to customise beyond what they have already given, but their documentation and setup guides were 
 invaluable.
-- My mentor recommended adding a search box after my initial presentation. Luckily Google's [PlaceBox setup]
-(https://developers.google.com/maps/documentation/javascript/examples/places-searchbox?hl=ja) ensured that I flew through adding this to 
-the project.
-- A few of the more advanced JavaScript functions in the [map script](assets/scripts/map.js) were taken from a [Google Code Labs tutorial]
-(https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0) that I dug out from their documentation, namely the 
+- My mentor recommended adding a search box after my initial presentation. Luckily Google's
+ [PlaceBox setup](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox?hl=ja) ensured that I flew 
+ through adding this to the project.
+- A few of the more advanced JavaScript functions in the [map script](assets/scripts/map.js) were taken from a 
+[Google Code Labs tutorial](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0) that I dug out from 
+their documentation, namely the 
 infoWindow functions.
 - jQuery's [documentation](https://api.jquery.com/) has an article on every function you'll ever think of, it was one of the few parts of 
 learning JavaScript that seemed to make sense immediately.
 - I wanted to keep everything on a single HTML page, and providing a contact form via a modal was how I achieved this. Bootstrap's 
 [documentation](https://getbootstrap.com/docs/4.0/components/modal/) on this was straightforward and provided a good shell, while the 
 jQuery came from [Tutorial Deep](https://tutorialdeep.com/knowhow/open-bootstrap-modal-on-button-click-jquery/).
-- I waded into the warzone that is [StackOverflow] a
-few times, often emerging more confused than when I arrived, but [this]
-(https://stackoverflow.com/questions/18616040/bootstrap-horizontal-drop-down) thread helped untangle some styling dropdown issues. I've 
-definitely learnt in this project that less is often more with CSS and Bootstrap.
+- I waded into the warzone that is StackOverflow a few times, often emerging more confused than when I arrived, but 
+[this](https://stackoverflow.com/questions/18616040/bootstrap-horizontal-drop-down) thread helped untangle some styling dropdown 
+issues. I've definitely learnt in this project that less is often more with CSS and Bootstrap.
