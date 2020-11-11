@@ -162,9 +162,8 @@ $(document).ready(function() {
 
     /* Dropdown collapse for mobile - not working yet */
     $("dropdown-item").on("click",function() {
-        $("#mobSelector").addClass("collapsed");
-        $("#mobSelector").attr("aria-expanded", "false");
-        $("div #leagueSelection").removeClass("show");
+        $("#mobSelector").addClass("collapsed").attr("aria-expanded", "false");
+        $("#leagueSelection").removeClass("show");
     });
 });
 
