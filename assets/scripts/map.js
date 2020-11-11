@@ -1266,7 +1266,7 @@ function initMap() {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
                     marker(results[i]);
-                    markers.push(marker);
+                    markers.push();
                 }
                 console.log(markers);
 
@@ -1289,7 +1289,7 @@ and sourcing photos below are taken from the Code Labs tutorial in the README.md
 
 function marker(place) {
 
-    let markers = [];
+    markers = [];
 
     const marker = new google.maps.Marker({
         map,
