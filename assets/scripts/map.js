@@ -1289,7 +1289,7 @@ and sourcing photos below are taken from the Code Labs tutorial in the README.md
 
 function marker(place) {
 
-    markers = [];
+    let markers = [];
 
     const marker = new google.maps.Marker({
         map,
@@ -1297,6 +1297,8 @@ function marker(place) {
         position: place.geometry.location,
         title: place.name
     });
+
+    markers.push(marker);
     
     google.maps.event.addListener(marker, "click", () => {
         let request = {
