@@ -1152,8 +1152,12 @@ function initMap() {
     /* Event Listener and Marker Creation for Pubs */
 
     google.maps.event.addDomListener(pubs, 'click', function() {
+        markers.forEach(function(marker) {
+            marker.setMap(null);
+        });
+
         console.log("PUBS SUCCESS");
-        markers = [ ];
+        markers = [];
         console.log(markers);
 
         let pubsRequest = {
@@ -1169,8 +1173,23 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
-                    marker(results[i]);
-                    markers.push(marker);
+                    const icon = {
+                        url: results[i].icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    const m = new google.maps.Marker({
+                        map,
+                        icon,
+                        animation: google.maps.Animation.DROP,
+                        position: results[i].geometry.location,
+                        title: results[i].name
+                    });
+
+                    markers.push(m);
                 }
                 console.log(markers);
 
@@ -1184,8 +1203,12 @@ function initMap() {
     /* Event Listener and Marker Creation for Food */
 
     google.maps.event.addDomListener(food, 'click', function() {
+        markers.forEach(function(marker) {
+            marker.setMap(null);
+        });
+        
         console.log("FOOD SUCCESS");
-        markers = [ ];
+        markers = [];
         console.log(markers);
 
         let foodRequest = {
@@ -1201,8 +1224,23 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
-                    marker(results[i]);
-                    markers.push(marker);
+                    const icon = {
+                        url: results[i].icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    const m = new google.maps.Marker({
+                        map,
+                        icon,
+                        animation: google.maps.Animation.DROP,
+                        position: results[i].geometry.location,
+                        title: results[i].name
+                    });
+
+                    markers.push(m);
                 }
                 console.log(markers);
 
@@ -1216,8 +1254,12 @@ function initMap() {
     /* Event Listener and Marker Creation for Hotels */
 
     google.maps.event.addDomListener(hotels, 'click', function() {
+        markers.forEach(function(marker) {
+            marker.setMap(null);
+        });
+        
         console.log("HOTEL SUCCESS");
-        markers = [ ];
+        markers = [];
         console.log(markers);
 
         let hotelRequest = {
@@ -1233,9 +1275,25 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
-                    marker(results[i]);
-                    markers.push(marker);
+                    const icon = {
+                        url: results[i].icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    const m = new google.maps.Marker({
+                        map,
+                        icon,
+                        animation: google.maps.Animation.DROP,
+                        position: results[i].geometry.location,
+                        title: results[i].name
+                    });
+
+                    markers.push(m);
                 }
+
                 console.log(markers);
                 
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
@@ -1248,8 +1306,12 @@ function initMap() {
     /* Event Listener and Marker Creation for Cafes */
 
     google.maps.event.addDomListener(coffee, 'click', function() {
+        markers.forEach(function(marker) {
+            marker.setMap(null);
+        });
+        
         console.log("CAFE SUCCESS");
-        markers = [ ];
+        markers = [];
         console.log(markers);
 
         let cafeRequest = {
@@ -1265,8 +1327,23 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
-                    marker(results[i]);
-                    markers.push();
+                    const icon = {
+                        url: results[i].icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    const m = new google.maps.Marker({
+                        map,
+                        icon,
+                        animation: google.maps.Animation.DROP,
+                        position: results[i].geometry.location,
+                        title: results[i].name
+                    });
+
+                    markers.push(m);
                 }
                 console.log(markers);
 
@@ -1299,6 +1376,8 @@ function marker(place) {
     });
 
     markers.push(marker);
+
+    /* do marker references below here need changing to m? */
     
     google.maps.event.addListener(marker, "click", () => {
         let request = {
