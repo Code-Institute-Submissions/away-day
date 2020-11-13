@@ -67,6 +67,7 @@ $(document).ready(function() {
 /* Drop-down interactivity for mobile display */
 $(document).ready(function() {
     if ($(window).width() < 576) {
+
         
         $("#bunDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");

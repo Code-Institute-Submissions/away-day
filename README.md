@@ -196,7 +196,9 @@ learning JavaScript that seemed to make sense immediately.
 jQuery came from [Tutorial Deep](https://tutorialdeep.com/knowhow/open-bootstrap-modal-on-button-click-jquery/).
 - I waded into the warzone that is StackOverflow a few times, often emerging more confused than when I arrived, but 
 [this](https://stackoverflow.com/questions/18616040/bootstrap-horizontal-drop-down) thread helped untangle some styling dropdown 
-issues. I've definitely learnt in this project that less is often more with CSS and Bootstrap.
+issues. I also took to the ever-reliable [W3 Schools](https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp) tutorials to help 
+iron out some margin and padding issues when moving between screen widths. I've definitely learnt in this project that less is often 
+more with CSS and Bootstrap.
 - An enormous thank you to Kevin Loughrey and Michael Park at Code Institute for helping sort out some of the issues. It is 
 frustrating to have to submit things to tutors knowing you are close to a solution, but they saved me hours of experimenting 
 towards a solution with concise explanations.

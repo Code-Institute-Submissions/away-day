@@ -210,6 +210,12 @@ footer {
         font-size: 36px;
     }
 
+    main.container-fluid#mainContain {
+        /* overrides Bootstrap default parameters */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
     #food,
     #pubs,
     #hotels,
