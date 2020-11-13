@@ -65,6 +65,7 @@
                     <div class="collapse navbar-collapse" id="leagueSelection">
                         <ul class="navbar-nav mx-auto">
 
+                            <!-- Dropdown for EPL clubs -->
                             <li class="nav-item dropdown" id="eplDrop">
                                 <a class="nav-link dropdown-toggle"
                                     href="#"
@@ -141,6 +142,7 @@
                                 </ul>
                             </li>
 
+                            <!-- Dropdown for Championship clubs -->
                             <li class="nav-item dropdown" id="flcDrop">
                                 <a class="nav-link dropdown-toggle"
                                     href="#"
@@ -229,6 +231,7 @@
                                 </ul>
                             </li>
 
+                            <!-- Dropdown for Bundesliga clubs -->
                             <li class="nav-item dropdown" id="bunDrop">
                                 <a class="nav-link dropdown-toggle"
                                     href="#"
@@ -299,6 +302,7 @@
                                 </ul>
                             </li>
 
+                            <!-- Dropdown for GAA clubs -->
                             <li class="nav-item dropdown" id="gaaDrop">
                                 <a class="nav-link dropdown-toggle"
                                     href="#"
@@ -411,6 +415,7 @@
                                 </ul>
                             </li>
 
+                            <!-- Dropdown for Super League clubs -->
                             <li class="nav-item dropdown" id="slrDrop">
                                 <a class="nav-link dropdown-toggle"
                                     href="#"
@@ -460,6 +465,7 @@
                                 </ul>
                             </li>
 
+                            <!-- Dropdown for League of Ireland clubs -->
                             <li class="nav-item dropdown" id="loiDrop">
                                 <a class="nav-link dropdown-toggle"
                                     href="#"
@@ -505,7 +511,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            
+
+                            <!-- Dropdown for NHL clubs -->                            
                             <li class="nav-item dropdown" id="nhlDrop">
                                 <a class="nav-link dropdown-toggle"
                                     href="#"
@@ -634,7 +641,6 @@
             </div>
 
             <!--Map-->
-            <!--Drop map slightly to give navbar more space-->
             <div class="col-sm-12 col-md-8 col-lg-6 my-auto" id="map-box">
                 <div class="mx-auto" id="map-api"></div>
             </div>
@@ -642,22 +648,27 @@
             <!--Map selectors-->
             <div class="col-sm-12 col-lg-3 my-auto">
                 <div class="row">
+                    <!--Pub Button-->
                     <button class="btn btn-outline-light map-button mx-auto" id="pubs">
                         <i class="fas fa-beer"></i>
                         <span class="d-none d-md-block">  Best pubs</span>
                     </button>
+                    <!--Restaurant Button-->
                     <button class="btn btn-outline-light map-button mx-auto" id="food">
                         <i class="fas fa-utensils"></i>
                         <span class="d-none d-md-block">  Best food</span>
                     </button>
+                    <!--Hotel Button-->
                     <button class="btn btn-outline-light map-button mx-auto" id="hotels">
                         <i class="fas fa-bed"></i>
                         <span class="d-none d-md-block">  Best hotels</span>
                     </button>
-                        <button class="btn btn-outline-light map-button mx-auto" id="coffee">
+                    <!--Coffee Button-->
+                    <button class="btn btn-outline-light map-button mx-auto" id="coffee">
                         <i class="fas fa-coffee"></i>
-                    <span class="d-none d-md-block">  Best coffee</span>
+                        <span class="d-none d-md-block">  Best coffee</span>
                     </button>
+                    <!--Search Box-->
                     <input
                         class="map-button mx-auto controls"
                         id="custom-input"
@@ -674,10 +685,14 @@
             <div id="footer-left" class="col-12 col-md-4 d-sm-block">
                 <a class="foot-social" target="_blank" href="http://www.twitter.com/"><i class="fab fa-twitter-square"></i></a>
                 <a class="foot-social" target="_blank" href="http://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+                <!--Below displays modal contact form on click, this is stored after the closing footer tag-->
                 <a class="foot-social" id="contact-footer"><i class="fas fa-envelope-square"></i></a>
             </div>
+
             <div id="footer-centre" class="col-12 col-md-4 d-none d-sm-block">
+            <!--No content here-->
             </div>
+
             <div id="footer-right" class="col-12 col-md-4 d-none d-sm-block">
                 <p>Design by <a class="gitlink" target="_blank" href="https://www.github.com/kiehozero">kiehozero <i class="fab fa-github-square"></i></a></p>
             </div>
@@ -689,12 +704,14 @@
     <div class="modal contact-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+
                 <div class="modal-header">
                     <h5 class="modal-title">Got feedback for <span class="uppercase">AwayDay?</span></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+
                 <div class="modal-body">
                     <form onsubmit="return sendMail(this);">
                         <input
@@ -730,6 +747,7 @@
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
     </div>
@@ -749,12 +767,6 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous">
     </script>
-    <!--does this need to be here now you are no longer using the clusterer?-->
-    <script 
-        async
-        defer
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
     <script 
         async
         defer
@@ -771,8 +783,6 @@
         src="assets/scripts/main.js">
     </script>
     <script 
-        async
-        defer
         src="assets/scripts/modal.js">
     </script>
     <script
