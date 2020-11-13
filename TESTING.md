@@ -59,14 +59,10 @@ my Try/Catch tests to the console, but also ensuring that the catch message neve
 
 - There is some bleed between the mobile-specific and desktop-specific jQuery scripts. Both work fine upon loading but 
 once you switch between screen sizes in developer mode the hover event listener can stick in place until another icon is 
-clicked. Given that most users would not sit and flick between two screen sizes while using the app, I decided to leave 
+clicked. Given that most users would not sit and flick between two screen sizes while using the site, I decided to leave 
 this unfixed as time was at a premium.
-- Mobile header display
-- ShareThis
-- Collapse dropdown on crest click (mobile only)
-- infoWindow closure upon new infoWindow open
-- contact form user input validation and user feedback
-- Margins and padding on map and instructions boxes
+- If a a location returns no results within the confines of a search (e.g. no pubs within 1km of the stadium), the API throws
+an exception. This needs to be fixed using an if else statement that extends the range to 2km or 5km.
 
 ## Validation
 
