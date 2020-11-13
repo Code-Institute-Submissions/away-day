@@ -1173,22 +1173,7 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
-                    const icon = {
-                        url: results[i].icon,
-                        size: new google.maps.Size(71, 71),
-                        origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(17, 34),
-                        scaledSize: new google.maps.Size(25, 25)
-                    };
-
-                    const m = new google.maps.Marker({
-                        map,
-                        icon,
-                        animation: google.maps.Animation.DROP,
-                        position: results[i].geometry.location,
-                        title: results[i].name
-                    });
-
+                    const m = marker(results[i]);
                     markers.push(m);
                 }
                 console.log(markers);
@@ -1224,22 +1209,7 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
-                    const icon = {
-                        url: results[i].icon,
-                        size: new google.maps.Size(71, 71),
-                        origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(17, 34),
-                        scaledSize: new google.maps.Size(25, 25)
-                    };
-
-                    const m = new google.maps.Marker({
-                        map,
-                        icon,
-                        animation: google.maps.Animation.DROP,
-                        position: results[i].geometry.location,
-                        title: results[i].name
-                    });
-
+                    const m = marker(results[i]);
                     markers.push(m);
                 }
                 console.log(markers);
@@ -1275,25 +1245,9 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
-                    const icon = {
-                        url: results[i].icon,
-                        size: new google.maps.Size(71, 71),
-                        origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(17, 34),
-                        scaledSize: new google.maps.Size(25, 25)
-                    };
-
-                    const m = new google.maps.Marker({
-                        map,
-                        icon,
-                        animation: google.maps.Animation.DROP,
-                        position: results[i].geometry.location,
-                        title: results[i].name
-                    });
-
+                    const m = marker(results[i]);
                     markers.push(m);
                 }
-
                 console.log(markers);
                 
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
@@ -1327,22 +1281,7 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
                 /* for loop restricts markers to top 5 items only */
                 for (let i = 0; i < 5; i++) {
-                    const icon = {
-                        url: results[i].icon,
-                        size: new google.maps.Size(71, 71),
-                        origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(17, 34),
-                        scaledSize: new google.maps.Size(25, 25)
-                    };
-
-                    const m = new google.maps.Marker({
-                        map,
-                        icon,
-                        animation: google.maps.Animation.DROP,
-                        position: results[i].geometry.location,
-                        title: results[i].name
-                    });
-
+                    const m = marker(results[i]);
                     markers.push(m);
                 }
                 console.log(markers);
@@ -1365,8 +1304,6 @@ console.log("Successfully called Google Maps API");
 and sourcing photos below are taken from the Code Labs tutorial in the README.md */
 
 function marker(place) {
-
-    markers = [];
 
     const marker = new google.maps.Marker({
         map,
@@ -1392,6 +1329,7 @@ function marker(place) {
         showDetails(placeResult, marker, status)
         });
     });
+    return marker
 }
 
 function showDetails(placeResult, marker) {
