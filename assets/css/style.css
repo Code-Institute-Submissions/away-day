@@ -52,6 +52,12 @@ a:hover {
     width: 90%;
 }
 
+img#info-window-img {
+    /* overrides Google infoWindow default styling */
+    max-height: 200px;
+    max-width: 200px;
+}
+
 #map-box {
     height: 80vh;
 }
@@ -242,7 +248,10 @@ footer {
         width: 100%;
     }
 
-    /* will need to add some JS to force the dropdown to collapse once a club is selected */
+   img#info-window-img {
+        max-height: 150px;
+        max-width: 150px; 
+    }
 }
 
 @media (min-width: 576px) and (max-width: 940px) {
