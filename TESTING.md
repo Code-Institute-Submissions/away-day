@@ -64,8 +64,9 @@ this unfixed as time was at a premium.
 - Mobile header display
 - ShareThis
 - Collapse dropdown on crest click (mobile only)
-- Remove markers upon new club search - fixing place search was priority as it markers often overlapped, whereas very few of the clubs
-are in close proximity
+- infoWindow closure upon new infoWindow open
+- contact form user input validation and user feedback
+- Margins and padding on map and instructions boxes
 
 ## Validation
 
