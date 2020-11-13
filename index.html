@@ -38,13 +38,14 @@
 <body onload="initMap()">
     <header class="container-fluid shadow">
         <nav class="navbar navbar-expand-sm">
-            <div class="col-xs-9 col-md-3 my-auto">
+        
+            <div class="col-3 col-md-5" id="logoHolder">
                 <a href="index.html" class="logo navbar-brand">
                     AwayDay
                 </a>
             </div>
 
-            <div class="col-xs-3 col-md-9 my-auto">
+            <div class="col-9 col-md-7" id="dropCollapse">
                 <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
                     <!--NAVIGATION DROP-DOWN (MOBILE ONLY)-->
                     <button 
@@ -244,7 +245,7 @@
                                     <span class="d-sm-block d-md-none">Bundesliga</span>
                                 </a>
 
-                                <ul class="dropdown-menu" id="bunClublist" aria-labelledby="bunDropdown">
+                                <ul class="dropdown-menu dropdown-menu-right" id="bunClublist" aria-labelledby="bunDropdown">
                                     <li class="dropdown-item list-inline-item" id="bunArminia" role="button">
                                         <img src="images/crests/bun/bunArminia.png" alt="Arminia Bielefeld">
                                     </li>

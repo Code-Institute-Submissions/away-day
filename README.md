@@ -190,7 +190,8 @@ invaluable.
 their documentation, namely the 
 infoWindow functions.
 - jQuery's [documentation](https://api.jquery.com/) has an article on every function you'll ever think of, it was one of the few parts of 
-learning JavaScript that seemed to make sense immediately.
+learning JavaScript that seemed to make sense immediately. The [section](https://api.jquery.com/toggleClass/) on class toggling solved 
+bug #7 listed in my [testing log](TESTING.md).
 - I wanted to keep everything on a single HTML page, and providing a contact form via a modal was how I achieved this. Bootstrap's 
 [documentation](https://getbootstrap.com/docs/4.0/components/modal/) on this was straightforward and provided a good shell, while the 
 jQuery came from [Tutorial Deep](https://tutorialdeep.com/knowhow/open-bootstrap-modal-on-button-click-jquery/).

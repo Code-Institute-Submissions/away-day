@@ -5,6 +5,7 @@ $(document).ready(function() {
     if ($(window).width() > 575) {
         
         /* Change of icon when cursor enters a league dropdown */
+        
         $("#bunDrop").on("mouseenter",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
         });
@@ -34,6 +35,7 @@ $(document).ready(function() {
         });
 
         /* Change back to default icon upon cursor exit */
+
         $("#bunDropdown").on("mouseleave",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
         });
@@ -65,9 +67,18 @@ $(document).ready(function() {
 });
 
 /* Drop-down interactivity for mobile display */
+
 $(document).ready(function() {
     if ($(window).width() < 576) {
 
+        /* Bugfix #7: removes AwayDay logo and allows drop-down to expand across screen */
+
+        $("#mobSelector").on("click",function() {
+            $("#dropCollapse").toggleClass("col-12");
+            $("#logoHolder").toggleClass("d-none");
+        });
+
+        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
         
         $("#bunDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
@@ -82,6 +93,8 @@ $(document).ready(function() {
             $("#bunDropdown").css("color", "#8a2be2");
         });
 
+        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+
         $("#eplDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
             $("#epl-icon").attr("src", "images/dropdowns/epl-8a2be2.png");
@@ -94,6 +107,8 @@ $(document).ready(function() {
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#eplDropdown").css("color", "#8a2be2");
         });
+
+        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
 
         $("#flcDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
@@ -108,6 +123,8 @@ $(document).ready(function() {
             $("#flcDropdown").css("color", "#8a2be2");
         });
 
+        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+
         $("#gaaDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
             $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
@@ -120,6 +137,8 @@ $(document).ready(function() {
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#gaaDropdown").css("color", "#8a2be2");
         });
+
+        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
 
         $("#loiDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
@@ -134,6 +153,8 @@ $(document).ready(function() {
             $("#loiDropdown").css("color", "#8a2be2");
         });
 
+        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+
         $("#nhlDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
             $("#epl-icon").attr("src", "images/dropdowns/epl-ffffff.png");
@@ -146,6 +167,8 @@ $(document).ready(function() {
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#nhlDropdown").css("color", "#8a2be2");
         });
+
+        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
 
         $("#slrDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
