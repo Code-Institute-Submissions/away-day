@@ -1,7 +1,7 @@
 <img src="images/site/namebar.PNG">
 
 Welcome to my interactive front-end development milestone project. For this project I chose to create Away Day, a website that 
-harnesses Google APIs to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
+harnesses Google's Place API to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
 
 The idea behind this project is that the most dedicated sports fans already know their hometown inside out, but they can spend up to 
 half of their time following their team away from home. AwayDay gives fans the best hotels, restaurants, pubs and cafes within a 
@@ -18,14 +18,15 @@ couple of clicks, taking the hassle out of organising away trips.
 I used the following hex colours, selecting using [Pixlr](https://www.pixlr.com/):
 
  - #05e680 is a light green that is the primary colour of the site. I used the satellite setting of the Google Maps API, so 
- I wanted something that provided a good contrast to this, as well as evoking a sports field.
+ I wanted something that provided a good contrast to this, as well as evoking a sports field. When I was sourcing club and league logos
+ I visited the [English Premier League](https://www.premierleague.com/) and found something very close to this colour, then experimented
+ with changing one or two digits in the hex colour code.
  - #8a2be2 is a violet that acts as a secondary colour, seen predominantly when hovering on links or items that customise the map. 
 
 - Fonts - Titillium provided a font that gave me both an upper and lower case view that I liked. Looking at fonts is generally a 
 pretty boring task but an important one nonetheless, Titillium provides upper case that allows for the creation of a good logo, 
 and a lower case that could be used across the site without looking tired or cliche.
 - The icons I used for the search refine buttons are taken from [Font Awesome](https://fontawesome.com/)'s free package.
-- Miscellaneous Design Decisions
 
 ### User Stories
 
@@ -69,8 +70,8 @@ location's top-ranked photograph.
 - Share plans with friends - I signed up to ShareThis during the project with a view to adding some pre-made share buttons to the 
 site, but was getting quite a lot of console warnings about non-loadable content, so this feature has been omitted from the 
 first release.
-- Directions - I'd like to include a feature to generation directions between any given marker and the stadium being visited, or 
-vice versa. I briefly explored the Directions API that Google offer but I already had my hands full with the Places API.
+- Directions - I'd like to include a feature to generate directions between any given marker and the stadium being visited, or 
+vice versa. I briefly explored Google's Directions API but I already had my hands full with the Places API.
 - Rollout to more leagues, sports and countries - The only thing I need to achieve this is the latitude and longitude of each 
 club's home stadium, so this could be quite easy to implement. My current main priorities are NFL, NBA, NRL and AFL.
 - A wider league selection would certainly require a re-structure of the drop-down options, the format I've used is already at the 
@@ -79,7 +80,7 @@ a secondary drop-down.
 layer.
 - Fixture API implementation - the holy grail! There's a host of sports data APIs out there, especially for football, and I'd love 
 to be able to generate a team's fixtures, then select an opponent that way.
-- Itineraries - to store locations would be great for users who are planning far in advance of a trip, while a 'Current Location' 
+- Itineraries - the ability to store locations would be great for users who are planning far in advance of a trip, while a 'Current Location' 
 feature would allow users to bypass the club selection phase, especially if there are multiple dropdowns and they are looking for 
 somewhere to go immediately.
 
