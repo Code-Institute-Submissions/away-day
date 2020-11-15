@@ -2,7 +2,7 @@
 
 /* Displays instructions as a modal for smaller screen widths */
 $(document).ready(function() {
-    if ($(window).width() < 576) {
+    if ($(window).width() < 800) {
         $("#instructions-modal").modal("show");
         console.log("Instructions success");
     }

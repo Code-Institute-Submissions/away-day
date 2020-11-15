@@ -204,6 +204,12 @@ footer {
     color: #05e680;
 }
 
+/* Instructions modal */
+
+    .instructions-step {
+        text-align: justify;
+    }
+
 /* Media Queries */
 
 @media (max-width: 575px) {
@@ -262,12 +268,6 @@ footer {
     img#info-window-img {
         max-height: 150px;
         max-width: 150px; 
-    }
-
-    /* Instructions modal */
-
-    .instructions-step {
-        text-align: justify;
     }
 }
 

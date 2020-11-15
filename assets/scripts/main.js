@@ -2,7 +2,7 @@
 
 /* Drop-down interactivity for desktop and tablets */
 $(document).ready(function() {
-    if ($(window).width() > 575) {
+    if ($(window).width() > 800) {
         
         /* Change of icon when cursor enters a league dropdown */
         
@@ -69,7 +69,7 @@ $(document).ready(function() {
 /* Drop-down interactivity for mobile display */
 
 $(document).ready(function() {
-    if ($(window).width() < 576) {
+    if ($(window).width() < 801) {
 
         /* Bugfix #7: removes AwayDay logo and allows drop-down to expand across screen */
 
