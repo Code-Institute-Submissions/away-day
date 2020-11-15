@@ -19,7 +19,7 @@ function sendMail(contactForm) {
         "feedback": contactForm.feedback.value
     })
     .then(
-        /* Test responses, displays alert and hides modals if successful */
+        /* Bugfix #9: Tests responses, displays alert and hides modals if successful */
         function(response) {
             console.log("SUCCESS", response);
             alert("Goal! Message sent!");

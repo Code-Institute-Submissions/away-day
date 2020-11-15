@@ -163,7 +163,7 @@ footer {
     color: #8a2be2;
 }
 
-/* Modal */
+/* Modals */
 
 .modal-content {
     /* overrides Bootstrap defaults */
@@ -259,9 +259,15 @@ footer {
         width: 100%;
     }
 
-   img#info-window-img {
+    img#info-window-img {
         max-height: 150px;
         max-width: 150px; 
+    }
+
+    /* Instructions modal */
+
+    .instructions-step {
+        text-align: justify;
     }
 }
 
