@@ -66,7 +66,7 @@ $(document).ready(function() {
     };
 });
 
-/* Drop-down interactivity for mobile display */
+/* Drop-down interactivity for mobile and tablet (bugfix #8) display */
 
 $(document).ready(function() {
     if ($(window).width() < 801) {
