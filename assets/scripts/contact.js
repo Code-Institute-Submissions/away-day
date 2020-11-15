@@ -1,3 +1,13 @@
+/* Scripts for contact form interactivity */
+
+/* Modal JS came from Tutorial Deep link in README */
+
+$(document).ready(function() {
+	$("#contact-footer").on("click", function() {
+        $(".contact-modal").modal("show");
+    });
+});
+
 /* EmailJS requests */
 
 /* Copied from the Code Institute resume tutorial */
@@ -20,6 +30,6 @@ function sendMail(contactForm) {
             console.log("FAILED", error);
             alert("Yellow card! Please complete all fields.");
         }
-        );
+    );
     return false;
 }
