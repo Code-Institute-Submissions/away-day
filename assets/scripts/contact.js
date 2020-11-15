@@ -15,9 +15,11 @@ function sendMail(contactForm) {
             alert("Goal! Message sent!");
             $(".contact-modal").modal("hide");
         },
+        /* Not displaying feedback yet */
         function(error) {
             console.log("FAILED", error);
-            alert("Yellow card! Please complete all fields.")
-        });
+            alert("Yellow card! Please complete all fields.");
+        }
+        );
     return false;
 }
