@@ -3,8 +3,10 @@
 ## User Stories
 
 1. I'm travelling a long way for this match and need somewhere to stay overnight before the match;
- - The start point for any user journey on AwayDay is the drop-down menu. Select your destination from it, and then click the Hotel 
- button to refine the search. Click any of the markers to display more information for each location.
+ - The start point for any user journey on AwayDay is the drop-down menu;
+ - Select your destination from the drop-down menu;
+ - click the Hotel button to refine the search;
+ - Click any of the markers to display more information for each location.
 
 2. Our train arrives a couple of hours before the match, where is good for a beer?
  - Thirsty? After selecting the club you are visiting from the drop-down menu, clicking the pint glass icon will return the 
@@ -54,6 +56,22 @@ my Try/Catch tests to the console, but also ensuring that the catch message neve
 - 
 - 
 
+<<<Responsiveness grid here>>>
+
+<<<Bugfix grid here>>>
+
+## Links and Images
+
+- When testing I have always tried to select different clubs to get as wide a selection of places returned by the API call
+as possible. These are all re-centreing the map based on each club's location variable (found in the 
+[map script](assets/scripts/map.js)), and I have included comments on a couple of clubs where they are either ground-sharing or 
+play matches at more than one stadium.
+- The social media links I have included in the footer are dummy links.
+- The contact form modal is live and sending any queries to an old GMail account I have.
+- The links and images displayed in the infoWindow are those returned by Google, so while I 
+have tested those extensively, I cannot guarantee that of the 20 results returned by the four buttons for the 135 clubs currently 
+featured, that all of these are active and functioning. What I have been able to spot is that a location will occasionally not yet
+have a photograph, and this is detailed in the next section.
 
 ## Outstanding Issues
 
@@ -65,6 +83,9 @@ this unfixed as time was at a premium.
 an exception. This needs to be fixed using an if else statement that extends the range to 2km or 5km.
 
 ## Validation
+
+Each page was directly inputted into the W3C HTML Validator to check that the markup used passed W3C standards. The CSS style 
+sheet was directly inputted into the W3C CSS Validator. The results can be seen below.
 
 ### Issues Raised
 
