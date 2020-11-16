@@ -1117,15 +1117,16 @@ function initMap() {
 
     const userInput = document.getElementById("custom-input");
     const customRequest = new google.maps.places.SearchBox(userInput);
-
     
     /* Biases results within the current map window, but not exclusively within it */
+
     map.addListener("bounds_changed", () => {
         customRequest.setBounds(map.getBounds());
     });
     markers = [];
 
     /* Returns results when a predictive item is selected */
+
     customRequest.addListener("places_changed", () => {
         const places = customRequest.getPlaces();
 
@@ -1166,6 +1167,32 @@ function initMap() {
                 })
             );
 
+            /* image and website not working properly yet, see line 1385 for possible solution? */
+            /* all infoWindows currently open against one marker for these search results rather than
+            against the marker they are assigned to, maybe needs a for each marker loop in there? */
+            /* Results tend to be thrown away from the original ground once the custom field looks for a wider radius. 
+            Maybe the map needs to be re-centered constantly, or does is it worth looking at the strictbounds property
+            in the AutoComplete tutorial? */
+
+            let placeDetails = `<div>
+                    <div style="text-transform: uppercase; color: #8e2be2"><b>${place.name}</b></div>
+                    <br>
+                    <p>Img here</p>
+                    <br>
+                    Rating: ${place.rating}
+                    <br>
+                    <a href="${place.website}" target="_blank" style="color: #05e680">Website</a>
+                    <br>
+                    </div>`;
+
+            let placeInfoWindow = new google.maps.InfoWindow({
+                content: placeDetails
+            });
+            
+            marker.addListener("click", function() {
+                placeInfoWindow.open(map, marker);
+            });
+
             /* Extends boundaries of map to accommodate all markers */ 
 
             if (place.geometry.viewport) {
@@ -1205,14 +1232,17 @@ function initMap() {
 
         service.nearbySearch(pubsRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+
                 /* for loop restricts markers to top 5 items only */
+
                 for (let i = 0; i < 5; i++) {
-                    const m = marker(results[i]);
+                    const m = buttonMarker(results[i]);
                     markers.push(m);
                 }
                 console.log(markers);
 
                 /* pubsRequest.location allows the map to stay centred on the stadium chosen */
+
                 map.setCenter(pubsRequest.location);
                 map.setZoom(14);
             }
@@ -1241,14 +1271,17 @@ function initMap() {
 
         service.nearbySearch(foodRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+
                 /* for loop restricts markers to top 5 items only */
+
                 for (let i = 0; i < 5; i++) {
-                    const m = marker(results[i]);
+                    const m = buttonMarker(results[i]);
                     markers.push(m);
                 }
                 console.log(markers);
 
                 /* foodRequest.location allows the map to stay centred on the stadium chosen */
+
                 map.setCenter(foodRequest.location);
                 map.setZoom(14);
             }
@@ -1277,14 +1310,17 @@ function initMap() {
 
         service.nearbySearch(hotelRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+
                 /* for loop restricts markers to top 5 items only */
+
                 for (let i = 0; i < 5; i++) {
-                    const m = marker(results[i]);
+                    const m = buttonMarker(results[i]);
                     markers.push(m);
                 }
                 console.log(markers);
                 
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
+
                 map.setCenter(hotelRequest.location);
                 map.setZoom(14);
             }
@@ -1313,14 +1349,17 @@ function initMap() {
 
         service.nearbySearch(cafeRequest, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK) {
+
                 /* for loop restricts markers to top 5 items only */
+
                 for (let i = 0; i < 5; i++) {
-                    const m = marker(results[i]);
+                    const m = buttonMarker(results[i]);
                     markers.push(m);
                 }
                 console.log(markers);
 
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
+
                 map.setCenter(cafeRequest.location);
                 map.setZoom(14);
             }
@@ -1331,13 +1370,14 @@ console.log("Successfully called Google Maps API");
 } catch (e) {
     alert(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
     console.log(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
+
     /* add a line in here for image display to replace alert above*/
 }
 
 /* The marker, showDetails and getDetails functions for the creation of markers, infoWindows 
 and sourcing photos below are taken from the Code Labs tutorial in the README.md */
 
-function marker(place) {
+function buttonMarker(place) {
 
     const marker = new google.maps.Marker({
         map,
