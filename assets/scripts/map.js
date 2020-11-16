@@ -225,7 +225,7 @@ const nhlDevils = document.getElementById("nhlDevils");
 const nhlDevilsLL = {lat: 40.733726, lng: -74.171051};
 const nhlIsland = document.getElementById("nhlIsland");
 const nhlIslandLL = {lat: 40.722936, lng: -73.590634};
-/* New York Islanders ground-share with New York Knicks of the NBA */
+/* New York Rangers ground-share with New York Knicks of the NBA */
 const nhlRangers = document.getElementById("nhlRangers");
 const nhlRangersLL = {lat: 40.750653, lng: -73.993527};
 const nhlSens = document.getElementById("nhlSens");
@@ -239,6 +239,7 @@ const nhlSharks = document.getElementById("nhlSharks");
 const nhlSharksLL = {lat: 37.332670, lng: -121.901331};
 const nhlBlues = document.getElementById("nhlBlues");
 const nhlBluesLL = {lat: 38.626790, lng: -90.202568};
+/* Seattle Kraken needs to be added for 2022 */
 const nhlTampa = document.getElementById("nhlTampa");
 const nhlTampaLL = {lat: 27.942605, lng: -82.451793};
 /* Toronto Maple Leafs ground-share with Toronto Raptors of the NBA */
@@ -328,6 +329,7 @@ const slrWigWarLL = {lat: 53.547562, lng: -2.654000};
 
 /* League of Ireland */
 
+/* Bohemians will ground-share with Shelbourne in 2022 */
 const loiBohs = document.getElementById("loiBohs");
 const loiBohsLL = {lat: 53.361751, lng: -6.275308};
 const loiCorkCty = document.getElementById("loiCorkCty");
@@ -1337,8 +1339,6 @@ function marker(place) {
     });
 
     markers.push(marker);
-
-    /* do marker references below here need changing to m? */
     
     google.maps.event.addListener(marker, "click", () => {
         let request = {
