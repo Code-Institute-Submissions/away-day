@@ -183,6 +183,8 @@ of the coding concepts behind the map.
 - Google's own [tutorials](https://developers.google.com/maps/documentation) give a great run-down of how to get started using maps. 
 They aren't too great for showing you how to customise beyond what they have already given, but their documentation and setup guides 
 were invaluable.
+- Just when I didn't think anybody couldn't sufficiently simplify the infoWindow process for me, Chris Minnick's 
+[Webucator tutorial](https://www.webucator.com/how-to/how-add-an-info-window-google-map.cfm) finally gave me the breakthrough I needed.
 - My mentor Precious Ijege recommended adding a search box after my initial presentation. Luckily Google's
  [PlaceBox setup](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox?hl=ja) ensured that I flew 
  through adding this to the project.
