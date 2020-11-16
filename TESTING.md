@@ -1,4 +1,4 @@
-<img src="images/site/namebar.PNG">
+<img src="images/site/testbar.PNG">
 
 ## User Stories
 
@@ -40,14 +40,14 @@
 
 ## Bugfixes
 
-- Harnessing power of Google Maps, getting and setting properties, displaying markers and information
+- Harnessing power of Google Maps, getting and setting properties, displaying markers and information >>>
 - Occasionally the call to Google's Places API would fail on account of the callback to my initMap function, and no amount of 
 tinkering with Try/Catch would get any alternative images to show up in place of the #map box. I tried moving scripts around 
 and removing the async property from the script tags, but luckily Kevin Loughrey at Code Institute was on hand to advise my to
 load the function in the <body> tag instead of in the script call to Google. This had the dual effect of successfully displaying
 my Try/Catch tests to the console, but also ensuring that the catch message never needed to be logged. 
-- Bug #6: On the mobile view, when a club crest is clicked, the league-specific menu closes but the overall drop-down menu stays open. I 
-tried to use class and ID selectors in jQuery to resolve this but could not find a solution. It doesn't impact the use of the site 
+- Bug #6: On the mobile view, when a club crest is clicked, the league-specific menu closes but the overall drop-down menu stays open. 
+I tried to use class and ID selectors in jQuery to resolve this but could not find a solution. It doesn't impact the use of the site 
 greatly but it does interfere with the usability flow on mobile devices, especially since people using mobiles are more likely to 
 want to use the website as quickly as possible.
 - Bug #7: I spent a lot of time trying to get the club crests to display in a neat way inside the drop-down menus. I piled the CSS 
@@ -67,10 +67,10 @@ as possible. These are all re-centreing the map based on each club's location va
 play matches at more than one stadium.
 - The social media links I have included in the footer are dummy links.
 - The contact form modal is live and sending any queries to an old GMail account I have.
-- The links and images displayed in the infoWindow are those returned by Google, so while I 
-have tested those extensively, I cannot guarantee that of the 20 results returned by the four buttons for the 135 clubs currently 
-featured, that all of these are active and functioning. What I have been able to spot is that a location will occasionally not yet
-have a photograph, and this is detailed in the next section.
+- The links and images displayed in the infoWindow are those returned by Google, so while I have tested those extensively, I cannot 
+guarantee that of the 20 results returned by the four buttons for the 135 clubs currently featured, that all of these are active and 
+functioning. What I have been able to spot is that a location will occasionally not yet have a photograph, and this is detailed in 
+the next section.
 
 ## Outstanding Issues
 
