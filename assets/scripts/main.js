@@ -75,6 +75,7 @@ $(document).ready(function() {
 
         $("#mobSelector").on("click",function() {
             $("#dropCollapse").toggleClass("col-12");
+            $("#dropCollapse").toggleClass("col-9 col-md-8");
             $("#logoHolder").toggleClass("d-none");
         });
 
