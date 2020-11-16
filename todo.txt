@@ -3,8 +3,9 @@
 3 Add comments for list of current ground shares and clubs with more than one stadium (perhaps add multiple stadia as future development).
 4 For loop to increase distance (see if upping to 2000m and decreasing zoom has an effect once you add a club crest marker
 5 Margin or padding for main container to separate main boxes from header?
-Search box refining and infowindows
-Test alert message for try catch by removing letter from Google API script 
+6 Search box refining and infowindows
+8 Test alert message for try catch by removing letter from Google API script 
     This will allow more map space on larger devices.  
-7 README and TESTING
+9 README and TESTING
 10 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
+11 tablet view drop-downs only displaying one column
