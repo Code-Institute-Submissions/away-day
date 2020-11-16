@@ -295,8 +295,9 @@ footer {
     }
 
     .dropdown-menu {
-        /* Overwrites default Bootstrap parameters */
-        min-width: 100%;
+        /* Overwrites default Bootstrap parameters, gives narrower 
+        width to prevent horizontal scrolling for tablet view */
+        min-width: 360px;
     }
 
     #map-box {
