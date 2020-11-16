@@ -62,16 +62,20 @@ const flcBlaRov = document.getElementById("flcBlaRov");
 const flcBlaRovLL = {lat: 53.728503, lng: -2.489116};
 const flcBourne = document.getElementById("flcBourne");
 const flcBourneLL = {lat: 50.735213, lng: -1.838267};
+/* Brentford groundshare with London Irish of the English Rugby Premiership */
 const flcBrentf = document.getElementById("flcBrentf");
 const flcBrentfLL = {lat: 51.490683, lng: -0.288730};
 const flcBriCty = document.getElementById("flcBriCty");
 const flcBriCtyLL = {lat: 51.440148, lng: -2.620163};
+/* Cardiff City ground-share with Cardiff Blues of Pro14 Rugby */
 const flcCarCty = document.getElementById("flcCarCty");
 const flcCarCtyLL = {lat: 51.472770, lng: -3.203034};
+/* Coventry City current ground-sharing with Birmingham City */
 const flcCovCty = document.getElementById("flcCovCty");
 const flcCovCtyLL = {lat: 52.475680, lng: -1.868044};
 const flcDerCou = document.getElementById("flcDerCou");
 const flcDerCouLL = {lat: 52.914937, lng: -1.447248};
+/* Huddersfield Town ground-share with Huddersfield Giants of the Rugby Super League */
 const flcHudTwn = document.getElementById("flcHudTwn");
 const flcHudTwnLL = {lat: 53.654194, lng: -1.768365};
 const flcLutTwn = document.getElementById("flcLutTwn");
@@ -96,6 +100,7 @@ const flcSheWed = document.getElementById("flcSheWed");
 const flcSheWedLL = {lat: 53.411400, lng: -1.500750};
 const flcStoCty = document.getElementById("flcStoCty");
 const flcStoCtyLL = {lat: 52.988429, lng: -2.175439};
+/* Swansea City ground-share with Neath-Swansea Ospreys of Pro14 Rugby */
 const flcSwaCty = document.getElementById("flcSwaCty");
 const flcSwaCtyLL = {lat: 51.642683, lng: -3.934559};
 const flcWatford = document.getElementById("flcWatford");
@@ -105,6 +110,7 @@ const flcWycWanLL = {lat: 51.630529, lng: -0.800300};
 
 /* GAA*/
 
+/* Antrim currently use this stadium for football and another for hurling */
 const gaaAntrim = document.getElementById("gaaAntrim");
 const gaaAntrimLL = {lat: 54.573336, lng: -5.983965};
 const gaaArmagh = document.getElementById("gaaArmagh");
@@ -123,6 +129,7 @@ const gaaDonegal = document.getElementById("gaaDonegal");
 const gaaDonegalLL = {lat: 54.801474, lng: -7.780035};
 const gaaDown = document.getElementById("gaaDown");
 const gaaDownLL = {lat: 54.163056, lng: -6.334669};
+/* Dublin currently use this stadium for football and another for hurling */
 const gaaDublin = document.getElementById("gaaDublin");
 const gaaDublinLL = {lat: 53.360496, lng: -6.251235};
 const gaaFerman = document.getElementById("gaaFerman");
@@ -174,8 +181,10 @@ const gaaWicklowLL = {lat: 52.852616, lng: -6.334831};
 
 const nhlDucks = document.getElementById("nhlDucks");
 const nhlDucksLL = {lat: 33.807845, lng: -117.876555};
+/* Arizona Coyotes ground-share with Phoenix Suns of the NBA */
 const nhlCoyotes = document.getElementById("nhlCoyotes");
 const nhlCoyotesLL = {lat: 33.531940, lng: -112.261141};
+/* Boston Bruins ground-share with Boston Celtics of the NBA */
 const nhlBruins = document.getElementById("nhlBruins");
 const nhlBruinsLL = {lat: 42.366347, lng: -71.062122};
 const nhlSabres = document.getElementById("nhlSabres");
@@ -184,22 +193,28 @@ const nhlFlames = document.getElementById("nhlFlames");
 const nhlFlamesLL = {lat: 51.037346, lng: -114.051897};
 const nhlCanes = document.getElementById("nhlCanes");
 const nhlCanesLL = {lat: 35.803303, lng: -78.722027};
+/* Colorado Avalanche ground-share with Denver Nuggets of the NBA */
 const nhlAvs = document.getElementById("nhlAvs");
 const nhlAvsLL = {lat: 39.748632, lng: -105.007807};
+/* Chicago Blackhawks ground-share with Chicago Bulls of the NBA */
 const nhlBHawks = document.getElementById("nhlBHawks");
 const nhlBHawksLL = {lat: 41.880675, lng: -87.674270};
 const nhlJackets = document.getElementById("nhlJackets");
 const nhlJacketsLL = {lat: 39.969249, lng: -83.005882};
+/* Dallas Stars ground-share with Dallas Mavericks of the NBA */
 const nhlStars = document.getElementById("nhlStars");
 const nhlStarsLL = {lat: 32.790468, lng: -96.810416};
+/* Detroit Red Wings ground-share with Detroit Pistons of the NBA */
 const nhlWings = document.getElementById("nhlWings");
 const nhlWingsLL = {lat: 42.341039, lng: -83.055342};
 const nhlOilers = document.getElementById("nhlOilers");
 const nhlOilersLL = {lat: 53.547081, lng: -113.497614};
 const nhlPanthers = document.getElementById("nhlPanthers");
 const nhlPanthersLL = {lat: 26.158421, lng: -80.325272};
+/* Los Angeles Kings ground-share with Los Angeles Lakers and Los Angeles Clippers of the NBA */
 const nhlKings = document.getElementById("nhlKings");
 const nhlKingsLL = {lat: 34.043169, lng: -118.267133};
+/* Minnesota Wild ground-share with Minnesota Timberwolves of the NBA */
 const nhlWild = document.getElementById("nhlWild");
 const nhlWildLL = {lat: 44.944790, lng: -93.101167};
 const nhlHabs = document.getElementById("nhlHabs");
@@ -210,10 +225,12 @@ const nhlDevils = document.getElementById("nhlDevils");
 const nhlDevilsLL = {lat: 40.733726, lng: -74.171051};
 const nhlIsland = document.getElementById("nhlIsland");
 const nhlIslandLL = {lat: 40.722936, lng: -73.590634};
+/* New York Islanders ground-share with New York Knicks of the NBA */
 const nhlRangers = document.getElementById("nhlRangers");
 const nhlRangersLL = {lat: 40.750653, lng: -73.993527};
 const nhlSens = document.getElementById("nhlSens");
 const nhlSensLL = {lat: 45.296939, lng: -75.926962};
+/* Philadelphia Flyers ground-share with Philadelphia 76ers of the NBA */
 const nhlFlyers = document.getElementById("nhlFlyers");
 const nhlFlyersLL = {lat: 39.901267, lng: -75.172081};
 const nhlPenguins = document.getElementById("nhlPenguins");
@@ -224,12 +241,14 @@ const nhlBlues = document.getElementById("nhlBlues");
 const nhlBluesLL = {lat: 38.626790, lng: -90.202568};
 const nhlTampa = document.getElementById("nhlTampa");
 const nhlTampaLL = {lat: 27.942605, lng: -82.451793};
+/* Toronto Maple Leafs ground-share with Toronto Raptors of the NBA */
 const nhlLeafs = document.getElementById("nhlLeafs");
 const nhlLeafsLL = {lat: 43.643482, lng: -79.379287};
 const nhlCanucks = document.getElementById("nhlCanucks");
 const nhlCanucksLL = {lat: 49.277921, lng: -123.108584};
 const nhlKnights = document.getElementById("nhlKnights");
 const nhlKnightsLL = {lat: 36.102773, lng: -115.178250};
+/* Washington Capitals ground-share with Washington Wizards of the NBA */
 const nhlCapitals = document.getElementById("nhlCapitals");
 const nhlCapitalsLL = {lat: 38.898044, lng: -77.020962};
 const nhlJets = document.getElementById("nhlJets");
@@ -284,8 +303,10 @@ const slrCasTig = document.getElementById("slrCasTig");
 const slrCasTigLL = {lat: 53.729517, lng: -1.340833};
 const slrCatDra = document.getElementById("slrCatDra");
 const slrCatDraLL = {lat: 42.722828, lng: 2.885358};
+/* Huddersfield Giants ground-share with Huddersfield Town of the English Football Championship */
 const slrHudGia = document.getElementById("slrHudGia");
 const slrHudGiaLL = {lat: 53.654194, lng: -1.768365};
+/* Hull FC ground-share with Hull City of League One */
 const slrHullFC = document.getElementById("slrHullFC");
 const slrHullFCLL = {lat: 53.746286, lng: -0.367702};
 const slrHullKR = document.getElementById("slrHullKR");
@@ -294,12 +315,14 @@ const slrLeeRhi = document.getElementById("slrLeeRhi");
 const slrLeeRhiLL = {lat: 53.816331, lng: -1.582257};
 const slrSaints = document.getElementById("slrSaints");
 const slrSaintsLL = {lat: 53.447313, lng: -2.726213};
+/* Salford Red Devils ground-share with Sale Sharks of English Rugby Premiership */
 const slrSalRed = document.getElementById("slrSalRed");
 const slrSalRedLL = {lat: 53.469339, lng: -2.374945};
 const slrWakTri = document.getElementById("slrWakTri");
 const slrWakTriLL = {lat: 53.669707, lng: -1.479360};
 const slrWarWol = document.getElementById("slrWarWol");
 const slrWarWolLL = {lat: 53.394812, lng: -2.595800};
+/* Wigan Warriors ground-share with wigan Athletic of League One */
 const slrWigWar = document.getElementById("slrWigWar");
 const slrWigWarLL = {lat: 53.547562, lng: -2.654000};
 
@@ -319,6 +342,7 @@ const loiShaRov = document.getElementById("loiShaRov");
 const loiShaRovLL = {lat: 53.283324, lng: -6.373823};
 const loiSliRov = document.getElementById("loiSliRov");
 const loiSliRovLL = {lat: 54.269872, lng: -8.487382};
+/* Shelbourne are due to ground-share with Bohemians in 2022 */
 const loiShels = document.getElementById("loiShels");
 const loiShelsLL = {lat: 53.367465, lng: -6.251664};
 const loiPats = document.getElementById("loiPats");

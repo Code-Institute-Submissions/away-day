@@ -74,7 +74,8 @@ first release.
 vice versa. I briefly explored Google's Directions API but I already had my hands full with the Places API.
 - Rollout to more leagues, sports and countries - The only thing I need to achieve this is the latitude and longitude of each 
 club's home stadium, and a good quality PNG club crest, so this could be quite easy to implement. My current main priorities are 
-NFL, NBA, NRL and AFL.
+NFL, NBA, NRL and AFL, and I've included some comments in the [map script](assets/scripts/map.js) of stadium co-ordinates that I 
+can re-use for this purpose.
 - A wider league selection would certainly require a re-structure of the drop-down options, the format I've used is already at the 
 limit of what it can display well on smaller devices. The most obvious solution would be to group leagues by sport and introduce 
 a secondary drop-down layer.
