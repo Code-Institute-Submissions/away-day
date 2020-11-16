@@ -1,6 +1,7 @@
 /* Site interactivity */
 
 /* Drop-down interactivity for desktop and tablets */
+
 $(document).ready(function() {
     if ($(window).width() > 800) {
         
@@ -66,9 +67,10 @@ $(document).ready(function() {
     };
 });
 
-/* Drop-down interactivity for mobile and tablet (bugfix #8) display */
+/* Drop-down interactivity for mobile and tablet (bugfix #9) display */
 
 $(document).ready(function() {
+
     if ($(window).width() < 801) {
 
         /* Bugfix #7: removes AwayDay logo and allows drop-down to expand across screen */
@@ -79,7 +81,20 @@ $(document).ready(function() {
             $("#logoHolder").toggleClass("d-none");
         });
 
-        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+        /* Bugfix #6: Dropdown collapse for mobile on crest selection */
+
+        $(".dropdown-item").on("click",function() {
+            console.log("clicked!");
+            $("#mobSelector").addClass("collapsed").attr("aria-expanded", "false");
+
+            /* below restores default classes see under bugfix #7 heading */
+
+            $("#leagueSelection").removeClass("show");
+            $("#logoHolder").removeClass("d-none");
+            $("#dropCollapse").removeClass("col-12").addClass("col-9 col-md-8");
+        });
+
+        /* Swaps league logo from #ffffff to #8aebe2 for selected league */
         
         $("#bunDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-8a2be2.png");
@@ -89,12 +104,14 @@ $(document).ready(function() {
             $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
             $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
             $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+
             /* below resets all dropdowns to white in case any have previously been selected */
+
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#bunDropdown").css("color", "#8a2be2");
         });
 
-        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+        /* Swaps league logo from #ffffff to #8aebe2 for selected league */
 
         $("#eplDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
@@ -104,12 +121,14 @@ $(document).ready(function() {
             $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
             $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
             $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+
             /* below resets all dropdowns to white in case any have previously been selected */
+
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#eplDropdown").css("color", "#8a2be2");
         });
 
-        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+        /* Swaps league logo from #ffffff to #8aebe2 for selected league */
 
         $("#flcDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
@@ -119,12 +138,14 @@ $(document).ready(function() {
             $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
             $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
             $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+
             /* below resets all dropdowns to white in case any have previously been selected */
+
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#flcDropdown").css("color", "#8a2be2");
         });
 
-        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+        /* Swaps league logo from #ffffff to #8aebe2 for selected league */
 
         $("#gaaDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
@@ -134,12 +155,14 @@ $(document).ready(function() {
             $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
             $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
             $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+
             /* below resets all dropdowns to white in case any have previously been selected */
+
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#gaaDropdown").css("color", "#8a2be2");
         });
 
-        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+        /* Swaps league logo from #ffffff to #8aebe2 for selected league */
 
         $("#loiDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
@@ -149,12 +172,14 @@ $(document).ready(function() {
             $("#loi-icon").attr("src", "images/dropdowns/loi-8a2be2.png");
             $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
             $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+
             /* below resets all dropdowns to white in case any have previously been selected */
+
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#loiDropdown").css("color", "#8a2be2");
         });
 
-        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+        /* Swaps league logo from #ffffff to #8aebe2 for selected league */
 
         $("#nhlDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
@@ -164,12 +189,14 @@ $(document).ready(function() {
             $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
             $("#nhl-icon").attr("src", "images/dropdowns/nhl-8a2be2.png");
             $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
+
             /* below resets all dropdowns to white in case any have previously been selected */
+
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#nhlDropdown").css("color", "#8a2be2");
         });
 
-        /* Swaps league logo from #ffffff to #8aebe2 for selected version */
+        /* Swaps league logo from #ffffff to #8aebe2 for selected league */
 
         $("#slrDropdown").on("click",function() {
             $("#bun-icon").attr("src", "images/dropdowns/bun-ffffff.png");
@@ -179,17 +206,13 @@ $(document).ready(function() {
             $("#loi-icon").attr("src", "images/dropdowns/loi-ffffff.png");
             $("#nhl-icon").attr("src", "images/dropdowns/nhl-ffffff.png");
             $("#slr-icon").attr("src", "images/dropdowns/slr-8a2be2.png");
+
             /* below resets all dropdowns to white in case any have previously been selected */
+
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#slrDropdown").css("color", "#8a2be2");
         });
     };
-
-    /* Dropdown collapse for mobile - not working yet */
-    $("dropdown-item").on("click",function() {
-        $("#mobSelector").addClass("collapsed").attr("aria-expanded", "false");
-        $("#leagueSelection").removeClass("show");
-    });
 });
 
     /* Button highlights to indicate current selection */

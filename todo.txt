@@ -1,8 +1,4 @@
 1 SEARCH BAR - streamline code. Limit search results, link to infoWindow code
-2 FAIL WHALE PAGE - just need to add an image in
-4 For loop to increase distance (see if upping to 2000m and decreasing zoom has an effect once you add a club crest marker
-6 Search box refining and infowindows
-8 Test alert message for try catch by removing letter from Google API script 
-    This will allow more map space on larger devices.  
-9 README and TESTING
-10 map event listener to recent to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
+2 FAIL WHALE PAGE - just need to add an image in, test alert message for try catch by removing letter from Google API script 
+3 For loop to increase distance (see if upping to 2000m and decreasing zoom has an effect once you add a club crest marker
+4 map event listener to re-centre to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked

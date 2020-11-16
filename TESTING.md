@@ -40,21 +40,20 @@
 
 ## Bugfixes
 
-- I spent a lot of time trying to get the club crests to display in a neat way inside the drop-down menus. I piled the CSS 
-rules up in an attempt to force those elements to do what I wanted, but eventually realised the power of the Element Inspector
-in the browser and simply turned parameters on and off again until I found the solution that I needed. Some of the links I
-have [credited](README.md) helped me realise that with CSS the rule is often 'less is more'.
 - Harnessing power of Google Maps, getting and setting properties, displaying markers and information
 - Occasionally the call to Google's Places API would fail on account of the callback to my initMap function, and no amount of 
 tinkering with Try/Catch would get any alternative images to show up in place of the #map box. I tried moving scripts around 
 and removing the async property from the script tags, but luckily Kevin Loughrey at Code Institute was on hand to advise my to
 load the function in the <body> tag instead of in the script call to Google. This had the dual effect of successfully displaying
 my Try/Catch tests to the console, but also ensuring that the catch message never needed to be logged. 
--  
-- 
-- 
-- 
-- 
+- Bug #6: On the mobile view, when a club crest is clicked, the league-specific menu closes but the overall drop-down menu stays open. I 
+tried to use class and ID selectors in jQuery to resolve this but could not find a solution. It doesn't impact the use of the site 
+greatly but it does interfere with the usability flow on mobile devices, especially since people using mobiles are more likely to 
+want to use the website as quickly as possible.
+- Bug #7: I spent a lot of time trying to get the club crests to display in a neat way inside the drop-down menus. I piled the CSS 
+rules up in an attempt to force those elements to do what I wanted, but eventually realised the power of the Element Inspector
+in the browser and simply turned parameters on and off again until I found the solution that I needed. Some of the links I
+have [credited](README.md) helped me realise that with CSS the rule is often 'less is more'.
 
 <<<Responsiveness grid here>>>
 
@@ -77,9 +76,10 @@ have a photograph, and this is detailed in the next section.
 
 - There is some bleed between the mobile-specific and desktop-specific jQuery scripts. Both work fine upon loading but 
 once you switch between screen sizes in developer mode the hover event listener can stick in place until another icon is 
-clicked. Given that most users would not sit and flick between two screen sizes while using the site, I decided to leave 
+clicked. The drop-down menu will not display correctly if you switch after loading, but if you load initially as a mobile device 
+it works fine. Given that most users would not sit and flick between two screen sizes while using the site, I decided to leave 
 this unfixed as time was at a premium.
-- If a a location returns no results within the confines of a search (e.g. no pubs within 1km of the stadium), the API throws
+- Bug #8: If a location returns no results within the confines of a search (e.g. no pubs within 1km of the stadium), the API throws
 an exception. This needs to be fixed using an if else statement that extends the range to 2km or 5km.
 
 ## Validation
