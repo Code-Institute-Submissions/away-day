@@ -377,91 +377,109 @@ function initMap() {
     google.maps.event.addDomListener(bunArminia, 'click', function() {
         map.setCenter(bunArminiaLL);
         map.setZoom(16);
+        let clubLatLng = bunArminiaLL;
     });
 
     google.maps.event.addDomListener(bunAugs07, 'click', function() {
         map.setCenter(bunAugs07LL);
         map.setZoom(16);
+        let clubLatLng = bunAugs07LL;
     });
 
     google.maps.event.addDomListener(bunBayer04, 'click', function() {
         map.setCenter(bunBayer04LL);
         map.setZoom(16);
+        let clubLatLng = bunBayer04LL;
     });
 
     google.maps.event.addDomListener(bunBayern, 'click', function() {
         map.setCenter(bunBayernLL);
         map.setZoom(16);
+        let clubLatLng = bunBayernLL;
     });
 
     google.maps.event.addDomListener(bunBorMGB, 'click', function() {
         map.setCenter(bunBorMGBLL);
         map.setZoom(16);
+        let clubLatLng = bunBorMGBLL;
     });
 
     google.maps.event.addDomListener(bunDortmund, 'click', function() {
         map.setCenter(bunDortmundLL);
         map.setZoom(16);
+        let clubLatLng = bunDortmundLL;
     });
 
     google.maps.event.addDomListener(bunEinFra, 'click', function() {
         map.setCenter(bunEinFraLL);
         map.setZoom(16);
+        let clubLatLng = bunEinFraLL;
     });
 
     google.maps.event.addDomListener(bunHertha, 'click', function() {
         map.setCenter(bunHerthaLL);
         map.setZoom(16);
+        let clubLatLng = bunHerthaLL;
     });
 
     google.maps.event.addDomListener(bunHoffen, 'click', function() {
         map.setCenter(bunHoffenLL);
         map.setZoom(16);
+        let clubLatLng = bunHoffenLL;
     });
 
     google.maps.event.addDomListener(bun1FCKoln, 'click', function() {
         map.setCenter(bun1FCKolnLL);
         map.setZoom(16);
+        let clubLatLng = bun1FCKolnLL;
     });
 
     google.maps.event.addDomListener(bunLeipzig, 'click', function() {
         map.setCenter(bunLeipzigLL);
         map.setZoom(16);
+        let clubLatLng = bunLeipzigLL;
     });
 
     google.maps.event.addDomListener(bunMainz, 'click', function() {
         map.setCenter(bunMainzLL);
         map.setZoom(16);
+        let clubLatLng = bunMainzLL;
     });
 
     google.maps.event.addDomListener(bunSCFrei, 'click', function() {
         map.setCenter(bunSCFreiLL);
         map.setZoom(16);
+        let clubLatLng = bunSCFreiLL;
     });
 
     google.maps.event.addDomListener(bunSchalke, 'click', function() {
         map.setCenter(bunSchalkeLL);
         map.setZoom(16);
+        let clubLatLng = bunSchalkeLL;
     });
 
     google.maps.event.addDomListener(bunStuttg, 'click', function() {
         map.setCenter(bunStuttgLL);
         map.setZoom(16);
+        let clubLatLng = bunStuttgLL;
     });
 
     google.maps.event.addDomListener(bunUnionB, 'click', function() {
         map.setCenter(bunUnionBLL);
         map.setZoom(16);
+        let clubLatLng = bunUnionBLL;
     });
 
     google.maps.event.addDomListener(bunWerder, 'click', function() {
         map.setCenter(bunWerderLL);
         map.setZoom(16);
+        let clubLatLng = bunWerderLL;
     });
 
     google.maps.event.addDomListener(bunWolfsb, 'click', function() {
         map.setCenter(bunWolfsbLL);
         map.setZoom(16);
+        let clubLatLng = bunWolfsbLL;
     });
     
     /* Championship */
@@ -469,121 +487,145 @@ function initMap() {
     google.maps.event.addDomListener(flcBarnsl, 'click', function() {
         map.setCenter(flcBarnslLL);
         map.setZoom(16);
+        let clubLatLng = flcBarnslLL;
     });
 
     google.maps.event.addDomListener(flcBirCty, 'click', function() {
         map.setCenter(flcBirCtyLL);
         map.setZoom(16);
+        let clubLatLng = flcBirCtyLL;
     });
 
     google.maps.event.addDomListener(flcBriCty, 'click', function() {
         map.setCenter(flcBriCtyLL);
         map.setZoom(16);
+        let clubLatLng = flcBriCtyLL;
     });
 
     google.maps.event.addDomListener(flcBlaRov, 'click', function() {
         map.setCenter(flcBlaRovLL);
         map.setZoom(16);
+        let clubLatLng = flcBlaRovLL;
     });
 
     google.maps.event.addDomListener(flcBourne, 'click', function() {
         map.setCenter(flcBourneLL);
         map.setZoom(16);
+        let clubLatLng = flcBourneLL;
     });
 
     google.maps.event.addDomListener(flcBrentf, 'click', function() {
         map.setCenter(flcBrentfLL);
         map.setZoom(16);
+        let clubLatLng = flcBrentfLL;
     });
 
     google.maps.event.addDomListener(flcCarCty, 'click', function() {
         map.setCenter(flcCarCtyLL);
         map.setZoom(16);
+        let clubLatLng = flcCarCtyLL;
     });
 
     google.maps.event.addDomListener(flcCovCty, 'click', function() {
         map.setCenter(flcCovCtyLL);
         map.setZoom(16);
+        let clubLatLng = flcCovCtyLL;
     });
 
     google.maps.event.addDomListener(flcDerCou, 'click', function() {
         map.setCenter(flcDerCouLL);
         map.setZoom(16);
+        let clubLatLng = flcDerCouLL;
     });
 
     google.maps.event.addDomListener(flcForest, 'click', function() {
         map.setCenter(flcForestLL);
         map.setZoom(16);
+        let clubLatLng = flcForestLL;
     });
 
     google.maps.event.addDomListener(flcHudTwn, 'click', function() {
         map.setCenter(flcHudTwnLL);
         map.setZoom(16);
+        let clubLatLng = flcHudTwnLL;
     });
 
     google.maps.event.addDomListener(flcLutTwn, 'click', function() {
         map.setCenter(flcLutTwnLL);
         map.setZoom(16);
+        let clubLatLng = flcLutTwnLL;
     });
 
     google.maps.event.addDomListener(flcMBoro, 'click', function() {
         map.setCenter(flcMBoroLL);
         map.setZoom(16);
+        let clubLatLng = flcMBoroLL;
     });
 
     google.maps.event.addDomListener(flcMillwall, 'click', function() {
         map.setCenter(flcMillwallLL);
         map.setZoom(16);
+        let clubLatLng = flcMillwallLL;
     });
 
     google.maps.event.addDomListener(flcNorCty, 'click', function() {
         map.setCenter(flcNorCtyLL);
         map.setZoom(16);
+        let clubLatLng = flcNorCtyLL;
     });
 
     google.maps.event.addDomListener(flcPreston, 'click', function() {
         map.setCenter(flcPrestonLL);
         map.setZoom(16);
+        let clubLatLng = flcPrestonLL;
     });
 
     google.maps.event.addDomListener(flcQPR, 'click', function() {
         map.setCenter(flcQPRLL);
         map.setZoom(16);
+        let clubLatLng = flcQPRLL;
     });
 
     google.maps.event.addDomListener(flcReading, 'click', function() {
         map.setCenter(flcReadingLL);
         map.setZoom(16);
+        let clubLatLng = flcReadingLL;
     });
 
     google.maps.event.addDomListener(flcRotUtd, 'click', function() {
         map.setCenter(flcRotUtdLL);
         map.setZoom(16);
+        let clubLatLng = flcRotUtdLL;
     });
 
     google.maps.event.addDomListener(flcSheWed, 'click', function() {
         map.setCenter(flcSheWedLL);
         map.setZoom(16);
+        let clubLatLng = flcSheWedLL;
     });
 
     google.maps.event.addDomListener(flcStoCty, 'click', function() {
         map.setCenter(flcStoCtyLL);
         map.setZoom(16);
+        let clubLatLng = flcStoCtyLL;
     });
 
     google.maps.event.addDomListener(flcSwaCty, 'click', function() {
         map.setCenter(flcSwaCtyLL);
         map.setZoom(16);
+        let clubLatLng = flcSwaCtyLL;
     });
 
     google.maps.event.addDomListener(flcWatford, 'click', function() {
         map.setCenter(flcWatfordLL);
         map.setZoom(16);
+        let clubLatLng = flcWatfordLL;
     });
 
     google.maps.event.addDomListener(flcWycWan, 'click', function() {
         map.setCenter(flcWycWanLL);
         map.setZoom(16);
+        let clubLatLng = flcWycWanLL;
     });
 
     /* GAA */
@@ -591,161 +633,193 @@ function initMap() {
     google.maps.event.addDomListener(gaaAntrim, 'click', function() {
         map.setCenter(gaaAntrimLL);
         map.setZoom(16);
+        let clubLatLng = gaaAntrimLL;
     });
 
     google.maps.event.addDomListener(gaaArmagh, 'click', function() {
         map.setCenter(gaaArmaghLL);
         map.setZoom(16);
+        let clubLatLng = gaaArmaghLL;
     });
 
     google.maps.event.addDomListener(gaaCarlow, 'click', function() {
         map.setCenter(gaaCarlowLL);
         map.setZoom(16);
+        let clubLatLng = gaaCarlowLL;
     });
 
     google.maps.event.addDomListener(gaaCavan, 'click', function() {
         map.setCenter(gaaCavanLL);
         map.setZoom(16);
+        let clubLatLng = gaaCavanLL;
     });
 
     google.maps.event.addDomListener(gaaClare, 'click', function() {
         map.setCenter(gaaClareLL);
         map.setZoom(16);
+        let clubLatLng = gaaClareLL;
     });
 
     google.maps.event.addDomListener(gaaCork, 'click', function() {
         map.setCenter(gaaCorkLL);
         map.setZoom(16);
+        let clubLatLng = gaaCorkLL;
     });
 
     google.maps.event.addDomListener(gaaDerry, 'click', function() {
         map.setCenter(gaaDerryLL);
         map.setZoom(16);
+        let clubLatLng = gaaDerryLL;
     });
 
     google.maps.event.addDomListener(gaaDonegal, 'click', function() {
         map.setCenter(gaaDonegalLL);
         map.setZoom(16);
+        let clubLatLng = gaaDonegalLL;
     });
 
     google.maps.event.addDomListener(gaaDown, 'click', function() {
         map.setCenter(gaaDownLL);
         map.setZoom(16);
+        let clubLatLng = gaaDownLL;
     });
 
     google.maps.event.addDomListener(gaaDublin, 'click', function() {
         map.setCenter(gaaDublinLL);
         map.setZoom(16);
+        let clubLatLng = gaaDublinLL;
     });
 
     google.maps.event.addDomListener(gaaFerman, 'click', function() {
         map.setCenter(gaaFermanLL);
         map.setZoom(16);
+        let clubLatLng = gaaFermanLL;
     });
 
     google.maps.event.addDomListener(gaaGalway, 'click', function() {
         map.setCenter(gaaGalwayLL);
         map.setZoom(16);
+        let clubLatLng = gaaGalwayLL;
     });
 
     google.maps.event.addDomListener(gaaKerry, 'click', function() {
         map.setCenter(gaaKerryLL);
         map.setZoom(16);
+        let clubLatLng = gaaKerryLL;
     });
 
     google.maps.event.addDomListener(gaaKildare, 'click', function() {
         map.setCenter(gaaKildareLL);
         map.setZoom(16);
+        let clubLatLng = gaaKildareLL;
     });
 
     google.maps.event.addDomListener(gaaKilken, 'click', function() {
         map.setCenter(gaaKilkenLL);
         map.setZoom(16);
+        let clubLatLng = gaaKilkenLL;
     });
 
     google.maps.event.addDomListener(gaaLaois, 'click', function() {
         map.setCenter(gaaLaoisLL);
         map.setZoom(16);
+        let clubLatLng = gaaLaoisLL;
     });
 
     google.maps.event.addDomListener(gaaLeitrim, 'click', function() {
         map.setCenter(gaaLeitrimLL);
         map.setZoom(16);
+        let clubLatLng = gaaLeitrimLL;
     });
 
     google.maps.event.addDomListener(gaaLim, 'click', function() {
         map.setCenter(gaaLimLL);
         map.setZoom(16);
+        let clubLatLng = gaaLimLL;
     });
 
     google.maps.event.addDomListener(gaaLong, 'click', function() {
         map.setCenter(gaaLongLL);
         map.setZoom(16);
+        let clubLatLng = gaaLongLL;
     });
 
     google.maps.event.addDomListener(gaaLouth, 'click', function() {
         map.setCenter(gaaLouthLL);
         map.setZoom(16);
+        let clubLatLng = gaaLouthLL;
     });
 
     google.maps.event.addDomListener(gaaMayo, 'click', function() {
         map.setCenter(gaaMayoLL);
         map.setZoom(16);
+        let clubLatLng = gaaMayoLL;
     });
 
     google.maps.event.addDomListener(gaaMeath, 'click', function() {
         map.setCenter(gaaMeathLL);
         map.setZoom(16);
+        let clubLatLng = gaaMeathLL;
     });
 
     google.maps.event.addDomListener(gaaMona, 'click', function() {
         map.setCenter(gaaMonaLL);
         map.setZoom(16);
+        let clubLatLng = gaaMonaLL;
     });
 
     google.maps.event.addDomListener(gaaOffaly, 'click', function() {
         map.setCenter(gaaOffalyLL);
         map.setZoom(16);
+        let clubLatLng = gaaOffalyLL;
     });
 
     google.maps.event.addDomListener(gaaRos, 'click', function() {
         map.setCenter(gaaRosLL);
         map.setZoom(16);
+        let clubLatLng = gaaRosLL;
     });
 
     google.maps.event.addDomListener(gaaSligo, 'click', function() {
         map.setCenter(gaaSligoLL);
         map.setZoom(16);
+        let clubLatLng = gaaSligoLL;
     });
 
     google.maps.event.addDomListener(gaaTipp, 'click', function() {
         map.setCenter(gaaTippLL);
         map.setZoom(16);
+        let clubLatLng = gaaTippLL;
     });
 
     google.maps.event.addDomListener(gaaTyrone, 'click', function() {
         map.setCenter(gaaTyroneLL);
         map.setZoom(16);
+        let clubLatLng = gaaTyroneLL;
     });
 
     google.maps.event.addDomListener(gaaWater, 'click', function() {
         map.setCenter(gaaWaterLL);
         map.setZoom(16);
+        let clubLatLng = gaaWaterLL;
     });
 
     google.maps.event.addDomListener(gaaWestm, 'click', function() {
         map.setCenter(gaaWestmLL);
         map.setZoom(16);
+        let clubLatLng = gaaWestmLL;
     });
 
     google.maps.event.addDomListener(gaaWexford, 'click', function() {
         map.setCenter(gaaWexfordLL);
         map.setZoom(16);
+        let clubLatLng = gaaWexfordLL;
     });
 
     google.maps.event.addDomListener(gaaWicklow, 'click', function() {
         map.setCenter(gaaWicklowLL);
         map.setZoom(16);
+        let clubLatLng = gaaWicklowLL;
     });
 
     /* NHL */
@@ -753,156 +827,187 @@ function initMap() {
     google.maps.event.addDomListener(nhlAvs, 'click', function() {
         map.setCenter(nhlAvsLL);
         map.setZoom(16);
+        let clubLatLng = nhlAvsLL;
     });
 
     google.maps.event.addDomListener(nhlBHawks, 'click', function() {
         map.setCenter(nhlBHawksLL);
         map.setZoom(16);
+        let clubLatLng = nhlBHawksLL;
     });
 
     google.maps.event.addDomListener(nhlBlues, 'click', function() {
         map.setCenter(nhlBluesLL);
         map.setZoom(16);
+        let clubLatLng = nhlBluesLL;
     });
 
     google.maps.event.addDomListener(nhlBruins, 'click', function() {
         map.setCenter(nhlBruinsLL);
         map.setZoom(16);
+        let clubLatLng = nhlBruinsLL;
     });
 
     google.maps.event.addDomListener(nhlCanes, 'click', function() {
         map.setCenter(nhlCanesLL);
         map.setZoom(16);
+        let clubLatLng = nhlCanesLL;
     });
 
     google.maps.event.addDomListener(nhlCanucks, 'click', function() {
         map.setCenter(nhlCanucksLL);
         map.setZoom(16);
+        let clubLatLng = nhlCanucksLL;
     });
 
     google.maps.event.addDomListener(nhlCapitals, 'click', function() {
         map.setCenter(nhlCapitalsLL);
         map.setZoom(16);
+        let clubLatLng = nhlCapitalsLL;
     });
 
     google.maps.event.addDomListener(nhlCoyotes, 'click', function() {
         map.setCenter(nhlCoyotesLL);
         map.setZoom(16);
+        let clubLatLng = nhlCoyotesLL;
     });
 
     google.maps.event.addDomListener(nhlDevils, 'click', function() {
         map.setCenter(nhlDevilsLL);
         map.setZoom(16);
+        let clubLatLng = nhlDevilsLL;
     });
 
     google.maps.event.addDomListener(nhlDucks, 'click', function() {
         map.setCenter(nhlDucksLL);
         map.setZoom(16);
+        let clubLatLng = nhlDucksLL;
     });
 
     google.maps.event.addDomListener(nhlFlames, 'click', function() {
         map.setCenter(nhlFlamesLL);
         map.setZoom(16);
+        let clubLatLng = nhlFlamesLL;
     });
 
     google.maps.event.addDomListener(nhlFlyers, 'click', function() {
         map.setCenter(nhlFlyersLL);
         map.setZoom(16);
+        let clubLatLng = nhlFlyersLL;
     });
 
     google.maps.event.addDomListener(nhlHabs, 'click', function() {
         map.setCenter(nhlHabsLL);
         map.setZoom(16);
+        let clubLatLng = nhlHabsLL;
     });
 
     google.maps.event.addDomListener(nhlIsland, 'click', function() {
         map.setCenter(nhlIslandLL);
         map.setZoom(16);
+        let clubLatLng = nhlIslandLL;
     });
 
     google.maps.event.addDomListener(nhlJackets, 'click', function() {
         map.setCenter(nhlJacketsLL);
         map.setZoom(16);
+        let clubLatLng = nhlJacketsLL;
     });
 
     google.maps.event.addDomListener(nhlJets, 'click', function() {
         map.setCenter(nhlJetsLL);
         map.setZoom(16);
+        let clubLatLng = nhlJetsLL;
     });
 
     google.maps.event.addDomListener(nhlKings, 'click', function() {
         map.setCenter(nhlKingsLL);
         map.setZoom(16);
+        let clubLatLng = nhlKingsLL;
     });
 
     google.maps.event.addDomListener(nhlKnights, 'click', function() {
         map.setCenter(nhlKnightsLL);
         map.setZoom(16);
+        let clubLatLng = nhlKnightsLL;
     });
 
     google.maps.event.addDomListener(nhlLeafs, 'click', function() {
         map.setCenter(nhlLeafsLL);
         map.setZoom(16);
+        let clubLatLng = nhlLeafsLL;
     });
 
     google.maps.event.addDomListener(nhlOilers, 'click', function() {
         map.setCenter(nhlOilersLL);
         map.setZoom(16);
+        let clubLatLng = nhlOilersLL;
     });
 
     google.maps.event.addDomListener(nhlPanthers, 'click', function() {
         map.setCenter(nhlPanthersLL);
         map.setZoom(16);
+        let clubLatLng = nhlPanthersLL;
     });
 
     google.maps.event.addDomListener(nhlPenguins, 'click', function() {
         map.setCenter(nhlPenguinsLL);
         map.setZoom(16);
+        let clubLatLng = nhlPenguinsLL;
     });
 
     google.maps.event.addDomListener(nhlPreds, 'click', function() {
         map.setCenter(nhlPredsLL);
         map.setZoom(16);
+        let clubLatLng = nhlPredsLL;
     });
 
     google.maps.event.addDomListener(nhlRangers, 'click', function() {
         map.setCenter(nhlRangersLL);
         map.setZoom(16);
+        let clubLatLng = nhlRangersLL;
     });
 
     google.maps.event.addDomListener(nhlSabres, 'click', function() {
         map.setCenter(nhlSabresLL);
         map.setZoom(16);
+        let clubLatLng = nhlSabresLL;
     });
 
     google.maps.event.addDomListener(nhlSens, 'click', function() {
         map.setCenter(nhlSensLL);
         map.setZoom(16);
+        let clubLatLng = nhlSensLL;
     });
 
     google.maps.event.addDomListener(nhlSharks, 'click', function() {
         map.setCenter(nhlSharksLL);
         map.setZoom(16);
+        let clubLatLng = nhlSharksLL;
     });
 
     google.maps.event.addDomListener(nhlStars, 'click', function() {
         map.setCenter(nhlStarsLL);
         map.setZoom(16);
+        let clubLatLng = nhlStarsLL;
     });
 
     google.maps.event.addDomListener(nhlTampa, 'click', function() {
         map.setCenter(nhlTampaLL);
         map.setZoom(16);
+        let clubLatLng = nhlTampaLL;
     });
 
     google.maps.event.addDomListener(nhlWild, 'click', function() {
         map.setCenter(nhlWildLL);
         map.setZoom(16);
+        let clubLatLng = nhlWildLL;
     });
 
     google.maps.event.addDomListener(nhlWings, 'click', function() {
         map.setCenter(nhlWingsLL);
         map.setZoom(16);
+        let clubLatLng = nhlWingsLL;
     });
 
     /* Premier League  */
@@ -910,101 +1015,121 @@ function initMap() {
     google.maps.event.addDomListener(eplArsenal, 'click', function() {
         map.setCenter(eplArsenalLL);
         map.setZoom(16);
+        let clubLatLng = eplArsenalLL;
     });
 
     google.maps.event.addDomListener(eplBriAlb, 'click', function() {
         map.setCenter(eplBriAlbLL);
         map.setZoom(16);
+        let clubLatLng = eplBriAlbLL;
     });
 
     google.maps.event.addDomListener(eplBurnley, 'click', function() {
         map.setCenter(eplBurnleyLL);
         map.setZoom(16);
+        let clubLatLng = eplBurnleyLL;
     });
 
     google.maps.event.addDomListener(eplChelsea, 'click', function() {
         map.setCenter(eplChelseaLL);
         map.setZoom(16);
+        let clubLatLng = eplChelseaLL;
     });
 
     google.maps.event.addDomListener(eplEverton, 'click', function() {
         map.setCenter(eplEvertonLL);
         map.setZoom(16);
+        let clubLatLng = eplEvertonLL;
     });
 
     google.maps.event.addDomListener(eplFulham, 'click', function() {
         map.setCenter(eplFulhamLL);
         map.setZoom(16);
+        let clubLatLng = eplFulhamLL;
     });
 
     google.maps.event.addDomListener(eplLeeds, 'click', function() {
         map.setCenter(eplLeedsLL);
         map.setZoom(16);
+        let clubLatLng = eplLeedsLL;
     });
 
     google.maps.event.addDomListener(eplLeiCty, 'click', function() {
         map.setCenter(eplLeiCtyLL);
         map.setZoom(16);
+        let clubLatLng = eplLeiCtyLL;
     });
 
     google.maps.event.addDomListener(eplLiverp, 'click', function() {
         map.setCenter(eplLiverpLL);
         map.setZoom(16);
+        let clubLatLng = eplLiverpLL;
     });
 
     google.maps.event.addDomListener(eplManCty, 'click', function() {
         map.setCenter(eplManCtyLL);
         map.setZoom(16);
+        let clubLatLng = eplManCtyLL;
     });
 
     google.maps.event.addDomListener(eplManUtd, 'click', function() {
         map.setCenter(eplManUtdLL);
         map.setZoom(16);
+        let clubLatLng = eplManUtdLL;
     });
 
     google.maps.event.addDomListener(eplNewUtd, 'click', function() {
         map.setCenter(eplNewUtdLL);
         map.setZoom(16);
+        let clubLatLng = eplNewUtdLL;
     });
 
     google.maps.event.addDomListener(eplPalace, 'click', function() {
         map.setCenter(eplPalaceLL);
         map.setZoom(16);
+        let clubLatLng = eplPalaceLL;
     });
 
     google.maps.event.addDomListener(eplSaints, 'click', function() {
         map.setCenter(eplSaintsLL);
         map.setZoom(16);
+        let clubLatLng = eplSaintsLL;
     });
 
     google.maps.event.addDomListener(eplSheUtd, 'click', function() {
         map.setCenter(eplSheUtdLL);
         map.setZoom(16);
+        let clubLatLng = eplSheUtdLL;
     });
 
     google.maps.event.addDomListener(eplSpurs, 'click', function() {
         map.setCenter(eplSpursLL);
         map.setZoom(16);
+        let clubLatLng = eplSpursLL;
     });
 
     google.maps.event.addDomListener(eplVilla, 'click', function() {
         map.setCenter(eplVillaLL);
         map.setZoom(16);
+        let clubLatLng = eplVillaLL;
     });
 
     google.maps.event.addDomListener(eplWestBrom, 'click', function() {
         map.setCenter(eplWestBromLL);
         map.setZoom(16);
+        let clubLatLng = eplWestBromLL;
     });
 
     google.maps.event.addDomListener(eplWestHam, 'click', function() {
         map.setCenter(eplWestHamLL);
         map.setZoom(16);
+        let clubLatLng = eplWestHamLL;
     });
 
     google.maps.event.addDomListener(eplWolves, 'click', function() {
         map.setCenter(eplWolvesLL);
         map.setZoom(16);
+        let clubLatLng = eplWolvesLL;
     });
 
     /* Super League */
@@ -1012,56 +1137,67 @@ function initMap() {
     google.maps.event.addDomListener(slrCasTig, 'click', function() {
         map.setCenter(slrCasTigLL);
         map.setZoom(16);
+        let clubLatLng = slrCasTigLL;
     });
     
     google.maps.event.addDomListener(slrCatDra, 'click', function() {
         map.setCenter(slrCatDraLL);
         map.setZoom(16);
+        let clubLatLng = slrCatDraLL;
     });
 
     google.maps.event.addDomListener(slrHudGia, 'click', function() {
         map.setCenter(slrHudGiaLL);
         map.setZoom(16);
+        let clubLatLng = slrHudGiaLL;
     });
 
     google.maps.event.addDomListener(slrHullFC, 'click', function() {
         map.setCenter(slrHullFCLL);
         map.setZoom(16);
+        let clubLatLng = slrHullFCLL;
     });
 
     google.maps.event.addDomListener(slrHullKR, 'click', function() {
         map.setCenter(slrHullKRLL);
         map.setZoom(16);
+        let clubLatLng = slrHullKRLL;
     });
 
     google.maps.event.addDomListener(slrLeeRhi, 'click', function() {
         map.setCenter(slrLeeRhiLL);
         map.setZoom(16);
+        let clubLatLng = slrLeeRhiLL;
     });
 
     google.maps.event.addDomListener(slrSaints, 'click', function() {
         map.setCenter(slrSaintsLL);
         map.setZoom(16);
+        let clubLatLng = slrSaintsLL;
     });
 
     google.maps.event.addDomListener(slrSalRed, 'click', function() {
         map.setCenter(slrSalRedLL);
         map.setZoom(16);
+        let clubLatLng = slrSalRedLL;
     });
 
     google.maps.event.addDomListener(slrWakTri, 'click', function() {
         map.setCenter(slrWakTriLL);
         map.setZoom(16);
+        let clubLatLng = slrWakTriLL;
     });
 
     google.maps.event.addDomListener(slrWarWol, 'click', function() {
         map.setCenter(slrWarWolLL);
         map.setZoom(16);
+        let clubLatLng = slrWarWolLL;
     });
 
     google.maps.event.addDomListener(slrWigWar, 'click', function() {
         map.setCenter(slrWigWarLL);
         map.setZoom(16);
+        let clubLatLng = slrWigWarLL;
     });
 
     /* League of Ireland */
@@ -1069,53 +1205,61 @@ function initMap() {
     google.maps.event.addDomListener(loiBohs, 'click', function() {
         map.setCenter(loiBohsLL);
         map.setZoom(16);
+        let clubLatLng = loiBohsLL;
     });
 
     google.maps.event.addDomListener(loiCorkCty, 'click', function() {
         map.setCenter(loiCorkCtyLL);
         map.setZoom(16);
+        let clubLatLng = loiCorkCtyLL;
     });
 
     google.maps.event.addDomListener(loiDerCty, 'click', function() {
         map.setCenter(loiDerCtyLL);
         map.setZoom(16);
+        let clubLatLng = loiDerCtyLL;
     });
 
     google.maps.event.addDomListener(loiDundalk, 'click', function() {
         map.setCenter(loiDundalkLL);
         map.setZoom(16);
+        let clubLatLng = loiDundalkLL;
     });
 
     google.maps.event.addDomListener(loiFHarps, 'click', function() {
         map.setCenter(loiFHarpsLL);
         map.setZoom(16);
+        let clubLatLng = loiFHarpsLL;
     });
 
     google.maps.event.addDomListener(loiShaRov, 'click', function() {
         map.setCenter(loiShaRovLL);
         map.setZoom(16);
         let clubLatLng = loiShaRovLL;
-        console.log(clubLatLng);
     });
 
     google.maps.event.addDomListener(loiShels, 'click', function() {
         map.setCenter(loiShelsLL);
         map.setZoom(16);
+        let clubLatLng = loiShelsLL;
     });
 
     google.maps.event.addDomListener(loiSliRov, 'click', function() {
         map.setCenter(loiSliRovLL);
         map.setZoom(16);
+        let clubLatLng = loiSliRovLL;
     });
 
     google.maps.event.addDomListener(loiPats, 'click', function() {
         map.setCenter(loiPatsLL);
         map.setZoom(16);
+        let clubLatLng = loiPatsLL;
     });
 
     google.maps.event.addDomListener(loiWaterf, 'click', function() {
         map.setCenter(loiWaterfLL);
         map.setZoom(16);
+        let clubLatLng = loiWaterfLL;
     });
 
     /* Search Box Setup - template taken from the PlaceBox tutorial in the README, then customised where comments state */
@@ -1153,6 +1297,7 @@ function initMap() {
 
         /* Returns place name and location */
 
+        const bounds = new google.maps.LatLngBounds();
         fivePlaces.forEach((place) => {
             if (!place.geometry) {
                 console.log("Returned place contains no geometry");
@@ -1185,10 +1330,18 @@ function initMap() {
             marker.addListener("click", function() {
                 placeInfoWindow.open(map, marker);
             });
+
+            /* Extends boundaries of map to accommodate all markers */ 
+
+            if (place.geometry.viewport) {
+                // Only geocodes have viewport.
+                bounds.union(place.geometry.viewport);
+            } else {
+                bounds.extend(place.geometry.location);
+            }
         });
         
-    map.setCenter(clubLatLng);
-    map.setZoom(12);
+    map.fitBounds(bounds);
     });
 
     /* Places Customisation - code here roughly follows Google API and Google Code Labs tutorials found in the README */
@@ -1205,7 +1358,7 @@ function initMap() {
         console.log(markers);
 
         let pubsRequest = {
-            location: map.getCenter(),
+            location: map.getCenter(clubLatLng),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'bar'
@@ -1244,7 +1397,7 @@ function initMap() {
         console.log(markers);
 
         let foodRequest = {
-            location: map.getCenter(),
+            location: map.getCenter(clubLatLng),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'restaurant'
@@ -1283,7 +1436,7 @@ function initMap() {
         console.log(markers);
 
         let hotelRequest = {
-            location: map.getCenter(),
+            location: map.getCenter(clubLatLng),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'lodging'
@@ -1322,7 +1475,7 @@ function initMap() {
         console.log(markers);
 
         let cafeRequest = {
-            location: map.getCenter(),
+            location: map.getCenter(clubLatLng),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'cafe'
@@ -1352,9 +1505,6 @@ function initMap() {
 console.log("Successfully called Google Maps API");
 } catch (e) {
     alert(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
-    console.log(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
-
-    /* add a line in here for image display to replace alert above*/
 }
 
 /* The marker, showDetails and getDetails functions for the creation of markers, infoWindows 
