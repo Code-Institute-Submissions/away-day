@@ -1153,7 +1153,6 @@ function initMap() {
 
         /* Returns place name and location */
 
-        const bounds = new google.maps.LatLngBounds();
         fivePlaces.forEach((place) => {
             if (!place.geometry) {
                 console.log("Returned place contains no geometry");
@@ -1171,15 +1170,6 @@ function initMap() {
                 })
             );
 
-            /* image and website not working properly yet, see line 1385 for possible solution? */
-            /* all infoWindows currently open against one marker for these search results rather than
-            against the marker they are assigned to, maybe needs a for each marker loop in there? */
-            /* Results tend to be thrown away from the original ground once the custom field looks for a wider radius. 
-            Maybe the map needs to be re-centered constantly, or does is it worth looking at the strictbounds property
-            in the AutoComplete tutorial? */
-
-            /* let placePhoto = place.photos[0].getUrl(); */
-
             let placeInfoWindow = new google.maps.InfoWindow();
             
             placeInfoWindow.setContent(
@@ -1188,7 +1178,6 @@ function initMap() {
                     <br>
                     Rating: ${place.rating}
                     <br>
-                    <a href="${place.website}" target="_blank" style="color: #05e680">Website</a>
                     <br>
                     </div>`
                 )
@@ -1196,18 +1185,10 @@ function initMap() {
             marker.addListener("click", function() {
                 placeInfoWindow.open(map, marker);
             });
-
-            /* Extends boundaries of map to accommodate all markers */ 
-
-            if (place.geometry.viewport) {
-                // Only geocodes have viewport.
-                bounds.union(place.geometry.viewport);
-            } else {
-                bounds.extend(place.geometry.location);
-            }
         });
         
-    map.fitBounds(bounds);
+    map.setCenter(clubLatLng);
+    map.setZoom(12);
     });
 
     /* Places Customisation - code here roughly follows Google API and Google Code Labs tutorials found in the README */
