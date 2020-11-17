@@ -103,7 +103,7 @@ unnecessarily specified my script types as javascript. The CSS script passed at 
 ### Certificates
 
 - HTML Validation
-
+<img src="images/site/html-valid.PNG">
 
 - CSS Validation
 <img src="images/site/css-valid.PNG">
