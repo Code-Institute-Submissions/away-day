@@ -3,11 +3,11 @@
 /* jshint esversion: 6 */
 /* Comment above tells JSHint what version of JS is being used */
 
-var map;
-var infoWindow;
-var service;
-var markers;
 var clubLatLng;
+var map;
+var markers;
+var sbBounds
+var service;
 
 /* Map Customisers */
 
@@ -1234,8 +1234,10 @@ function initMap() {
 
     google.maps.event.addDomListener(loiShaRov, 'click', function() {
         map.setCenter(loiShaRovLL);
-        map.setZoom(16);
+        map.setZoom(13);
         let clubLatLng = loiShaRovLL;
+        let sbBounds = map.getBounds();
+        map.setZoom(16);
     });
 
     google.maps.event.addDomListener(loiShels, 'click', function() {
@@ -1258,8 +1260,11 @@ function initMap() {
 
     google.maps.event.addDomListener(loiWaterf, 'click', function() {
         map.setCenter(loiWaterfLL);
-        map.setZoom(16);
+        map.setZoom(13);
         let clubLatLng = loiWaterfLL;
+        let sbBounds = map.getBounds();
+        map.setZoom(16);
+        console.log(sbBounds);
     });
 
     /* Search Box Setup - template taken from the PlaceBox tutorial in the README, then customised where comments state */
@@ -1286,7 +1291,7 @@ function initMap() {
         /* Added my own code in here, creates new array containing five 
         closest items, as Google appears to rank items by distance */
 
-        fivePlaces = places.slice(0,5);
+        let fivePlaces = places.slice(0,5);
 
         /* Removes any markers that were added to the markers array by a previous iteration of the script */
 
@@ -1359,7 +1364,7 @@ function initMap() {
 
         let pubsRequest = {
             location: map.getCenter(),
-            radius: 1000,
+            radius: 2000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'bar'
         };
@@ -1380,7 +1385,7 @@ function initMap() {
                 /* pubsRequest.location allows the map to stay centred on the stadium chosen */
 
                 map.setCenter(pubsRequest.location);
-                map.setZoom(14);
+                map.setZoom(13);
             }
         });
     });
@@ -1398,7 +1403,7 @@ function initMap() {
 
         let foodRequest = {
             location: map.getCenter(),
-            radius: 1000,
+            radius: 2000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'restaurant'
         };
@@ -1419,7 +1424,7 @@ function initMap() {
                 /* foodRequest.location allows the map to stay centred on the stadium chosen */
 
                 map.setCenter(foodRequest.location);
-                map.setZoom(14);
+                map.setZoom(13);
             }
         });
     });
@@ -1437,7 +1442,7 @@ function initMap() {
 
         let hotelRequest = {
             location: map.getCenter(),
-            radius: 1000,
+            radius: 2000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'lodging'
         };
@@ -1458,7 +1463,7 @@ function initMap() {
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
 
                 map.setCenter(hotelRequest.location);
-                map.setZoom(14);
+                map.setZoom(13);
             }
         });
     });
@@ -1476,7 +1481,7 @@ function initMap() {
 
         let cafeRequest = {
             location: map.getCenter(),
-            radius: 1000,
+            radius: 2000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'cafe'
         };
@@ -1497,7 +1502,7 @@ function initMap() {
                 /* hotelRequest.location allows the map to stay centred on the stadium chosen */
 
                 map.setCenter(cafeRequest.location);
-                map.setZoom(14);
+                map.setZoom(13);
             }
         });
     });
