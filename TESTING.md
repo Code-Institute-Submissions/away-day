@@ -97,6 +97,9 @@ the markup used passed W3C standards. The CSS style sheet was directly inputted 
 
 ### Issues Raised
 
+The only issues that arose in the HTML validation were that I had given all of the club <li> tags a button role, and that I had 
+unnecessarily specified my script types as javascript. The CSS script passed at the first attempt.
+
 ### Certificates
 
 - HTML Validation
