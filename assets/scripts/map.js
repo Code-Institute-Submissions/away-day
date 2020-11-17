@@ -7,6 +7,7 @@ var map;
 var infoWindow;
 var service;
 var markers;
+var clubLatLng;
 
 /* Map Customisers */
 
@@ -325,7 +326,7 @@ const slrWakTri = document.getElementById("slrWakTri");
 const slrWakTriLL = {lat: 53.669707, lng: -1.479360};
 const slrWarWol = document.getElementById("slrWarWol");
 const slrWarWolLL = {lat: 53.394812, lng: -2.595800};
-/* Wigan Warriors ground-share with wigan Athletic of League One */
+/* Wigan Warriors ground-share with Wigan Athletic of League One */
 const slrWigWar = document.getElementById("slrWigWar");
 const slrWigWarLL = {lat: 53.547562, lng: -2.654000};
 
@@ -1093,6 +1094,8 @@ function initMap() {
     google.maps.event.addDomListener(loiShaRov, 'click', function() {
         map.setCenter(loiShaRovLL);
         map.setZoom(16);
+        let clubLatLng = loiShaRovLL;
+        console.log(clubLatLng);
     });
 
     google.maps.event.addDomListener(loiShels, 'click', function() {
@@ -1140,7 +1143,6 @@ function initMap() {
         closest items, as Google appears to rank items by distance */
 
         fivePlaces = places.slice(0,5);
-        console.log(fivePlaces);
 
         /* Removes any markers that were added to the markers array by a previous iteration of the script */
 
@@ -1169,6 +1171,8 @@ function initMap() {
                 })
             );
 
+            map.setCenter(clubLatLng);
+
             /* image and website not working properly yet, see line 1385 for possible solution? */
             /* all infoWindows currently open against one marker for these search results rather than
             against the marker they are assigned to, maybe needs a for each marker loop in there? */
@@ -1176,20 +1180,20 @@ function initMap() {
             Maybe the map needs to be re-centered constantly, or does is it worth looking at the strictbounds property
             in the AutoComplete tutorial? */
 
-            let placeDetails = `<div>
+            /* let placePhoto = place.photos[0].getUrl(); */
+
+            let placeInfoWindow = new google.maps.InfoWindow();
+            
+            placeInfoWindow.setContent(
+                    `<div>
                     <div style="text-transform: uppercase; color: #8e2be2"><b>${place.name}</b></div>
-                    <br>
-                    <p>Img here</p>
                     <br>
                     Rating: ${place.rating}
                     <br>
                     <a href="${place.website}" target="_blank" style="color: #05e680">Website</a>
                     <br>
-                    </div>`;
-
-            let placeInfoWindow = new google.maps.InfoWindow({
-                content: placeDetails
-            });
+                    </div>`
+                )
             
             marker.addListener("click", function() {
                 placeInfoWindow.open(map, marker);
@@ -1207,8 +1211,6 @@ function initMap() {
         
     map.fitBounds(bounds);
     });
-
-    /* Need to add infoWindow functionality for search box */
 
     /* Places Customisation - code here roughly follows Google API and Google Code Labs tutorials found in the README */
 
