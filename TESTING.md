@@ -46,7 +46,6 @@
 
 ## Bugfixes
 
-- Harnessing power of Google Maps, getting and setting properties, displaying markers and information >>>
 - Occasionally the call to Google's Places API would fail on account of the callback to my initMap function, and no amount of 
 tinkering with Try/Catch would get any alternative images to show up in place of the #map box. I tried moving scripts around 
 and removing the async property from the script tags, but luckily Kevin Loughrey at Code Institute was on hand to advise my to

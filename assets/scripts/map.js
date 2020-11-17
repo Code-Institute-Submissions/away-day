@@ -1325,7 +1325,7 @@ function initMap() {
                     <br>
                     <br>
                     </div>`
-                )
+                );
             
             marker.addListener("click", function() {
                 placeInfoWindow.open(map, marker);
@@ -1358,7 +1358,7 @@ function initMap() {
         console.log(markers);
 
         let pubsRequest = {
-            location: map.getCenter(clubLatLng),
+            location: map.getCenter(),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'bar'
@@ -1397,7 +1397,7 @@ function initMap() {
         console.log(markers);
 
         let foodRequest = {
-            location: map.getCenter(clubLatLng),
+            location: map.getCenter(),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'restaurant'
@@ -1436,7 +1436,7 @@ function initMap() {
         console.log(markers);
 
         let hotelRequest = {
-            location: map.getCenter(clubLatLng),
+            location: map.getCenter(),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'lodging'
@@ -1475,7 +1475,7 @@ function initMap() {
         console.log(markers);
 
         let cafeRequest = {
-            location: map.getCenter(clubLatLng),
+            location: map.getCenter(),
             radius: 1000,
             rankBy: google.maps.places.RankBy.PROMINENCE,
             type: 'cafe'
