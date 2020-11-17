@@ -1,7 +1,9 @@
 /* Scripts for contact form interactivity */
 
 /* jshint esversion: 6 */
-/* Comment above tells JSHint what version of JS is being used */
+/* globals $:false */
+/* Comments above tells JSHint what version of JS is being used, and secondly overrides JSHint's assumption that the 
+$ symbol is an undefined variable */
 
 /* Modal JS came from Tutorial Deep link in README */
 

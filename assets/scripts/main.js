@@ -1,7 +1,9 @@
 /* Site interactivity */
 
 /* jshint esversion: 6 */
-/* Comment above tells JSHint what version of JS is being used */
+/* globals $:false */
+/* Comments above tells JSHint what version of JS is being used, and secondly overrides JSHint's assumption that the 
+$ symbol is an undefined variable */
 
 /* Drop-down interactivity for desktop and tablets */
 
@@ -67,7 +69,7 @@ $(document).ready(function() {
         $("#slrDropdown").on("mouseleave",function() {
             $("#slr-icon").attr("src", "images/dropdowns/slr-ffffff.png");
         });
-    };
+    }
 });
 
 /* Drop-down interactivity for mobile and tablet (bugfix #9) display */
@@ -215,7 +217,7 @@ $(document).ready(function() {
             $(".dropdown-toggle").css("color", "#ffffff");
             $("#slrDropdown").css("color", "#8a2be2");
         });
-    };
+    }
 });
 
     /* Button highlights to indicate current selection */
@@ -239,4 +241,4 @@ $(document).ready(function() {
         $(".map-button").css("background-color","05e680");
         $(this).css("background-color","#8a2be2");
     });
-})
+});

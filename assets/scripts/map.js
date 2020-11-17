@@ -4,7 +4,6 @@
 /* Comment above tells JSHint what version of JS is being used */
 
 var map;
-var mapCenter;
 var infoWindow;
 var service;
 var markers;

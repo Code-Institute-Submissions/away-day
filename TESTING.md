@@ -87,6 +87,8 @@ it works fine. Given that most users would not sit and flick between two screen 
 this unfixed as time was at a premium.
 - Bug #8: If a location returns no results within the confines of a search (e.g. no pubs within 1km of the stadium), the API throws
 an exception. This needs to be fixed using an if else statement that extends the range to 2km or 5km.
+- If a search query returns under five results, the console will display an undefined error as the script cannot find a fifth entry 
+to plot on the map. This does not affect the plotting of any other markers.
 
 ## Validation
 
@@ -97,8 +99,14 @@ the markup used passed W3C standards. The CSS style sheet was directly inputted 
 
 ### Issues Raised
 
-The only issues that arose in the HTML validation were that I had given all of the club <li> tags a button role, and that I had 
-unnecessarily specified my script types as javascript. The CSS script passed at the first attempt.
+- The only issues that arose in the HTML validation were that I had given all of the club <li> tags a button role, and that I had 
+unnecessarily specified my script types as javascript.
+- The CSS script passed at the first attempt.
+- For the JSHint validations, the [contact](assets/scripts/contact.js), [instructions](assets/scripts/instructions.js) and 
+[main](assets/scripts/main.js) files all passed validation once I added comments specifying that I was using
+ [ES6 conventions](https://www.w3schools.com/Js/js_es6.asp), and specified that the dollar symbol in jQuery syntax was not an 
+[undefined variable](https://stackoverflow.com/questions/8852765/jshint-and-jquery-is-not-defined#8854093). The contact file flagged
+up errors in undefined variables that were actually called within the [index page](index.html).
 
 ### Certificates
 
@@ -108,5 +116,14 @@ unnecessarily specified my script types as javascript. The CSS script passed at 
 - CSS Validation
 <img src="images/site/css-valid.PNG">
 
-- JS Validation
+- JS Validation: contact.js
+<img src="images/site/contactjs-valid.PNG">
+
+- JS Validation: instructions.js
+<img src="images/site/instructionsjs-valid.PNG">
+
+- JS Validation: main.js
+<img src="images/site/mainjs-valid.PNG">
+
+- JS Validation: map.js
 

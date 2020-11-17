@@ -1,7 +1,9 @@
 /* Scripts for instructions interactivity */
 
 /* jshint esversion: 6 */
-/* Comment above tells JSHint what version of JS is being used */
+/* globals $:false */
+/* Comments above tells JSHint what version of JS is being used, and secondly overrides JSHint's assumption that the 
+$ symbol is an undefined variable */
 
 /* Displays instructions as a modal for mobile and tablet (bugfix #8) screen widths */
 $(document).ready(function() {
