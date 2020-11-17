@@ -252,7 +252,7 @@ footer {
     }
 
     .dropdown-menu {
-    /* Overwrites default Bootstrap parameters */
+        /* Overwrites default Bootstrap parameters */
         min-width: 100%;
     }
 
@@ -325,6 +325,7 @@ footer {
 }
 
 /* Bugfix #1: Last two rules here are just to deal with vertical tablet displays */
+
 @media (min-height: 1024px) and (max-height: 1279px) {
     #map-box {
         height: 66vh;
