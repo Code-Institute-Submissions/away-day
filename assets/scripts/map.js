@@ -1171,8 +1171,6 @@ function initMap() {
                 })
             );
 
-            map.setCenter(clubLatLng);
-
             /* image and website not working properly yet, see line 1385 for possible solution? */
             /* all infoWindows currently open against one marker for these search results rather than
             against the marker they are assigned to, maybe needs a for each marker loop in there? */
