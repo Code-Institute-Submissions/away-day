@@ -90,9 +90,11 @@ an exception. This needs to be fixed using an if else statement that extends the
 
 ## Validation
 
-Each page was directly inputted into the W3C HTML Validator to check that the markup used passed W3C standards. The CSS style 
-sheet was directly inputted into the W3C CSS Validator. The results can be seen below.
+Each page was directly inputted into the [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to check that 
+the markup used passed W3C standards. The CSS style sheet was directly inputted into the 
+[W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input). The results can be seen below.
 
 ### Issues Raised
 
 ### Certificates
+
