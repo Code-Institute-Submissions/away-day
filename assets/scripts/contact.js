@@ -1,5 +1,8 @@
 /* Scripts for contact form interactivity */
 
+/* jshint esversion: 6 */
+/* Comment above tells JSHint what version of JS is being used */
+
 /* Modal JS came from Tutorial Deep link in README */
 
 $(document).ready(function() {

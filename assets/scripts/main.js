@@ -1,5 +1,8 @@
 /* Site interactivity */
 
+/* jshint esversion: 6 */
+/* Comment above tells JSHint what version of JS is being used */
+
 /* Drop-down interactivity for desktop and tablets */
 
 $(document).ready(function() {

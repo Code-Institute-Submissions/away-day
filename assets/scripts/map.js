@@ -1,5 +1,8 @@
 /* Scripts for map-specific interactivity */
 
+/* jshint esversion: 6 */
+/* Comment above tells JSHint what version of JS is being used */
+
 var map;
 var mapCenter;
 var infoWindow;
@@ -1398,10 +1401,10 @@ function buttonMarker(place) {
 
         /* Returns details only after click to reduce API requests */
         service.getDetails(request, (placeResult, status) => {
-        showDetails(placeResult, marker, status)
+        showDetails(placeResult, marker, status);
         });
     });
-    return marker
+    return marker;
 }
 
 function showDetails(placeResult, marker) {
