@@ -1,6 +1,7 @@
 <img src="images/site/namebar.PNG">
 
-Welcome to my interactive front-end development milestone project. For this project I chose to create Away Day, a website that 
+Welcome to my interactive front-end development milestone project. For this project I chose to create 
+[Away Day](https://kiehozero.github.io/away-day/index.html), a website that 
 harnesses Google's Place API to provide football fans with the best pubs, clubs and hotels close to the opponent's stadium.
 
 The idea behind this project is that the most dedicated sports fans already know their hometown inside out, but they can spend up to 
@@ -32,14 +33,16 @@ and a lower case that could be used across the site without looking tired or cli
 
 Testing for each of the below user stories is included within the [testing log](TESTING.md).
 
-1. I'm travelling a long way for this match and need somewhere to stay overnight before the match;
-2. Our train arrives a couple of hours before the match, where is good for a beer?
-3. We've heard horror stories about the food at the ground we're visiting, can I find something decent to eat after the match?
-4. We were at the match yesterday and visited too many of the pubs your site recommended, can you find me a good hangover coffee?
-6. Just because I'm a football fan doesn't mean I want to drink all day, how can I search for some other things to do?
-7. A local friend recommended me somewhere to go, I just need to find it on the map;
-8. My club or league is missing, I'd like to ask the site owner to add them to the next release!
-9. I want my business to show up on your search results for a particular club or city, who do I contact?
+As a fan I want to...
+
+  1. ... find somewhere to stay overnight before the match;
+  2. ... find a place to get a drink;
+  3. ... find a restaurant to eat in after the match
+  4. We were at the match yesterday and visited too many of the pubs your site recommended, can you find me a good hangover coffee?
+  6. Just because I'm a football fan doesn't mean I want to drink all day, how can I search for some other things to do?
+  7. A local friend recommended me somewhere to go, I just need to find it on the map;
+  8. My club or league is missing, I'd like to ask the site owner to add them to the next release!
+  9. I want my business to show up on your search results for a particular club or city, who do I contact?
 
 
 ## Features
@@ -61,7 +64,8 @@ display the location of their home stadium:
         - [European Super League](https://superleague.co.uk/);
 - The four search refine buttons allow users to the search for pubs, cafes, hotels and restaurants. This returns the top five 
 entries based on Google's Prominence ranking.
-- The search box allows for a user to find any other type of location beyond the four above, or a particular place using AutoComplete.
+- The search box allows for a user to find any other type of location beyond the four above, or a particular place using AutoComplete. 
+There are issues with this feature that are detailed in the [testing](TESTING.md) log.
 - Each place that Google returns is then assigned a clickable marker that displays the place's name, rating and website, as well as 
 that location's top-ranked photograph.
 
@@ -74,8 +78,7 @@ first release.
 vice versa. I briefly explored Google's Directions API but I already had my hands full with the Places API.
 - Rollout to more leagues, sports and countries - The only thing I need to achieve this is the latitude and longitude of each 
 club's home stadium, and a good quality PNG club crest, so this could be quite easy to implement. My current main priorities are 
-NFL, NBA, NRL and AFL, and I've included some comments in the [map script](assets/scripts/map.js) of stadium co-ordinates that I 
-can re-use for this purpose.
+NFL, NBA, NRL and AFL.
 - A wider league selection would certainly require a re-structure of the drop-down options, the format I've used is already at the 
 limit of what it can display well on smaller devices. The most obvious solution would be to group leagues by sport and introduce 
 a secondary drop-down layer.
@@ -84,6 +87,9 @@ to be able to generate a team's fixtures, then select an opponent that way.
 - Itineraries - the ability to store locations would be great for users who are planning far in advance of a trip, while a 'Current 
 Location' feature would allow users to bypass the club selection phase, especially if there are multiple dropdowns and they are 
 looking for somewhere to go immediately.
+- As I got more confident with using JS I've realised how enormous the map.js file is. I wrote all of those consts at the very start
+of the project when I was least comfortable with the language, so once I've got my results back I'll be doing some serious 
+optimisation on this file just as a personal learning exercise.
 
 ## Technologies Used
 
@@ -176,24 +182,12 @@ For an in-depth guide to cloning repositories, click [here](https://www.howtogee
 which the steps above were taken.
 
 ## Credits
-- Some of the styling and map dos and don'ts from Sitepoint's great 
-[tutorial](https://www.sitepoint.com/google-maps-javascript-api-the-right-way/)
-- Envato Tut's [YouTube tutorial](https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx) helped me understand some 
-of the coding concepts behind the map.
-- Google's own [tutorials](https://developers.google.com/maps/documentation) give a great run-down of how to get started using maps. 
-They aren't too great for showing you how to customise beyond what they have already given, but their documentation and setup guides 
-were invaluable.
-- Just when I didn't think anybody couldn't sufficiently simplify the infoWindow process for me, Chris Minnick's 
-[Webucator tutorial](https://www.webucator.com/how-to/how-add-an-info-window-google-map.cfm) finally gave me the breakthrough I needed.
-- My mentor Precious Ijege recommended adding a search box after my initial presentation. Luckily Google's
- [PlaceBox setup](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox?hl=ja) ensured that I flew 
- through adding this to the project.
+
+### Content
+
 - A few of the more advanced JavaScript functions in the [map script](assets/scripts/map.js) were taken from a 
 [Google Code Labs tutorial](https://codelabs.developers.google.com/codelabs/google-maps-nearby-search-js/#0) that I dug out from 
 their documentation, namely the infoWindow functions.
-- jQuery's [documentation](https://api.jquery.com/) has an article on every function in their library it was one of the few parts of 
-learning JavaScript that made sense immediately. The [section](https://api.jquery.com/toggleClass/) on class toggling solved 
-bug #7 listed in my [testing log](TESTING.md).
 - I wanted to keep everything on a single HTML page, and providing a contact form via a modal was how I achieved this. Bootstrap's 
 [documentation](https://getbootstrap.com/docs/4.0/components/modal/) on this was straightforward and provided a good shell, while the 
 jQuery came from [Tutorial Deep](https://tutorialdeep.com/knowhow/open-bootstrap-modal-on-button-click-jquery/).
@@ -202,6 +196,39 @@ jQuery came from [Tutorial Deep](https://tutorialdeep.com/knowhow/open-bootstrap
 issues. I also took to the ever-reliable [W3 Schools](https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp) tutorials to help 
 iron out some margin and padding issues when moving between screen widths. I've definitely learnt in this project that less is often 
 more with CSS and Bootstrap.
-- An enormous thank you to Kevin Loughrey and Michael Park at Code Institute for helping sort out some of the trickier issues when 
-calling the Places API. It is frustrating to have to submit things to tutors knowing you are close to a solution, but they saved me 
-hours of experimenting towards a solution with concise explanations.
+
+### Tutorials
+
+- Google's own [tutorials](https://developers.google.com/maps/documentation) give a great run-down of how to get started using maps. 
+They aren't too great for showing you how to customise beyond what they have already given, but their documentation and setup guides 
+were invaluable.
+- Some of the styling and map dos and don'ts from Sitepoint's great 
+[tutorial](https://www.sitepoint.com/google-maps-javascript-api-the-right-way/)
+- Envato Tut's [YouTube tutorial](https://www.youtube.com/playlist?list=PLgGbWId6zgaXFR4SW_3qJ55cxmEqRNIzx) helped me understand some 
+of the coding concepts behind the map.
+- jQuery's [documentation](https://api.jquery.com/) has an article on every function in their library it was one of the few parts of 
+learning JavaScript that made sense immediately. The [section](https://api.jquery.com/toggleClass/) on class toggling solved 
+bug #7 listed in my [testing log](TESTING.md).
+- Just when I didn't think anybody couldn't sufficiently simplify the infoWindow process for me, Chris Minnick's 
+[Webucator tutorial](https://www.webucator.com/how-to/how-add-an-info-window-google-map.cfm) finally gave me the breakthrough I needed.
+
+### Media
+
+- League and club logos were sourced from the following locations:
+    - [English Championship](https://www.efl.com/clubs-and-competitions/sky-bet-championship/);
+    - [English Premier League](https://www.premierleague.com/);
+    - [German Bundesliga](https://www.bundesliga.com/en/bundesliga);
+    - [League of Ireland Premier Division](https://www.sseairtricityleague.ie/);
+    - [Gaelic Athletic Association](https://www.gaa.ie/);
+    - [National Hockey League](https://www.nhl.com/);
+    - [European Super League](https://www.superleague.co.uk/);
+    - [Wikipedia](https://en.wikipedia.org/)
+
+### Acknowledgements
+
+- My mentor Precious Ijege recommended adding a search box after my initial presentation. Luckily Google's
+ [PlaceBox setup](https://developers.google.com/maps/documentation/javascript/examples/places-searchbox?hl=ja) ensured that I flew 
+ through adding this to the project.
+- An enormous thank you to Kevin Loughrey, Samantha Dartnall, Cormac Lawlor and Michael Park at Code Institute for helping sort out 
+some of the trickier issues when calling the Places API. It is frustrating to have to submit things to tutors knowing you are close 
+to a solution, but they saved me hours of experimenting towards a solution with concise explanations.
