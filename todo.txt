@@ -1,4 +1,0 @@
-1 SEARCH BAR - Map centering, infowindow content
-2 map event listener to re-centre to relevant request (foodRequest, hotelRequest, etc.) when each infoWindow close button is clicked
-3 FAIL WHALE PAGE - just need to add an image in, test alert message for try catch by removing letter from Google API script 
-4 For loop to increase distance (see if upping to 2000m and decreasing zoom has an effect once you add a club crest marker
