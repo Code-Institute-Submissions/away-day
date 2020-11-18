@@ -2,46 +2,42 @@
 
 ## User Stories
 
-1. I'm travelling a long way for this match and need somewhere to stay overnight before the match;
- - The start point for any user journey on AwayDay is the drop-down menu;
- - Select your destination from the drop-down menu;
- - click the Hotel button to refine the search;
- - Click any of the markers to display more information for each location.
+1. ... find somewhere to stay overnight before the match.
+    - The start point for any user journey on AwayDay is the drop-down menu;
+    - Select your destination from the drop-down menu;
+    - click the Hotel button to refine the search;
+    - Click any of the markers to display more information for each location.
 
-2. Our train arrives a couple of hours before the match, where is good for a beer?
- - Select the club you are visiting from the drop-down menu;
- - Clicking the pint glass icon will return the top-ranked pubs based on Google's Prominence score;
- - Click any of the markers to display more information for each location.
+2. ... find a place to get a drink.
+    - Select the club you are visiting from the drop-down menu;
+    - Clicking the pint glass icon will return the top-ranked pubs based on Google's Prominence score;
+    - Click any of the markers to display more information for each location.
 
-3. We've heard horror stories about the food at the ground we're visiting, can I find something decent to eat after the match?
- - Select the club you are visiting from the drop-down menu;
- - Avoid any dodgy pies by clicking the Best Food button to return the top-ranked restaurants based on Google's Prominence score;
- - Click any of the markers to display more information for each location.
+3. ... find something to eat.
+    - Select the club you are visiting from the drop-down menu;
+    - Avoid any dodgy pies by clicking the Best Food button to return the top-ranked restaurants based on Google's Prominence score;
+    - Click any of the markers to display more information for each location.
 
-4. We were at the match yesterday and visited too many of the pubs your site recommended, can you find me a good hangover coffee?
- - Select the club you are visiting from the drop-down menu;
- - Begin your detox by clicking the coffee mug icon to return the top-ranked cafes based on Google's Prominence score;
- - Click any of the markers to display more information for each location.
+4. ... find a place to get a coffee.
+    - Select the club you are visiting from the drop-down menu;
+    - Begin your detox by clicking the coffee mug icon to return the top-ranked cafes based on Google's Prominence score;
+    - Click any of the markers to display more information for each location.
 
-6. Just because I'm a football fan doesn't mean I want to drink all day, how can I search for some other things to do?
- - Good for you! Select the club you are visiting from the drop-down menu;
- - type anything you like, be it parks, museums or libraries, into the search box to return relevant results;
- - Click any of the markers to display more information for each location.
+5. ... find something else to do.
+    - Select the club you are visiting from the drop-down menu;
+    - Type anything you like, be it parks, museums or libraries, into the search box to return relevant results;
+    - Click any of the markers to display more information for each location.
 
-7. A local friend recommended me somewhere to go, I just need to find it on the map;
- - Select the club you are visiting from the drop-down menu;
- - The search box will also display type of or specific businesses or locations;
- - Select your specific business type or location from the predictive results to add them to the map.
+6. ... find a specific place that I was recommended.
+    - Select the club you are visiting from the drop-down menu;
+    - The search box will also display type of or specific businesses or locations;
+    - Select your specific business type or location from the predictive results to add them to the map.
 
-8. My club or league is missing, I'd like to ask the site owner to add them to the next release!
- - Click the e-mail icon in the bottom-right corner;
- - Complete the contact form with whatever feedback you have for us;
- - We already have a list of leagues in the pipeline, but any feedback is welcome and helps us to develop a better experience, so 
+7. ... recommend a club or league for addition to the site.
+    - Click the e-mail icon in the bottom-right corner;
+    - Complete the contact form with whatever feedback you have for us;
+    - We already have a list of leagues in the pipeline, but any feedback is welcome and helps us to develop a better experience, so 
  let us know and we'll bump your league up the priority list.
-
-9. I want my business to show up on your search results for a particular club or city, who do I contact?
- - AwayDay relies on Google's algorithms and user ratings to generate results, your friendly local SEO business will be able to help 
- you soar up the rankings.
 
 
 ## Bugfixes

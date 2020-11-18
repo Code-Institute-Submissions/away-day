@@ -37,12 +37,11 @@ As a fan I want to...
 
   1. ... find somewhere to stay overnight before the match;
   2. ... find a place to get a drink;
-  3. ... find a restaurant to eat in after the match
-  4. We were at the match yesterday and visited too many of the pubs your site recommended, can you find me a good hangover coffee?
-  6. Just because I'm a football fan doesn't mean I want to drink all day, how can I search for some other things to do?
-  7. A local friend recommended me somewhere to go, I just need to find it on the map;
-  8. My club or league is missing, I'd like to ask the site owner to add them to the next release!
-  9. I want my business to show up on your search results for a particular club or city, who do I contact?
+  3. ... find a restaurant to eat in after the match;
+  4. ... find a place to get a coffee;
+  5. ... find something else to do;
+  6. ... find a specific place that I was recommended.
+  7. ... recommend a club or league for addition to the site.
 
 
 ## Features
