@@ -90,6 +90,7 @@ looking for somewhere to go immediately.
 of the project when I was least comfortable with the language, so once I've got my results back I'll be doing some serious 
 optimisation on this file just as a personal learning exercise.
 
+
 ## Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -151,6 +152,7 @@ I tested this project primarily on Firefox but also Chrome and Edge, taking adva
 Samsung Galaxy and Kindle Fire. I also tested the site on my own Huawei device, as well as passing the initial site on to some friends
 for UI feedback.
 
+
 ## Deployment
 
 I used [GitHub](https://www.github.com/) as the host for this project, and [GitPod](https://www.gitpod.io/) to write it, using 
@@ -179,6 +181,7 @@ Assuming you already have Git [installed](https://git-scm.com/download/), anybod
 
 For an in-depth guide to cloning repositories, click [here](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/), from 
 which the steps above were taken.
+
 
 ## Credits
 

@@ -1,5 +1,6 @@
 <img src="images/site/testbar.PNG">
 
+
 ## User Stories
 
 1. ... find somewhere to stay overnight before the match.
@@ -58,6 +59,7 @@ have [credited](README.md) helped me realise that with CSS the rule is often 'le
 
 <img src="images/site/bugs-rendering.PNG">
 
+
 ## Links and Images
 
 - When testing I have always tried to select different clubs to get as wide a selection of places returned by the API call
@@ -69,6 +71,7 @@ play matches at more than one stadium.
 - The links and images displayed in the infoWindow are those returned by Google, so while I have tested those extensively, I cannot 
 guarantee that of the 20 results returned by the four buttons for the 135 clubs currently featured, that all of these are active and 
 functioning.
+
 
 ## Outstanding Issues
 
