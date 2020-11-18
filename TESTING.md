@@ -60,22 +60,19 @@ rules up in an attempt to force those elements to do what I wanted, but eventual
 in the browser and simply turned parameters on and off again until I found the solution that I needed. Some of the links I
 have [credited](README.md) helped me realise that with CSS the rule is often 'less is more'.
 
-<<<Responsiveness grid here>>>
-
-<<<Bugfix grid here>>>
+<img src="images/site/bugs-rendering.PNG">
 
 ## Links and Images
 
 - When testing I have always tried to select different clubs to get as wide a selection of places returned by the API call
 as possible. These are all re-centreing the map based on each club's location variable (found in the 
-[map script](assets/scripts/map.js)), and I have included comments on a couple of clubs where they are either ground-sharing or 
+[map script](assets/scripts/map.js), and I have included comments on a couple of clubs where they are either ground-sharing or 
 play matches at more than one stadium.
 - The social media links I have included in the footer are dummy links.
 - The contact form modal is live and sending any queries to an old GMail account I have.
 - The links and images displayed in the infoWindow are those returned by Google, so while I have tested those extensively, I cannot 
 guarantee that of the 20 results returned by the four buttons for the 135 clubs currently featured, that all of these are active and 
-functioning. What I have been able to spot is that a location will occasionally not yet have a photograph, and this is detailed in 
-the next section.
+functioning.
 
 ## Outstanding Issues
 
@@ -86,6 +83,13 @@ it works fine. Given that most users would not sit and flick between two screen 
 this unfixed as time was at a premium.
 - If a search query returns under five results, the console will display an undefined error as the script cannot find a fifth entry 
 to plot on the map. This does not affect the plotting of any other markers.
+- The search box was relatively quick to install, but an unresolved issue at present is that after each search the map does not 
+re-centre to the original club selection. I tried to resolve this by passing map boundaries to a variable using setBounds and getBounds
+from the original club lat/long const but to no avail. As it stands, the search box will return top-ranked results biased by proximity to
+the club lat/long on the first run, but then extends the map boundaries if markers fall outside of this. If another search criteria is 
+then entered, it takes this boundary as a search area, rather than the club latitude and longitude. Happily this does not affect the 
+four pre-set buttons that also accompany the map.
+
 
 ## Validation
 
