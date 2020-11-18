@@ -221,6 +221,7 @@ $(document).ready(function() {
 });
 
     /* Button highlights to indicate current selection */
+
 $(document).ready(function() {
     $("#food").on("click", function() {
         $(".map-button").css("background-color","#05e680");
@@ -238,7 +239,7 @@ $(document).ready(function() {
     });
 
     $("#hotels").on("click", function() {
-        $(".map-button").css("background-color","05e680");
+        $(".map-button").css("background-color","#05e680");
         $(this).css("background-color","#8a2be2");
     });
 });

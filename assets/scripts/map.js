@@ -1333,7 +1333,7 @@ function initMap() {
             }
         });
     });
-}
+};
 
 } catch (e) {
     alert(`Uh oh! Looks like Google has scored an own goal! Please refresh the page, it's still 0-0 lads!`);
