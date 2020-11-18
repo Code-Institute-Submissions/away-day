@@ -33,9 +33,8 @@ function sendMail(contactForm) {
             $("#feedback").val("");
             $(".contact-modal").modal("hide");
         },
-        /* Not displaying feedback yet */
+
         function(error) {
-            console.log("FAILED", error);
             alert("Yellow card! Please complete all fields.");
         }
     );

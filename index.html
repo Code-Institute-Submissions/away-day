@@ -14,11 +14,14 @@
         href="assets/css/style.css"
         rel="stylesheet"
         type="text/css">
+
     <script
         src="https://kit.fontawesome.com/faa153a592.js"
         crossorigin="anonymous">
     </script>
+
     <!--EmailJS scripts for contact form-->
+
     <script
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
@@ -27,11 +30,14 @@
             emailjs.init("user_W4dj8lHY3F2fCc19kl6tw");
         })();
     </script>
+
     <!--Favicons-->
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="images/favicons/site.webmanifest">
+
 </head>
 <body onload="initMap()">
     <header class="container-fluid shadow">
@@ -45,588 +51,588 @@
 
             <div class="col-9 col-md-8" id="dropCollapse">
                 <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
-                    <!--NAVIGATION DROP-DOWN (MOBILE ONLY)-->
-                    <button 
-                        class="navbar-toggler ml-auto d-sm-none d-block"
-                        type="button"
-                        id="mobSelector"
-                        data-toggle="collapse"
-                        data-target="#leagueSelection"
-                        aria-controls="leagueSelection"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span>
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </span>
-                    </button>
+                <!--NAVIGATION DROP-DOWN (MOBILE ONLY)-->
+                <button 
+                    class="navbar-toggler ml-auto d-sm-none d-block"
+                    type="button"
+                    id="mobSelector"
+                    data-toggle="collapse"
+                    data-target="#leagueSelection"
+                    aria-controls="leagueSelection"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span>
+                </button>
 
-                    <!--DROP-DOWN MENU ITEMS-->
-                    <div class="collapse navbar-collapse" id="leagueSelection">
-                        <ul class="navbar-nav mx-auto">
+                <!--DROP-DOWN MENU ITEMS-->
+                <div class="collapse navbar-collapse" id="leagueSelection">
+                    <ul class="navbar-nav mx-auto">
 
-                            <!-- Dropdown for EPL clubs -->
-                            <li class="nav-item dropdown" id="eplDrop">
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="eplDropdown"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src="images/dropdowns/epl-ffffff.png" id="epl-icon" alt="English Premier League Logo">
-                                    <span class="d-sm-block d-md-none">English Premier League</span>
-                                </a>
+                        <!-- Dropdown for EPL clubs -->
+                        <li class="nav-item dropdown" id="eplDrop">
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="eplDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="images/dropdowns/epl-ffffff.png" id="epl-icon" alt="English Premier League Logo">
+                                <span class="d-sm-block d-md-none">English Premier League</span>
+                            </a>
 
-                                <ul class="dropdown-menu" id="eplClublist" aria-labelledby="eplDropdown">
-                                    <li class="dropdown-item list-inline-item" id="eplArsenal">
-                                        <img src="images/crests/epl/eplArsenal.png" alt="Arsenal">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplVilla">
-                                        <img src="images/crests/epl/eplVilla.png" alt="Aston Villa">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplBriAlb">
-                                        <img src="images/crests/epl/eplBriAlb.png" alt="Brighton and Hove Albion">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplBurnley">
-                                        <img src="images/crests/epl/eplBurnley.png" alt="Burnley">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplChelsea">
-                                        <img src="images/crests/epl/eplChelsea.png" alt="Chelsea">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplPalace">
-                                        <img src="images/crests/epl/eplPalace.png" alt="Crystal Palace">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplEverton">
-                                        <img src="images/crests/epl/eplEverton.png" alt="Everton">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplFulham">
-                                        <img src="images/crests/epl/eplFulham.png" alt="Fulham">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplLeeds">
-                                        <img src="images/crests/epl/eplLeeds.png" alt="Leeds United">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplLeiCty">
-                                        <img src="images/crests/epl/eplLeiCty.png" alt="Leicester City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplLiverp">
-                                        <img src="images/crests/epl/eplLiverp.png" alt="Liverpool">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplManCty">
-                                        <img src="images/crests/epl/eplManCty.png" alt="Manchester City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplManUtd">
-                                        <img src="images/crests/epl/eplManUtd.png" alt="Manchester United">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplNewUtd">
-                                        <img src="images/crests/epl/eplNewUtd.png" alt="Newcastle United">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplSheUtd">
-                                        <img src="images/crests/epl/eplSheUtd.png" alt="Sheffield United">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplSaints">
-                                        <img src="images/crests/epl/eplSaints.png" alt="Southampton">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplSpurs">
-                                        <img src="images/crests/epl/eplSpurs.png" alt="Tottenham Hotspur">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplWestBrom">
-                                        <img src="images/crests/epl/eplWBA.png" alt="West Bromwich Albion">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplWestHam">
-                                        <img src="images/crests/epl/eplWestHam.png" alt="West Ham United">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="eplWolves">
-                                        <img src="images/crests/epl/eplWolves.png" alt="Wolverhampton Wanderers">
-                                    </li>
-                                </ul>
-                            </li>
+                            <ul class="dropdown-menu" id="eplClublist" aria-labelledby="eplDropdown">
+                                <li class="dropdown-item list-inline-item" id="eplArsenal">
+                                    <img src="images/crests/epl/eplArsenal.png" alt="Arsenal">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplVilla">
+                                    <img src="images/crests/epl/eplVilla.png" alt="Aston Villa">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplBriAlb">
+                                    <img src="images/crests/epl/eplBriAlb.png" alt="Brighton and Hove Albion">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplBurnley">
+                                    <img src="images/crests/epl/eplBurnley.png" alt="Burnley">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplChelsea">
+                                    <img src="images/crests/epl/eplChelsea.png" alt="Chelsea">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplPalace">
+                                    <img src="images/crests/epl/eplPalace.png" alt="Crystal Palace">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplEverton">
+                                    <img src="images/crests/epl/eplEverton.png" alt="Everton">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplFulham">
+                                    <img src="images/crests/epl/eplFulham.png" alt="Fulham">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplLeeds">
+                                    <img src="images/crests/epl/eplLeeds.png" alt="Leeds United">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplLeiCty">
+                                    <img src="images/crests/epl/eplLeiCty.png" alt="Leicester City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplLiverp">
+                                    <img src="images/crests/epl/eplLiverp.png" alt="Liverpool">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplManCty">
+                                    <img src="images/crests/epl/eplManCty.png" alt="Manchester City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplManUtd">
+                                    <img src="images/crests/epl/eplManUtd.png" alt="Manchester United">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplNewUtd">
+                                    <img src="images/crests/epl/eplNewUtd.png" alt="Newcastle United">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplSheUtd">
+                                    <img src="images/crests/epl/eplSheUtd.png" alt="Sheffield United">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplSaints">
+                                    <img src="images/crests/epl/eplSaints.png" alt="Southampton">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplSpurs">
+                                    <img src="images/crests/epl/eplSpurs.png" alt="Tottenham Hotspur">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplWestBrom">
+                                    <img src="images/crests/epl/eplWBA.png" alt="West Bromwich Albion">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplWestHam">
+                                    <img src="images/crests/epl/eplWestHam.png" alt="West Ham United">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="eplWolves">
+                                    <img src="images/crests/epl/eplWolves.png" alt="Wolverhampton Wanderers">
+                                </li>
+                            </ul>
+                        </li>
 
-                            <!-- Dropdown for Championship clubs -->
-                            <li class="nav-item dropdown" id="flcDrop">
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="flcDropdown"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src="images/dropdowns/flc-ffffff.png" id="flc-icon" alt="English Football Championship Logo">
-                                    <span class="d-sm-block d-md-none">English Championship</span>
-                                </a>
+                        <!-- Dropdown for Championship clubs -->
+                        <li class="nav-item dropdown" id="flcDrop">
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="flcDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="images/dropdowns/flc-ffffff.png" id="flc-icon" alt="English Football Championship Logo">
+                                <span class="d-sm-block d-md-none">English Championship</span>
+                            </a>
 
-                                <ul class="dropdown-menu" id="flcClublist" aria-labelledby="flcDropdown">
-                                    <li class="dropdown-item list-inline-item" id="flcBarnsl">
-                                        <img src="images/crests/flc/flcBarnsl.png" alt="Barnsley">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcBirCty">
-                                        <img src="images/crests/flc/flcBirCty.png" alt="Birmingham City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcBlaRov">
-                                        <img src="images/crests/flc/flcBlaRov.png" alt="Blackburn Rovers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcBourne">
-                                        <img src="images/crests/flc/flcBourne.png" alt="Bournemouth">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcBrentf">
-                                        <img src="images/crests/flc/flcBrentf.png" alt="Brentford">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcBriCty">
-                                        <img src="images/crests/flc/flcBriCty.png" alt="Bristol City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcCarCty">
-                                        <img src="images/crests/flc/flcCarCty.png" alt="Cardiff City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcCovCty">
-                                        <img src="images/crests/flc/flcCovCty.png" alt="Coventry City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcDerCou">
-                                        <img src="images/crests/flc/flcDerCou.png" alt="Derby County">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcHudTwn">
-                                        <img src="images/crests/flc/flcHudTwn.png" alt="Huddersfield Town">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcLutTwn">
-                                        <img src="images/crests/flc/flcLutTwn.png" alt="Luton Town">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcMBoro">
-                                        <img src="images/crests/flc/flcMBoro.png" alt="Middlesbrough">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcMillwall">
-                                        <img src="images/crests/flc/flcMillwall.png" alt="Millwall">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcNorCty">
-                                        <img src="images/crests/flc/flcNorCty.png" alt="Norwich City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcForest">
-                                        <img src="images/crests/flc/flcForest.png" alt="Nottingham Forest">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcPreston">
-                                        <img src="images/crests/flc/flcPreston.png" alt="Preston North End">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcQPR">
-                                        <img src="images/crests/flc/flcQPR.png" alt="Queen's Park Rangers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcReading">
-                                        <img src="images/crests/flc/flcReading.png" alt="Reading">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcRotUtd">
-                                        <img src="images/crests/flc/flcRotUtd.png" alt="Rotherham United">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcSheWed">
-                                        <img src="images/crests/flc/flcSheWed.png" alt="Sheffield Wednesday">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcStoCty">
-                                        <img src="images/crests/flc/flcStoCty.png" alt="Stoke City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcSwaCty">
-                                        <img src="images/crests/flc/flcSwaCty.png" alt="Swansea City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcWatford">
-                                        <img src="images/crests/flc/flcWatford.png" alt="Watford">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="flcWycWan">
-                                        <img src="images/crests/flc/flcWycWan.png" alt="Wycombe Wanderers">
-                                    </li>
-                                </ul>
-                            </li>
+                            <ul class="dropdown-menu" id="flcClublist" aria-labelledby="flcDropdown">
+                                <li class="dropdown-item list-inline-item" id="flcBarnsl">
+                                    <img src="images/crests/flc/flcBarnsl.png" alt="Barnsley">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcBirCty">
+                                    <img src="images/crests/flc/flcBirCty.png" alt="Birmingham City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcBlaRov">
+                                    <img src="images/crests/flc/flcBlaRov.png" alt="Blackburn Rovers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcBourne">
+                                    <img src="images/crests/flc/flcBourne.png" alt="Bournemouth">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcBrentf">
+                                    <img src="images/crests/flc/flcBrentf.png" alt="Brentford">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcBriCty">
+                                    <img src="images/crests/flc/flcBriCty.png" alt="Bristol City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcCarCty">
+                                    <img src="images/crests/flc/flcCarCty.png" alt="Cardiff City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcCovCty">
+                                    <img src="images/crests/flc/flcCovCty.png" alt="Coventry City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcDerCou">
+                                    <img src="images/crests/flc/flcDerCou.png" alt="Derby County">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcHudTwn">
+                                    <img src="images/crests/flc/flcHudTwn.png" alt="Huddersfield Town">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcLutTwn">
+                                    <img src="images/crests/flc/flcLutTwn.png" alt="Luton Town">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcMBoro">
+                                    <img src="images/crests/flc/flcMBoro.png" alt="Middlesbrough">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcMillwall">
+                                    <img src="images/crests/flc/flcMillwall.png" alt="Millwall">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcNorCty">
+                                    <img src="images/crests/flc/flcNorCty.png" alt="Norwich City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcForest">
+                                    <img src="images/crests/flc/flcForest.png" alt="Nottingham Forest">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcPreston">
+                                    <img src="images/crests/flc/flcPreston.png" alt="Preston North End">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcQPR">
+                                    <img src="images/crests/flc/flcQPR.png" alt="Queen's Park Rangers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcReading">
+                                    <img src="images/crests/flc/flcReading.png" alt="Reading">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcRotUtd">
+                                    <img src="images/crests/flc/flcRotUtd.png" alt="Rotherham United">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcSheWed">
+                                    <img src="images/crests/flc/flcSheWed.png" alt="Sheffield Wednesday">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcStoCty">
+                                    <img src="images/crests/flc/flcStoCty.png" alt="Stoke City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcSwaCty">
+                                    <img src="images/crests/flc/flcSwaCty.png" alt="Swansea City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcWatford">
+                                    <img src="images/crests/flc/flcWatford.png" alt="Watford">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="flcWycWan">
+                                    <img src="images/crests/flc/flcWycWan.png" alt="Wycombe Wanderers">
+                                </li>
+                            </ul>
+                        </li>
 
-                            <!-- Dropdown for Bundesliga clubs -->
-                            <li class="nav-item dropdown" id="bunDrop">
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="bunDropdown"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src="images/dropdowns/bun-ffffff.png" id="bun-icon" alt="Deutsche Bundesliga Logo">
-                                    <span class="d-sm-block d-md-none">Bundesliga</span>
-                                </a>
+                        <!-- Dropdown for Bundesliga clubs -->
+                        <li class="nav-item dropdown" id="bunDrop">
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="bunDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="images/dropdowns/bun-ffffff.png" id="bun-icon" alt="Deutsche Bundesliga Logo">
+                                <span class="d-sm-block d-md-none">Bundesliga</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right" id="bunClublist" aria-labelledby="bunDropdown">
+                                <li class="dropdown-item list-inline-item" id="bunArminia">
+                                    <img src="images/crests/bun/bunArminia.png" alt="Arminia Bielefeld">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunAugs07">
+                                    <img src="images/crests/bun/bunAugs07.png" alt="FC Augsburg 1907">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunBayer04">
+                                    <img src="images/crests/bun/bunBayer04.png" alt="Bayer 04 Leverkusen">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunBayern">
+                                    <img src="images/crests/bun/bunBayern.png" alt="Bayern">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunDortmund">
+                                    <img src="images/crests/bun/bunDortmund.png" alt="Borussia Dortmund">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunBorMGB">
+                                    <img src="images/crests/bun/bunBorMGB.png" alt="Borussia Mönchengladbach">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunEinFra">
+                                    <img src="images/crests/bun/bunEinFra.png" alt="Eintracht Frankfurt">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunSCFrei">
+                                    <img src="images/crests/bun/bunSCFrei.png" alt="SC Freiburg">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunHertha">
+                                    <img src="images/crests/bun/bunHertha.png" alt="Hertha Berlin">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunHoffen">
+                                    <img src="images/crests/bun/bunHoffen.png" alt="1899 Hoffenheim">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bun1FCKoln">
+                                    <img src="images/crests/bun/bun1FCKoln.png" alt="1. FC Köln">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunMainz">
+                                    <img src="images/crests/bun/bunMainz.png" alt="Mainz 05">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunLeipzig">
+                                    <img src="images/crests/bun/bunLeipzig.png" alt="Leipzig">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunSchalke">
+                                    <img src="images/crests/bun/bunSchalke.png" alt="Schalke 04">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunStuttg">
+                                    <img src="images/crests/bun/bunStuttg.png" alt="VfB Stuttgart">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunUnionB">
+                                    <img src="images/crests/bun/bunUnionB.png" alt="1. FC Union Berlin">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunWerder">
+                                    <img src="images/crests/bun/bunWerder.png" alt="Werder Bremen">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="bunWolfsb">
+                                    <img src="images/crests/bun/bunWolfsb.png" alt="VfL Wolfsburg">
+                                </li>
+                            </ul>
+                        </li>
 
-                                <ul class="dropdown-menu dropdown-menu-right" id="bunClublist" aria-labelledby="bunDropdown">
-                                    <li class="dropdown-item list-inline-item" id="bunArminia">
-                                        <img src="images/crests/bun/bunArminia.png" alt="Arminia Bielefeld">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunAugs07">
-                                        <img src="images/crests/bun/bunAugs07.png" alt="FC Augsburg 1907">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunBayer04">
-                                        <img src="images/crests/bun/bunBayer04.png" alt="Bayer 04 Leverkusen">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunBayern">
-                                        <img src="images/crests/bun/bunBayern.png" alt="Bayern">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunDortmund">
-                                        <img src="images/crests/bun/bunDortmund.png" alt="Borussia Dortmund">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunBorMGB">
-                                        <img src="images/crests/bun/bunBorMGB.png" alt="Borussia Mönchengladbach">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunEinFra">
-                                        <img src="images/crests/bun/bunEinFra.png" alt="Eintracht Frankfurt">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunSCFrei">
-                                        <img src="images/crests/bun/bunSCFrei.png" alt="SC Freiburg">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunHertha">
-                                        <img src="images/crests/bun/bunHertha.png" alt="Hertha Berlin">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunHoffen">
-                                        <img src="images/crests/bun/bunHoffen.png" alt="1899 Hoffenheim">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bun1FCKoln">
-                                        <img src="images/crests/bun/bun1FCKoln.png" alt="1. FC Köln">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunMainz">
-                                        <img src="images/crests/bun/bunMainz.png" alt="Mainz 05">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunLeipzig">
-                                        <img src="images/crests/bun/bunLeipzig.png" alt="Leipzig">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunSchalke">
-                                        <img src="images/crests/bun/bunSchalke.png" alt="Schalke 04">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunStuttg">
-                                        <img src="images/crests/bun/bunStuttg.png" alt="VfB Stuttgart">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunUnionB">
-                                        <img src="images/crests/bun/bunUnionB.png" alt="1. FC Union Berlin">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunWerder">
-                                        <img src="images/crests/bun/bunWerder.png" alt="Werder Bremen">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="bunWolfsb">
-                                        <img src="images/crests/bun/bunWolfsb.png" alt="VfL Wolfsburg">
-                                    </li>
-                                </ul>
-                            </li>
+                        <!-- Dropdown for GAA clubs -->
+                        <li class="nav-item dropdown" id="gaaDrop">
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="gaaDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="images/dropdowns/gaa-ffffff.png" id="gaa-icon" alt="Gaelic Athletic Association Logo">
+                                <span class="d-sm-block d-md-none">Gaelic Athletic Association</span>
+                            </a>
 
-                            <!-- Dropdown for GAA clubs -->
-                            <li class="nav-item dropdown" id="gaaDrop">
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="gaaDropdown"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src="images/dropdowns/gaa-ffffff.png" id="gaa-icon" alt="Gaelic Athletic Association Logo">
-                                    <span class="d-sm-block d-md-none">Gaelic Athletic Association</span>
-                                </a>
+                            <ul class="dropdown-menu dropdown-menu-right" id="gaaClublist" aria-labelledby="gaaDropdown">
+                                <li class="dropdown-item list-inline-item" id="gaaAntrim">
+                                    <img src="images/crests/gaa/gaaAntrim.png" alt="Antrim">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaArmagh">
+                                    <img src="images/crests/gaa/gaaArmagh.png" alt="Armagh">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaCarlow">
+                                    <img src="images/crests/gaa/gaaCarlow.png" alt="Carlow">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaCavan">
+                                    <img src="images/crests/gaa/gaaCavan.png" alt="Cavan">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaClare">
+                                    <img src="images/crests/gaa/gaaClare.png" alt="Clare">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaCork">
+                                    <img src="images/crests/gaa/gaaCork.png" alt="Cork">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaDerry">
+                                    <img src="images/crests/gaa/gaaDerry.png" alt="Derry">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaDonegal">
+                                    <img src="images/crests/gaa/gaaDonegal.png" alt="Donegal">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaDown">
+                                    <img src="images/crests/gaa/gaaDown.png" alt="Down">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaDublin">
+                                    <img src="images/crests/gaa/gaaDublin.png" alt="Dublin">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaFerman">
+                                    <img src="images/crests/gaa/gaaFerman.png" alt="Fermanagh">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaGalway">
+                                    <img src="images/crests/gaa/gaaGalway.png" alt="Galway">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaKerry">
+                                    <img src="images/crests/gaa/gaaKerry.png" alt="Kerry">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaKildare">
+                                    <img src="images/crests/gaa/gaaKildare.png" alt="Kildare">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaKilken">
+                                    <img src="images/crests/gaa/gaaKilken.png" alt="Kilkenny">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaLaois">
+                                    <img src="images/crests/gaa/gaaLaois.png" alt="Laois">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaLeitrim">
+                                    <img src="images/crests/gaa/gaaLeitrim.png" alt="Leitrim">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaLim">
+                                    <img src="images/crests/gaa/gaaLim.png" alt="Limerick">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaLong">
+                                    <img src="images/crests/gaa/gaaLong.png" alt="Longford">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaLouth">
+                                    <img src="images/crests/gaa/gaaLouth.png" alt="Louth">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaMayo">
+                                    <img src="images/crests/gaa/gaaMayo.png" alt="Mayo">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaMeath">
+                                    <img src="images/crests/gaa/gaaMeath.png" alt="Meath">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaMona">
+                                    <img src="images/crests/gaa/gaaMona.png" alt="Monaghan">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaOffaly">
+                                    <img src="images/crests/gaa/gaaOffaly.png" alt="Offaly">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaRos">
+                                    <img src="images/crests/gaa/gaaRos.png" alt="Roscommon">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaSligo">
+                                    <img src="images/crests/gaa/gaaSligo.png" alt="Sligo">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaTipp">
+                                    <img src="images/crests/gaa/gaaTipp.png" alt="Tipperary">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaTyrone">
+                                    <img src="images/crests/gaa/gaaTyrone.png" alt="Tyrone">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaWater">
+                                    <img src="images/crests/gaa/gaaWater.png" alt="Waterford">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaWestm">
+                                    <img src="images/crests/gaa/gaaWestm.png" alt="Westmeath">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaWexford">
+                                    <img src="images/crests/gaa/gaaWexford.png" alt="Wexford">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="gaaWicklow">
+                                    <img src="images/crests/gaa/gaaWicklow.png" alt="Wicklow">
+                                </li>
+                            </ul>
+                        </li>
 
-                                <ul class="dropdown-menu dropdown-menu-right" id="gaaClublist" aria-labelledby="gaaDropdown">
-                                    <li class="dropdown-item list-inline-item" id="gaaAntrim">
-                                        <img src="images/crests/gaa/gaaAntrim.png" alt="Antrim">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaArmagh">
-                                        <img src="images/crests/gaa/gaaArmagh.png" alt="Armagh">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaCarlow">
-                                        <img src="images/crests/gaa/gaaCarlow.png" alt="Carlow">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaCavan">
-                                        <img src="images/crests/gaa/gaaCavan.png" alt="Cavan">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaClare">
-                                        <img src="images/crests/gaa/gaaClare.png" alt="Clare">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaCork">
-                                        <img src="images/crests/gaa/gaaCork.png" alt="Cork">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaDerry">
-                                        <img src="images/crests/gaa/gaaDerry.png" alt="Derry">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaDonegal">
-                                        <img src="images/crests/gaa/gaaDonegal.png" alt="Donegal">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaDown">
-                                        <img src="images/crests/gaa/gaaDown.png" alt="Down">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaDublin">
-                                        <img src="images/crests/gaa/gaaDublin.png" alt="Dublin">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaFerman">
-                                        <img src="images/crests/gaa/gaaFerman.png" alt="Fermanagh">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaGalway">
-                                        <img src="images/crests/gaa/gaaGalway.png" alt="Galway">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaKerry">
-                                        <img src="images/crests/gaa/gaaKerry.png" alt="Kerry">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaKildare">
-                                        <img src="images/crests/gaa/gaaKildare.png" alt="Kildare">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaKilken">
-                                        <img src="images/crests/gaa/gaaKilken.png" alt="Kilkenny">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaLaois">
-                                        <img src="images/crests/gaa/gaaLaois.png" alt="Laois">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaLeitrim">
-                                        <img src="images/crests/gaa/gaaLeitrim.png" alt="Leitrim">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaLim">
-                                        <img src="images/crests/gaa/gaaLim.png" alt="Limerick">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaLong">
-                                        <img src="images/crests/gaa/gaaLong.png" alt="Longford">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaLouth">
-                                        <img src="images/crests/gaa/gaaLouth.png" alt="Louth">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaMayo">
-                                        <img src="images/crests/gaa/gaaMayo.png" alt="Mayo">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaMeath">
-                                        <img src="images/crests/gaa/gaaMeath.png" alt="Meath">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaMona">
-                                        <img src="images/crests/gaa/gaaMona.png" alt="Monaghan">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaOffaly">
-                                        <img src="images/crests/gaa/gaaOffaly.png" alt="Offaly">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaRos">
-                                        <img src="images/crests/gaa/gaaRos.png" alt="Roscommon">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaSligo">
-                                        <img src="images/crests/gaa/gaaSligo.png" alt="Sligo">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaTipp">
-                                        <img src="images/crests/gaa/gaaTipp.png" alt="Tipperary">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaTyrone">
-                                        <img src="images/crests/gaa/gaaTyrone.png" alt="Tyrone">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaWater">
-                                        <img src="images/crests/gaa/gaaWater.png" alt="Waterford">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaWestm">
-                                        <img src="images/crests/gaa/gaaWestm.png" alt="Westmeath">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaWexford">
-                                        <img src="images/crests/gaa/gaaWexford.png" alt="Wexford">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="gaaWicklow">
-                                        <img src="images/crests/gaa/gaaWicklow.png" alt="Wicklow">
-                                    </li>
-                                </ul>
-                            </li>
+                        <!-- Dropdown for Super League clubs -->
+                        <li class="nav-item dropdown" id="slrDrop">
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="slrDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="images/dropdowns/slr-ffffff.png" id="slr-icon" alt="Super League Rugby Logo">
+                                <span class="d-sm-block d-md-none">Super League Rugby</span>
+                            </a>
 
-                            <!-- Dropdown for Super League clubs -->
-                            <li class="nav-item dropdown" id="slrDrop">
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="slrDropdown"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src="images/dropdowns/slr-ffffff.png" id="slr-icon" alt="Super League Rugby Logo">
-                                    <span class="d-sm-block d-md-none">Super League Rugby</span>
-                                </a>
+                            <ul class="dropdown-menu dropdown-menu-right" id="slrClublist" aria-labelledby="slrDropdown">
+                                <li class="dropdown-item list-inline-item" id="slrCasTig">
+                                    <img src="images/crests/slr/slrCasTig.png" alt="Castleford Tigers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrCatDra">
+                                    <img src="images/crests/slr/slrCatDra.png" alt="Catalans Dragons">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrHudGia">
+                                    <img src="images/crests/slr/slrHudGia.png" alt="Huddersfield Giants">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrHullFC">
+                                    <img src="images/crests/slr/slrHullFC.png" alt="Hull FC">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrHullKR">
+                                    <img src="images/crests/slr/slrHullKR.png" alt="Hull Kingston Rovers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrLeeRhi">
+                                    <img src="images/crests/slr/slrLeeRhi.png" alt="Leeds Rhinos">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrSalRed">
+                                    <img src="images/crests/slr/slrSalRed.png" alt="Salford Red Devils">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrSaints">
+                                    <img src="images/crests/slr/slrSaints.png" alt="St. Helens">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrWakTri">
+                                    <img src="images/crests/slr/slrWakTri.png" alt="Wakefield Trinity">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrWarWol">
+                                    <img src="images/crests/slr/slrWarWol.png" alt="Warrington Wolves">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="slrWigWar">
+                                    <img src="images/crests/slr/slrWigWar.png" alt="Wigan Warriors">
+                                </li>
+                            </ul>
+                        </li>
 
-                                <ul class="dropdown-menu dropdown-menu-right" id="slrClublist" aria-labelledby="slrDropdown">
-                                    <li class="dropdown-item list-inline-item" id="slrCasTig">
-                                        <img src="images/crests/slr/slrCasTig.png" alt="Castleford Tigers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrCatDra">
-                                        <img src="images/crests/slr/slrCatDra.png" alt="Catalans Dragons">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrHudGia">
-                                        <img src="images/crests/slr/slrHudGia.png" alt="Huddersfield Giants">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrHullFC">
-                                        <img src="images/crests/slr/slrHullFC.png" alt="Hull FC">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrHullKR">
-                                        <img src="images/crests/slr/slrHullKR.png" alt="Hull Kingston Rovers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrLeeRhi">
-                                        <img src="images/crests/slr/slrLeeRhi.png" alt="Leeds Rhinos">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrSalRed">
-                                        <img src="images/crests/slr/slrSalRed.png" alt="Salford Red Devils">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrSaints">
-                                        <img src="images/crests/slr/slrSaints.png" alt="St. Helens">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrWakTri">
-                                        <img src="images/crests/slr/slrWakTri.png" alt="Wakefield Trinity">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrWarWol">
-                                        <img src="images/crests/slr/slrWarWol.png" alt="Warrington Wolves">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="slrWigWar">
-                                        <img src="images/crests/slr/slrWigWar.png" alt="Wigan Warriors">
-                                    </li>
-                                </ul>
-                            </li>
+                        <!-- Dropdown for League of Ireland clubs -->
+                        <li class="nav-item dropdown" id="loiDrop">
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="loiDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="images/dropdowns/loi-ffffff.png" id="loi-icon" alt="League of Ireland Logo">
+                                <span class="d-sm-block d-md-none">League of Ireland</span>
+                            </a>
 
-                            <!-- Dropdown for League of Ireland clubs -->
-                            <li class="nav-item dropdown" id="loiDrop">
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="loiDropdown"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src="images/dropdowns/loi-ffffff.png" id="loi-icon" alt="League of Ireland Logo">
-                                    <span class="d-sm-block d-md-none">League of Ireland</span>
-                                </a>
+                            <ul class="dropdown-menu dropdown-menu-right" id="loiClublist" aria-labelledby="loiDropdown">
+                                <li class="dropdown-item list-inline-item" id="loiBohs">
+                                    <img src="images/crests/loi/loiBohs.png" alt="Bohemians">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiCorkCty">
+                                    <img src="images/crests/loi/loiCorkCty.png" alt="Cork City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiDerCty">
+                                    <img src="images/crests/loi/loiDerCty.png" alt="Derry City">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiDundalk">
+                                    <img src="images/crests/loi/loiDundalk.png" alt="Dundalk">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiFHarps">
+                                    <img src="images/crests/loi/loiFHarps.png" alt="Finn Harps">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiShaRov">
+                                    <img src="images/crests/loi/loiShaRov.png" alt="Shamrock Rovers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiShels">
+                                    <img src="images/crests/loi/loiShels.png" alt="Shelbourne">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiSliRov">
+                                    <img src="images/crests/loi/loiSliRov.png" alt="Sligo Rovers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiPats">
+                                    <img src="images/crests/loi/loiPats.png" alt="St. Patrick's Athletic">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="loiWaterf">
+                                    <img src="images/crests/loi/loiWaterf.png" alt="Waterford">
+                                </li>
+                            </ul>
+                        </li>
 
-                                <ul class="dropdown-menu dropdown-menu-right" id="loiClublist" aria-labelledby="loiDropdown">
-                                    <li class="dropdown-item list-inline-item" id="loiBohs">
-                                        <img src="images/crests/loi/loiBohs.png" alt="Bohemians">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiCorkCty">
-                                        <img src="images/crests/loi/loiCorkCty.png" alt="Cork City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiDerCty">
-                                        <img src="images/crests/loi/loiDerCty.png" alt="Derry City">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiDundalk">
-                                        <img src="images/crests/loi/loiDundalk.png" alt="Dundalk">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiFHarps">
-                                        <img src="images/crests/loi/loiFHarps.png" alt="Finn Harps">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiShaRov">
-                                        <img src="images/crests/loi/loiShaRov.png" alt="Shamrock Rovers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiShels">
-                                        <img src="images/crests/loi/loiShels.png" alt="Shelbourne">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiSliRov">
-                                        <img src="images/crests/loi/loiSliRov.png" alt="Sligo Rovers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiPats">
-                                        <img src="images/crests/loi/loiPats.png" alt="St. Patrick's Athletic">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="loiWaterf">
-                                        <img src="images/crests/loi/loiWaterf.png" alt="Waterford">
-                                    </li>
-                                </ul>
-                            </li>
+                        <!-- Dropdown for NHL clubs -->                            
+                        <li class="nav-item dropdown" id="nhlDrop">
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="nhlDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="images/dropdowns/nhl-ffffff.png" id="nhl-icon" alt="National Hockey League Logo">
+                                <span class="d-sm-block d-md-none">National Hockey League</span>
+                            </a>
 
-                            <!-- Dropdown for NHL clubs -->                            
-                            <li class="nav-item dropdown" id="nhlDrop">
-                                <a class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="nhlDropdown"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <img src="images/dropdowns/nhl-ffffff.png" id="nhl-icon" alt="National Hockey League Logo">
-                                    <span class="d-sm-block d-md-none">National Hockey League</span>
-                                </a>
-
-                                <ul class="dropdown-menu dropdown-menu-right" id="nhlClublist" aria-labelledby="nhlDropdown">
-                                    <li class="dropdown-item list-inline-item" id="nhlDucks">
-                                        <img src="images/crests/nhl/nhlDucks.png" alt="Anaheim Ducks">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlCoyotes">
-                                        <img src="images/crests/nhl/nhlCoyotes.png" alt="Arizona Coyotes">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlBruins">
-                                        <img src="images/crests/nhl/nhlBruins.png" alt="Boston Bruins">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlSabres">
-                                        <img src="images/crests/nhl/nhlSabres.png" alt="Buffalo Sabres">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlFlames">
-                                        <img src="images/crests/nhl/nhlFlames.png" alt="Calgary Flames">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlCanes">
-                                        <img src="images/crests/nhl/nhlCanes.png" alt="Carolina Hurricanes">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlBHawks">
-                                        <img src="images/crests/nhl/nhlBHawks.png" alt="Chicago Blackhawks">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlAvs">
-                                        <img src="images/crests/nhl/nhlAvs.png" alt="Colorado Avalanche">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlJackets">
-                                        <img src="images/crests/nhl/nhlJackets.png" alt="Columbus Blue Jackets">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlStars">
-                                        <img src="images/crests/nhl/nhlStars.png" alt="Dallas Stars">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlWings">
-                                        <img src="images/crests/nhl/nhlWings.png" alt="Detroit Red Wings">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlOilers">
-                                        <img src="images/crests/nhl/nhlOilers.png" alt="Edmonton Oilers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlPanthers">
-                                        <img src="images/crests/nhl/nhlPanthers.png" alt="Florida Panthers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlKings">
-                                        <img src="images/crests/nhl/nhlKings.png" alt="Los Angeles Kings">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlWild">
-                                        <img src="images/crests/nhl/nhlWild.png" alt="Minnesota Wild">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlHabs">
-                                        <img src="images/crests/nhl/nhlHabs.png" alt="Montreal Canadiens">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlPreds">
-                                        <img src="images/crests/nhl/nhlPreds.png" alt="Nashville Predators">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlDevils">
-                                        <img src="images/crests/nhl/nhlDevils.png" alt="New Jersey Devils">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlIsland">
-                                        <img src="images/crests/nhl/nhlIsland.png" alt="New York Islanders">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlRangers">
-                                        <img src="images/crests/nhl/nhlRangers.png" alt="New York Rangers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlSens">
-                                        <img src="images/crests/nhl/nhlSens.png" alt="Ottawa Senators">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlFlyers">
-                                        <img src="images/crests/nhl/nhlFlyers.png" alt="Philadelphia Flyers">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlPenguins">
-                                        <img src="images/crests/nhl/nhlPenguins.png" alt="Pittsburgh Penguins">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlSharks">
-                                        <img src="images/crests/nhl/nhlSharks.png" alt="San Jose Sharks">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlBlues">
-                                        <img src="images/crests/nhl/nhlBlues.png" alt="St. Louis Blues">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlTampa">
-                                        <img src="images/crests/nhl/nhlTampa.png" alt="Tampa Bay Lightning">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlLeafs">
-                                        <img src="images/crests/nhl/nhlLeafs.png" alt="Toronto Maple Leafs">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlCanucks">
-                                        <img src="images/crests/nhl/nhlCanucks.png" alt="Vancouver Canucks">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlKnights">
-                                        <img src="images/crests/nhl/nhlKnights.png" alt="Vegas Golden Knights">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlCapitals">
-                                        <img src="images/crests/nhl/nhlCapitals.png" alt="Washington Capitals">
-                                    </li>
-                                    <li class="dropdown-item list-inline-item" id="nhlJets">
-                                        <img src="images/crests/nhl/nhlJets.png" alt="Winnipeg Jets">
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                            <ul class="dropdown-menu dropdown-menu-right" id="nhlClublist" aria-labelledby="nhlDropdown">
+                                <li class="dropdown-item list-inline-item" id="nhlDucks">
+                                    <img src="images/crests/nhl/nhlDucks.png" alt="Anaheim Ducks">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlCoyotes">
+                                    <img src="images/crests/nhl/nhlCoyotes.png" alt="Arizona Coyotes">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlBruins">
+                                    <img src="images/crests/nhl/nhlBruins.png" alt="Boston Bruins">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlSabres">
+                                    <img src="images/crests/nhl/nhlSabres.png" alt="Buffalo Sabres">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlFlames">
+                                    <img src="images/crests/nhl/nhlFlames.png" alt="Calgary Flames">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlCanes">
+                                    <img src="images/crests/nhl/nhlCanes.png" alt="Carolina Hurricanes">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlBHawks">
+                                    <img src="images/crests/nhl/nhlBHawks.png" alt="Chicago Blackhawks">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlAvs">
+                                    <img src="images/crests/nhl/nhlAvs.png" alt="Colorado Avalanche">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlJackets">
+                                    <img src="images/crests/nhl/nhlJackets.png" alt="Columbus Blue Jackets">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlStars">
+                                    <img src="images/crests/nhl/nhlStars.png" alt="Dallas Stars">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlWings">
+                                    <img src="images/crests/nhl/nhlWings.png" alt="Detroit Red Wings">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlOilers">
+                                    <img src="images/crests/nhl/nhlOilers.png" alt="Edmonton Oilers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlPanthers">
+                                    <img src="images/crests/nhl/nhlPanthers.png" alt="Florida Panthers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlKings">
+                                    <img src="images/crests/nhl/nhlKings.png" alt="Los Angeles Kings">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlWild">
+                                    <img src="images/crests/nhl/nhlWild.png" alt="Minnesota Wild">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlHabs">
+                                    <img src="images/crests/nhl/nhlHabs.png" alt="Montreal Canadiens">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlPreds">
+                                    <img src="images/crests/nhl/nhlPreds.png" alt="Nashville Predators">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlDevils">
+                                    <img src="images/crests/nhl/nhlDevils.png" alt="New Jersey Devils">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlIsland">
+                                    <img src="images/crests/nhl/nhlIsland.png" alt="New York Islanders">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlRangers">
+                                    <img src="images/crests/nhl/nhlRangers.png" alt="New York Rangers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlSens">
+                                    <img src="images/crests/nhl/nhlSens.png" alt="Ottawa Senators">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlFlyers">
+                                    <img src="images/crests/nhl/nhlFlyers.png" alt="Philadelphia Flyers">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlPenguins">
+                                    <img src="images/crests/nhl/nhlPenguins.png" alt="Pittsburgh Penguins">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlSharks">
+                                    <img src="images/crests/nhl/nhlSharks.png" alt="San Jose Sharks">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlBlues">
+                                    <img src="images/crests/nhl/nhlBlues.png" alt="St. Louis Blues">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlTampa">
+                                    <img src="images/crests/nhl/nhlTampa.png" alt="Tampa Bay Lightning">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlLeafs">
+                                    <img src="images/crests/nhl/nhlLeafs.png" alt="Toronto Maple Leafs">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlCanucks">
+                                    <img src="images/crests/nhl/nhlCanucks.png" alt="Vancouver Canucks">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlKnights">
+                                    <img src="images/crests/nhl/nhlKnights.png" alt="Vegas Golden Knights">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlCapitals">
+                                    <img src="images/crests/nhl/nhlCapitals.png" alt="Washington Capitals">
+                                </li>
+                                <li class="dropdown-item list-inline-item" id="nhlJets">
+                                    <img src="images/crests/nhl/nhlJets.png" alt="Winnipeg Jets">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+            </div>
             <!--Dropdown shell taken from Bootstrap guide to drop-downs.-->
+
         </nav>
     </header>
-    
+
     <main class="container-fluid px-0 px-lg-3" id="mainContain">
     <!--Bugfix #1: mx- and px- classes here are Bootstrap classes, remove margin and padding from smaller screen sizes-->
         <div class="row mx-auto">
