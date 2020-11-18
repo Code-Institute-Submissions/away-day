@@ -28,6 +28,9 @@ function sendMail(contactForm) {
         function(response) {
             console.log("SUCCESS", response);
             alert("Goal! Message sent!");
+            $("#full_name").val("");
+            $("#email_address").val("");
+            $("#feedback").val("");
             $(".contact-modal").modal("hide");
         },
         /* Not displaying feedback yet */
